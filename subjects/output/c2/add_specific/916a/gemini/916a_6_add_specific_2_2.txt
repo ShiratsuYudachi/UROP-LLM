@@ -1,0 +1,13 @@
+N=int(input())
+alpha='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for i in range(0,N):
+    a=int(input())
+    b=str(input())
+    if a==0:
+        ans=0
+    else:
+        ans=1
+    for j in range(0,26):
+        if j+1<=b.count(alpha[j]):
+            ans+=1
+    print(b,ans)

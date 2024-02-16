@@ -1,0 +1,16 @@
+N=int(input())
+if N>=1 and N<=100:
+    alpha=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    for i in range(0,N):
+        a=int(input())
+        if 1<=a and a<=500:
+            b=str(input())
+            ans=0
+            for j in range(0,26):
+                if j+1<=b.count(alpha[j]):
+                    ans+=1
+            print(b,ans)
+        else:
+            break
+else:
+    print("Invalid N value. It should be between 1 and 100.")

@@ -1,0 +1,13 @@
+N=int(input())
+alpha='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for i in range(0,N):
+    a=int(input())
+    b=str(input())
+    ans=0
+    for j in range(0,26):
+        if b[a-1-j]==alpha[j] and a-1-j>=0 and (j==25 or b[a-1-j+1]!=alpha[j]):
+            pass
+        else:
+            break
+            ans+=1
+    print(b,ans)

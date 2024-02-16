@@ -1,0 +1,20 @@
+n = int(input())
+for i in range(n):
+    a = int(input())
+    arr = list(map(int, input().split()))
+    ones, zeros = arr.count(1), arr.count(0)
+    inversions = zeros * ones
+    flip_count = 0
+    max_inversions = inversions
+    for j in range(a):
+        if arr[j] == 1:
+            ones -= 1
+        else:
+            zeros -= 1
+        flip_count += 1
+        new_inversions = ones * zeros
+        if new_inversions > max_inversions:
+            max_inversions = new_inversions
+        if ones == 0 or zeros == 0:
+            break
+    print(max_inversions)

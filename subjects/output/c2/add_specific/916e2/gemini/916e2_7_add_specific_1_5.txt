@@ -1,0 +1,16 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=[int(ele) for ele in input().split()]
+    b=[int(ele) for ele in input().split()]
+    d=[[a[i]+b[i],i] for i in range(n)]
+    if a[0]==0 and b[0]==0:
+        pass
+    else:
+        d.sort()
+
+    res=0
+    for i in range(n):
+        if i%2:res-=(b[d[i][1]]-1)
+        else: res+=(b[d[i][1]]-1)
+    print(res)

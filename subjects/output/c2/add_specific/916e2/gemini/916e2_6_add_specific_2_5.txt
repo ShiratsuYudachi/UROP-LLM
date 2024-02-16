@@ -1,0 +1,19 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=[int(ele) for ele in input().split()]
+    b=[int(ele) for ele in input().split()]
+    if n%2:
+        a.append(1e10)
+        b.append(1e10)
+
+    d=[]
+    for j in range(n):
+        d.append([min(a[j],b[j]),j])
+
+    d.sort(key=lambda x:-x[0])
+    res=0
+    for i in range(n):
+        if i%2:res-=(b[d[i][1]]-1)
+        else: res+=(b[d[i][1]]-1)
+    print(res)

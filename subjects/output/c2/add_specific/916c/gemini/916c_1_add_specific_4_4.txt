@@ -1,0 +1,18 @@
+def maximum_experience(n, k):
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    result = 0
+    max_exp = 0
+    sum = 0
+    for i in range(min([k, n])):
+        if i < n:
+            sum += a[i]
+        max_exp = max(max_exp, b[i])
+        result = max(result, sum + max_exp * (k - i - 1))
+    print(result)
+
+
+t = int(input())
+for _ in range(t):
+    n, k = map(int, input().split())
+    maximum_experience(n, k)

@@ -1,0 +1,14 @@
+def solve(a, b):
+    d=[[a[i]+b[i],i] for i in range(len(a))]
+    d.sort(key=lambda x:-x[0])
+    res=0
+    for i in range(len(a)):
+        if i%2:res-=(b[d[i][1]]-1)
+        else: res+=(b[d[i][1]]-1)
+    return res
+
+for i in range(t):
+    n=int(input())
+    a=[int(ele) for ele in input().split()]
+    b=[int(ele) for ele in input().split()]
+    print(solve(a,b))

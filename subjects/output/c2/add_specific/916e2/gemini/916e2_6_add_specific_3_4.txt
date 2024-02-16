@@ -1,0 +1,18 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=[int(ele) for ele in input().split()]
+    b=[int(ele) for ele in input().split()]
+    while any(a) and any(b):
+        d=[(a[i]-b[i],i) for i in range(n) if a[i] and b[i]]
+        d.sort(key=lambda x:-x[0])
+        r=min(a[d[0][1]],b[d[0][1]])
+        a[d[0][1]]-=r
+        b[d[0][1]]-=r
+
+    d.sort(key=lambda x:-x[0])
+    res=0
+    for i in range(n):
+        if i%2:res-=(b[d[i][1]]-1)
+        else: res+=(b[d[i][1]]-1)
+    print(res)

@@ -1,0 +1,15 @@
+for _ in range(int(input())):
+    n, k = map(int, input().split())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    dp = [0] * n
+    dp[0] = a[0]
+    result = dp[0]
+    max_till_now = dp[0]
+    sum = dp[0]
+    for i in range(min([k, n])):
+        if i < n - 1:
+            sum += a[i + 1]
+        max_till_now = max(max_till_now, dp[i] + b[i])
+        result = max(result, sum + max_till_now * (k - i - 1))
+    print(result)

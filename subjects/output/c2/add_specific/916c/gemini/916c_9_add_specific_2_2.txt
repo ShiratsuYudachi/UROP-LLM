@@ -1,0 +1,13 @@
+for _ in range(int(input())):
+    n, k = map(int, input().split())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    result = 0
+    maxi = 0
+    sum = 0
+    for i in range(min([n, k])):
+        if i == 0:
+            sum += a[i]
+        maxi = max(maxi, sum + b[i] * (k - i - 1))
+        result = max(result, sum + maxi * (n - i - 1))
+    print(result)

@@ -1,0 +1,11 @@
+N=int(input())
+alpha='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for i in range(0,N):
+    a=int(input())
+    b=str(input())
+    ans=0
+    for j in range(0,26):
+        if alpha[j]==b[0] and a>=j+1:
+            a=a-j-1
+            b=b[j+1:]
+    print(ans)

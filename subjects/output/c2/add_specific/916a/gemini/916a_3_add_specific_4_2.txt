@@ -1,0 +1,13 @@
+N=int(input())
+alpha='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+def solve(n,b):
+    a=int(input())
+    b=str(input())
+    ans=0
+    for j in range(0,26):
+        if j+1<=b.count(alpha[j]):
+            ans+=1
+    return ans
+
+for i in range (0,N):
+    print(solve(a,b))

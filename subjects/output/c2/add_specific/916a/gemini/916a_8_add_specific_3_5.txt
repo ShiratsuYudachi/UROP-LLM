@@ -1,0 +1,15 @@
+N=int(input())
+alpha='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+for i in range(0,N):
+    a=int(input())
+    b=str(input())
+    ans=0
+    for j in range(0,26):
+        while b.find(alpha[j])!=-1:
+            c=b.find(alpha[j])
+            if c<=a:
+                b=b[:c]+b[c+1:]
+                a-=1
+            else: break
+        ans+=1
+    print(b,ans)

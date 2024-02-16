@@ -1,0 +1,19 @@
+N=int(input())
+if 1<=N<=100:
+    pass
+else:
+    print('N is outside the range')
+
+for i in range(0,N):
+    a=int(input())
+    if 1<=a<=500:
+        pass
+    else:
+        print('a is outside the range')
+    b=str(input())
+    ans=0
+    alpha=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    for j in range(0,26):
+        if j+1<=b.count(alpha[j]):
+            ans+=1
+    print(ans)

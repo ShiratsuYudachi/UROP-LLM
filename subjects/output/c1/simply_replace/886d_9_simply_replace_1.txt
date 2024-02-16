@@ -1,0 +1,13 @@
+n = int(input())
+for i in range(n):
+    a = int(input())
+    lst = list(map(int, input().split()))
+    inversions = sum(lst)
+    max_inversions = inversions
+    for j in range(a):
+        if lst[j] == 0:
+            inversions += 1
+        else:
+            inversions -= 1
+        max_inversions = max(max_inversions, inversions)
+    print(max_inversions)

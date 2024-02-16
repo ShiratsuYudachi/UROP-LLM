@@ -1,0 +1,17 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=[int(ele) for ele in input().split()]
+    b=[int(ele) for ele in input().split()]
+    d=[[a[i],b[i],i] for i in range(n)]
+    d.sort(key=lambda x:x[0])
+    res=0
+    while len(d):
+        if d[0][0]==d[0][1]:d.pop(0)
+        else: d[0][0]+=1;d[0][1]+=1;res+=min(d[0][0],d[0][1]) - max(d[0][0],d[0][1]);d.remove(d[0]);d[0][0]+=1;d[0][1]+=1
+        d.sort(key=lambda x:x[0])
+
+    for i in range(n):
+        if i%2:res-=(b[d[i][1]]-1)
+        else: res+=(b[d[i][1]]-1)
+    print(res)

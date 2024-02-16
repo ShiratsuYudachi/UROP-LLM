@@ -1,0 +1,25 @@
+docstring:
+"""
+Recently, Alice and Bob were given marbles of 𝑛 different colors by their parents. Alice has received 𝑎1 marbles of color 1 , 𝑎2 marbles of color 2 ,..., 𝑎𝑛 marbles of color 𝑛. Bob has received 𝑏1 marbles of color 1 , 𝑏2 marbles of color 2,...,𝑏𝑛 marbles of color 𝑛. All 𝑎𝑖 and 𝑏𝑖 are between 1 and 10^9.
+
+After some discussion, Alice and Bob came up with the following game: players take turns, starting with Alice. On their turn, a player chooses a color 𝑖 such that both players have at least one marble of that color. The player then discards one marble of color 𝑖 , and their opponent discards all marbles of color 𝑖 . The game ends when there is no color 𝑖 such that both players have at least one marble of that color.
+
+The score in the game is the difference between the number of remaining marbles that Alice has and the number of remaining marbles that Bob has at the end of the game. In other words, the score in the game is equal to (𝐴−𝐵) , where 𝐴 is the number of marbles Alice has and 𝐵 is the number of marbles Bob has at the end of the game. Alice wants to maximize the score, while Bob wants to minimize it.
+
+Calculate the score at the end of the game if both players play optimally.
+
+Input
+
+The first line contains a single integer 𝑡 (1≤𝑡≤10^4) — the number of test cases.
+
+Each test case consists of three lines:
+- the first line contains a single integer 𝑛 (2≤𝑛≤2⋅10^5) — the number of colors;
+- the second line contains 𝑛 integers 𝑎1,𝑎2,…,𝑎𝑛 (1≤𝑎𝑖≤10^9), where 𝑎𝑖 is the number of marbles of the 𝑖-th color that Alice has;
+- the third line contains 𝑛 integers 𝑏1,𝑏2,…,𝑏𝑛 (1≤𝑏𝑖≤10^9), where 𝑏𝑖 is the number of marbles of the 𝑖 -th color that Bob has.
+
+Additional constraint on the input: the sum of 𝑛 for all test cases does not exceed 2⋅10^5.
+
+Output
+
+For each test case, output a single integer — the score at the end of the game if both Alice and Bob act optimally.
+"""

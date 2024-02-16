@@ -1,0 +1,16 @@
+N=int(input())
+if N<1 or N>100:
+    pass
+else:
+    alpha=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    for i in range(0,N):
+        a=int(input())
+        b=str(input())
+        if a<len(b) or a>500 or len(b)!=a:
+           pass
+        else:
+            ans=0
+            for j in range(0,26):
+                if j+1<=b.count(alpha[j]):
+                    ans+=1
+            print(b,ans)

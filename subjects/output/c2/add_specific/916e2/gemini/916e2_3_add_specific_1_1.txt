@@ -1,0 +1,16 @@
+t=int(input())
+for i in range(t):
+    if i%2:
+        n=int(input())
+    else:
+        n=int(input())+1
+
+    a=[int(ele) for ele in input().split()]
+    b=[int(ele) for ele in input().split()]
+    d=[[a[i]+b[i],i] for i in range(n-1)]
+    d.sort(key=lambda x:-x[0])
+    res=0
+    for i in range(n-1):
+        if i%2:res-=(b[d[i][1]]-1)
+        else: res+=(b[d[i][1]]-1)
+    print(res)

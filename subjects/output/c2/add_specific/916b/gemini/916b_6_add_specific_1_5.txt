@@ -1,0 +1,27 @@
+t = int(input())
+for nt in range(t):
+    n, k = map(int, input().split())
+    s = ''
+    if k == 0:
+        if n%2 == 1:
+            for i in range(1, n+1, 2):
+                s = s + ' ' + str(i)
+            for i in range(2, n+1, 2):
+                s = s + ' ' + str(i)
+        else:
+            for i in range(2, n+1, 2):
+                s = s + ' ' + str(i)
+            for i in range(1, n+1, 2):
+                s = s + ' ' + str(i)
+
+    elif k == n-1:
+        for i in range(1, n+1):
+            s = s + ' ' + str(i)
+    else:
+        for j in range(1, n-k):
+            s = s + ' ' + str(j)
+        s = str(n-k)+s
+        while i <= n-1:
+            s = str(i)+s+' '+str(i+1)
+            i += 2
+    print(s[:-1])
