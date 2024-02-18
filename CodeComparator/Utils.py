@@ -61,6 +61,7 @@ class CompareResult:
                 print(f"{result.base}:")
                 print(f" \t{result.comparer}: isSyntaxSame {result.isSyntaxSame}, isSemanticSame {result.isSemanticSame}")
 
+    @staticmethod
     def toExcel():
         # 创建一个DataFrame
         dataFrame = {
