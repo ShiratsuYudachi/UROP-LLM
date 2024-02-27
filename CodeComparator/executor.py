@@ -5,7 +5,7 @@ import signal
 from Utils import *
 
 # 定义一个执行外部命令的函数
-timeout = 0.5
+timeout = 1
 
 def run_command(cmd):
     global process
