@@ -11,6 +11,7 @@ def wrapDir(dir: str):
     return dir
 
 submissionsPath = "/Users/tsuyue/Documents/GitHub/UROP-LLM/CodeCollector/submissions/"
+subjectPath = "/Users/tsuyue/Documents/GitHub/UROP-LLM/CodeCollector/subjects/"
 
 
 class Verdict:
@@ -95,7 +96,7 @@ class CFSubmission:
     
     
 class CFSubject:
-    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, errorCase:str=None, errorLine:int=0) -> None:
+    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, errorCase={}, errorLine:int=0) -> None:
         self.acceptedSubmission = acceptedSubmission
         self.rejectedSubmission = rejectedSubmission
         self.acceptedCode = acceptedCode
@@ -135,6 +136,9 @@ class CFSubject:
     
     
 
+def get_subject_json_name(contestID):
+    return subjectPath+str(contestID)+'.json'
+
 def get_submission_json_name(contestID):
     return submissionsPath+str(contestID)+'.json'
 
@@ -151,7 +155,6 @@ def read_submissions(contestID):
     return submissions
 
 
-
 def colorPrint(info:str , color: str):
     colorCode = 31
     if color=="red":
@@ -161,3 +164,9 @@ def colorPrint(info:str , color: str):
     elif color=="yellow":
         colorCode = 33
     print(f"\033[0;{colorCode}m%s\033[0m" % info)
+
+def save_subjects(subjects, contestID):
+    subject_dicts = [subject.to_dict() for subject in subjects]
+    filename = get_subject_json_name(contestID)
+    with open(filename, 'w') as file:
+        json.dump(subject_dicts, file, indent=4)

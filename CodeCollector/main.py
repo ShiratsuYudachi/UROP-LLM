@@ -43,7 +43,6 @@ if __name__ == "__main__":
                 colorPrint('exit with error!', 'red')
                 # http error happenned
                 break
-            time.sleep(2)
 
     elif (option == "2"):
         # fetch all submissions of the below contest
@@ -51,7 +50,9 @@ if __name__ == "__main__":
         contestID = input("contestID=")
         if contestID=='':
             contestID = default_contestID
-        getSubjects(contestID)
+
+        subjects = getSubjects(contestID)
+        save_subjects(subjects, contestID)
         pass
     else:
         # test branch

@@ -82,3 +82,5 @@ def fetch_error_test_case():
     result_dict = response.json()
 
     print(result_dict)
+
+#fetch_error_test_case()
