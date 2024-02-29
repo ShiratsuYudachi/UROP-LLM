@@ -56,7 +56,7 @@ if __name__ == "__main__":
             contestID = default_contestID
 
         subjects = getSubjects(contestID)
-        save_subjects(subjects, contestID)
+        CFSubject.save_list_to_json(subjects, contestID)
         pass
     else:
         fetch_submissions("https://codeforces.com/contest/1915/status?order=BY_ARRIVED_DESC")

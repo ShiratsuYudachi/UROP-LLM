@@ -4,6 +4,7 @@ from datetime import datetime
 import csv
 
 acceptedLangs = ["Python 3", "Python 2", "PyPy 2", "PyPy 3", "PyPy 3-64"]
+thresh_diff_lines = 5 # thresh for consider two code as same version
 
 
 def wrapDir(dir: str):
@@ -138,6 +139,21 @@ class CFSubject:
             failedTestCase=failedTestCase,
             errorLine=errorLine
         )
+    
+    @staticmethod
+    def save_list_to_json(subjects, contestID):
+        subject_dicts = [subject.to_dict() for subject in subjects]
+        filename = get_subject_json_name(contestID)
+        with open(filename, 'w') as file:
+            json.dump(subject_dicts, file, indent=4)
+    
+    @staticmethod
+    def load_list_from_json(contestID):
+        filename = get_subject_json_name(contestID)
+        with open(filename, 'r') as file:
+            subjectJson = json.load(file)
+        subjects = [CFSubject.parse_dict(x) for x in subjectJson]
+        return subjects
 
     
 
@@ -157,9 +173,3 @@ def colorPrint(info:str , color: str):
     elif color=="yellow":
         colorCode = 33
     print(f"\033[0;{colorCode}m%s\033[0m" % info)
-
-def save_subjects(subjects, contestID):
-    subject_dicts = [subject.to_dict() for subject in subjects]
-    filename = get_subject_json_name(contestID)
-    with open(filename, 'w') as file:
-        json.dump(subject_dicts, file, indent=4)

@@ -34,7 +34,7 @@
             "expectedOutput": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO...",
             "CheckerComment": "wrong answer expected YES, found NO [16th token]\r\n"
         },
-        "errorLine": 0
+        "errorLine": 2
     },
     {
         "acceptedSubmission": {
@@ -71,7 +71,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -108,7 +108,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -145,7 +145,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -182,7 +182,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 6
     },
     {
         "acceptedSubmission": {
@@ -219,7 +219,7 @@
             "expectedOutput": "1\r\n3\r\n6\r\n7\r\n0\r\n6\r\n8\r\n5\r\n5\r\n7\r\n",
             "CheckerComment": "wrong answer 1st numbers differ - expected: '1', found: '3'\r\n"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -256,7 +256,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -293,7 +293,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -330,7 +330,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -367,7 +367,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -404,7 +404,7 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 0
+        "errorLine": 1
     },
     {
         "acceptedSubmission": {
@@ -478,7 +478,7 @@
             "expectedOutput": "A\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\n",
             "CheckerComment": "wrong answer Unexpected EOF in the participants output\r\n"
         },
-        "errorLine": 0
+        "errorLine": 2
     },
     {
         "acceptedSubmission": {
@@ -515,6 +515,6 @@
             "expectedOutput": "ba\r\nca\r\nda\r\nbe\r\nce\r\nde\r\nbab\r\nbac\r\nbad\r\nbeb\r\nbec\r\nbed\r\ncab\r\ncac\r\ncad\r\nceb\r\ncec\r\nced\r\ndab\r\ndac\r\ndad\r\ndeb\r\ndec\r\nded\r\nba.ba\r\nba.ca\r\nba.da\r\nba.be\r\nba.ce\r\nba.de\r\nca.ba\r\nca.ca\r\nca.da\r\nca.be\r\nca.ce\r\nca.de\r\nda.ba\r\nda.ca\r\nda.da\r\nda.be\r\nda.ce\r\nda.de\r\nbe.ba\r\nbab.ba\r\nbab.ca\r\nbab.da\r\nbab.be\r\nbab.ce\r\nbab.de\r\nbac.ba\r\nbac.ca\r\nbac.da\r\nbac.be\r\nbac.ce\r\nbac.de\r\nbad.ba\r\nbad.ca\r\nbad.da\r\nbad.be\r\nbad.ce\r\nbad.de\r\nbeb.ba\r\nba.bab\r\nba.bac\r\nba.bad\r\nba.beb\r\nba.bec\r\nba.bed\r\nba.cab\r\nba.cac\r\nba.cad\r\nba.ceb\r\nba.cec\r\nba.ced\r\nba.dab\r\nba.dac\r\n...",
             "CheckerComment": "wrong answer 1st words differ - expected: 'ba', found: 'baa'\r\n"
         },
-        "errorLine": 0
+        "errorLine": 12
     }
 ]
