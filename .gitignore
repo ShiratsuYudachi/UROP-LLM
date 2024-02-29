@@ -8,3 +8,4 @@ subjects/.DS_Store
 output.xlsx
 ~$output.xlsx
 CodeComparator/src.py
+/CodeCollector/__pycache__
