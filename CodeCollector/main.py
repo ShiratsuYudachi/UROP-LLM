@@ -1,6 +1,7 @@
 from Utils import *
 from FetchManager import fetch_submissions
-from SubjectsCollector import getSubjects
+from SubjectsCollector import find_pairs, print_pairs, fetch_submission_code_error
+from Comparator import compare_code_lines
 from tqdm import tqdm
 import os
 import time
@@ -54,9 +55,37 @@ if __name__ == "__main__":
         contestID = input("contestID=")
         if contestID=='':
             contestID = default_contestID
+        
+        submissions = CFSubmission.read_from_csv(contestID)
+        pairs = find_pairs(submissions)
+        pairs_to_fetch = pairs.copy()
+        print_pairs(pairs)
+        subjects = []
+        startPage = 1
+        
+        if os.path.exists(get_subject_json_name(contestID)):
+            subjects = CFSubject.load_list_from_json(contestID)
+            for pair in pairs:
+                for subject in subjects:
+                    if (pair[0].author == subject.acceptedSubmission.author):
+                        pairs_to_fetch.remove(pair)
+                    
+            print(f"imported {len(pairs) - len(pairs_to_fetch)} subjects")
 
-        subjects = getSubjects(contestID)
-        CFSubject.save_list_to_json(subjects, contestID)
+        
+        for submission_pair in tqdm(pairs_to_fetch):
+            accepted_code = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)[0]
+            rejected = fetch_submission_code_error(submission_pair[1].contestID, submission_pair[1].submissionID, submission_pair[1].errorCaseNo)
+            subject = CFSubject(acceptedSubmission=submission_pair[0],
+                                rejectedSubmission=submission_pair[1],
+                                acceptedCode=accepted_code,
+                                rejectedCode=rejected[0],
+                                failedTestCase=rejected[1],
+                                errorLine=compare_code_lines(accepted_code,rejected[0])[1]
+                                )
+            subjects.append(subject)
+            CFSubject.save_list_to_json(subjects, contestID)
+    
         pass
     else:
         fetch_submissions("https://codeforces.com/contest/1915/status?order=BY_ARRIVED_DESC")

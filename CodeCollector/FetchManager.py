@@ -47,7 +47,7 @@ def parse_submission_html(tr):
         return CFSubmission(contestID="1915", problem=problem, submissionID=submission_id, author=author, isAccepted=isAccepted, errorType=errorType, errorCaseNo=errorCaseNo, lang=lang, runTime=run_time, memory=memory, submissionTime=submission_time)
 
 def myparser():
-    response = requests.get(url)
+    response = requests.get()
     soup = BeautifulSoup(response.text, 'html.parser')
     if response.status_code == 200:
         submissions = []
