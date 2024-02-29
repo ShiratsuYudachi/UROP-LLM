@@ -24,12 +24,27 @@ def parse_submission_html(tr):
         problem = tr.find('td', {'data-problemid': True}).a.text.strip()
         lang = tr.find('td', class_=None).text.strip()
         verdict_str = tr.find('td', class_='status-cell').span.text.strip()
+        isAccepted = verdict_str=='Accepted'
+        errorType = None
+        errorCaseNo = 0
+        if not isAccepted:
+            if 'Compilation' in verdict_str:
+                errorType = 'Compilation'
+            elif 'Runtime' in verdict_str:
+                errorType = 'Runtime'
+            elif 'Time' in verdict_str:
+                errorType = 'Time'
+            elif 'Wrong' in verdict_str:
+                errorType = 'Answer'
+            else:
+                errorType = verdict_str
+            if errorType in ('Answer','Runtime','Time'):
+                errorCaseNo = verdict_str.split(' ')[-1]
         run_time = int(tr.find('td', class_='time-consumed-cell').text.strip().split('\xa0')[0])
         memory = int(tr.find('td', class_='memory-consumed-cell').text.strip().split('\xa0')[0])
         submission_time = datetime.strptime(time_str, '%b/%d/%Y %H:%M').timestamp()
 
-        verdict = Verdict.parse_dict(verdict_str)
-        return CFSubmission(contestID="1915", problem=problem, submissionID=submission_id, author=author, lang=lang, verdict=verdict, runTime=run_time, memory=memory, submissionTime=submission_time)
+        return CFSubmission(contestID="1915", problem=problem, submissionID=submission_id, author=author, isAccepted=isAccepted, errorType=errorType, errorCaseNo=errorCaseNo, lang=lang, runTime=run_time, memory=memory, submissionTime=submission_time)
 
 def myparser():
     response = requests.get(url)
@@ -110,10 +125,10 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
             'Referer': url
         }
         data = {
-            "submissionId": "248637681",
+            "submissionId": submission_id,
             "csrf_token": csrf_token
         }
-        response = session.post(submitSource_url, headers=headers, data=data)
+        response = session.post(submitSource_url, headers=headers, data=data).json()
         errorCase = {
             'input': response[f'input#{errorCaseNo}'],
             'output': response[f'output#{errorCaseNo}'],
@@ -123,5 +138,3 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
 
     
     return code, errorCase
-
-print(fetch_submission_code_error(1914,248602789,errorCaseNo=0))

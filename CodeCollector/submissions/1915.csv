@@ -1,0 +1,551 @@
+contestID,problem,submissionID,author,lang,isAccepted,errorType,errorCaseNo,runTime,memory,submissionTime
+1915,E - Romantic Glasses,248884492,Slephy,GNU C++20 (64),False,Running on test 10,0,0,0,1709191680.0
+1915,E - Romantic Glasses,248884325,Slephy,GNU C++20 (64),False,Answer,3,46,3200,1709191620.0
+1915,D - Unnatural Language Processing,248884044,hhhsuanfa,GNU C++17 (64),True,,0,30,7600,1709191500.0
+1915,D - Unnatural Language Processing,248883857,Slephy,GNU C++20 (64),True,,0,30,7500,1709191440.0
+1915,E - Romantic Glasses,248883780,shivank_dixit,GNU C++17,True,,0,155,9600,1709191380.0
+1915,E - Romantic Glasses,248883553,shivank_dixit,GNU C++17,False,Time,11,1000,8700,1709191260.0
+1915,D - Unnatural Language Processing,248883526,zero_coding,GNU C11,False,Time,3,1000,500,1709191260.0
+1915,C - Can I Square?,248883050,Slephy,GNU C++20 (64),True,,0,46,1600,1709191080.0
+1915,C - Can I Square?,248882888,ymr0060,GNU C++20 (64),True,,0,436,0,1709190960.0
+1915,D - Unnatural Language Processing,248882585,hhhsuanfa,GNU C++17 (64),True,,0,31,500,1709190840.0
+1915,F - Greetings,248882433,szx233,GNU C++17,False,Time,3,5000,1600,1709190780.0
+1915,D - Unnatural Language Processing,248882382,Alamin_20,GNU C++17,True,,0,62,500,1709190720.0
+1915,B - Not Quite Latin Square,248881016,ymr0060,GNU C++20 (64),True,,0,0,0,1709190120.0
+1915,C - Can I Square?,248880516,AmanuelAbel,Python 3,True,,0,218,26200,1709189940.0
+1915,C - Can I Square?,248879980,hhhsuanfa,GNU C++17 (64),True,,0,93,1600,1709189700.0
+1915,C - Can I Square?,248879807,hhhsuanfa,GNU C++17 (64),False,Answer,3,46,300,1709189580.0
+1915,C - Can I Square?,248879690,AmanuelAbel,Python 3,False,Answer,2,31,0,1709189580.0
+1915,C - Can I Square?,248879511,hhhsuanfa,GNU C++17 (64),False,Time,3,1000,0,1709189460.0
+1915,C - Can I Square?,248879164,AmanuelAbel,Python 3,False,Answer,2,108,100,1709189340.0
+1915,C - Can I Square?,248878872,vjudge1,GNU C++20 (64),True,,0,46,0,1709189160.0
+1915,C - Can I Square?,248878461,NianEr,GNU C++17 (64),True,,0,405,800,1709188980.0
+1915,B - Not Quite Latin Square,248878315,hhhsuanfa,GNU C++17 (64),True,,0,15,0,1709188920.0
+1915,B - Not Quite Latin Square,248878297,Alamin_20,GNU C++17,True,,0,0,0,1709188920.0
+1915,B - Not Quite Latin Square,248878290,AmanuelAbel,Python 3,True,,0,46,0,1709188920.0
+1915,C - Can I Square?,248878209,NianEr,GNU C++17 (64),False,Answer,3,342,100,1709188860.0
+1915,C - Can I Square?,248877987,NianEr,GNU C++17 (64),False,Answer,3,343,100,1709188800.0
+1915,A - Odd One Out,248877618,AmanuelAbel,Python 3,True,,0,31,0,1709188620.0
+1915,E - Romantic Glasses,248877582,mrxaid,GNU C++20 (64),True,,0,109,15800,1709188620.0
+1915,C - Can I Square?,248877434,NianEr,GNU C++17 (64),False,Answer,3,327,100,1709188560.0
+1915,A - Odd One Out,248877365,ymr0060,GNU C++20 (64),True,,0,15,0,1709188500.0
+1915,A - Odd One Out,248877342,hhhsuanfa,GNU C++17 (64),True,,0,0,0,1709188500.0
+1915,C - Can I Square?,248877194,Esplidse,GNU C++20 (64),True,,0,46,0,1709188440.0
+1915,A - Odd One Out,248877104,Alamin_20,GNU C++17,True,,0,15,0,1709188440.0
+1915,A - Odd One Out,248876880,Alamin_20,GNU C++17,False,Compilation,0,0,0,1709188320.0
+1915,C - Can I Square?,248876861,Esplidse,GNU C++20 (64),False,Answer,2,15,0,1709188320.0
+1915,D - Unnatural Language Processing,248876644,NaroToT,GNU C++20 (64),True,,0,46,500,1709188200.0
+1915,B - Not Quite Latin Square,248876547,medha.bhutani,GNU C++20 (64),True,,0,0,0,1709188140.0
+1915,C - Can I Square?,248876304,Alamin_20,GNU C++17,True,,0,436,0,1709188020.0
+1915,B - Not Quite Latin Square,248875897,Esplidse,GNU C++20 (64),True,,0,0,0,1709187900.0
+1915,A - Odd One Out,248874963,Esplidse,GNU C++20 (64),True,,0,0,0,1709187480.0
+1915,A - Odd One Out,248874390,odil2007.4455,GNU C++17,True,,0,15,0,1709187180.0
+1915,D - Unnatural Language Processing,248873766,FaisalDev01,Java 21,False,Answer,1,202,100,1709186940.0
+1915,A - Odd One Out,248873432,JayantGoel001,GNU C++17 (64),True,,0,0,200,1709186760.0
+1915,A - Odd One Out,248872961,NITUL_,GNU C++20 (64),True,,0,15,0,1709186520.0
+1915,B - Not Quite Latin Square,248872941,Prayag_Kalriya_,GNU C++20 (64),True,,0,15,0,1709186520.0
+1915,C - Can I Square?,248872843,Prayag_Kalriya_,GNU C++20 (64),False,Answer,1,0,0,1709186460.0
+1915,C - Can I Square?,248872767,Prayag_Kalriya_,GNU C++20 (64),False,Answer,1,0,0,1709186460.0
+1915,E - Romantic Glasses,248872618,shubham74550,GNU C++17,True,,0,421,7200,1709186340.0
+1915,B - Not Quite Latin Square,248872576,NITUL_,GNU C++20 (64),True,,0,0,0,1709186340.0
+1915,C - Can I Square?,248872528,Prayag_Kalriya_,GNU C++20 (64),False,Answer,1,0,0,1709186340.0
+1915,E - Romantic Glasses,248872442,shubham74550,GNU C++17,False,Answer,3,343,2100,1709186280.0
+1915,E - Romantic Glasses,248872397,mrxaid,GNU C++20 (64),True,,0,156,15800,1709186220.0
+1915,C - Can I Square?,248872374,Prayag_Kalriya_,GNU C++20 (64),False,Answer,1,0,0,1709186220.0
+1915,C - Can I Square?,248872284,cyyyyyyyy,Go,True,,0,46,3100,1709186160.0
+1915,E - Romantic Glasses,248872088,shubham74550,PyPy 3,False,Time,14,1000,26600,1709186040.0
+1915,C - Can I Square?,248871963,Prayag_Kalriya_,GNU C++20 (64),False,Answer,1,0,0,1709185980.0
+1915,C - Can I Square?,248871955,cyyyyyyyy,Go,False,Idleness limit exceeded on test 3,0,311,2000,1709185980.0
+1915,A - Odd One Out,248871885,EhsanNof,Python 3,True,,0,46,0,1709185980.0
+1915,C - Can I Square?,248871850,Prayag_Kalriya_,GNU C++20 (64),False,Answer,1,0,0,1709185920.0
+1915,A - Odd One Out,248871835,EhsanNof,GNU C++20 (64),False,Compilation,0,0,0,1709185920.0
+1915,A - Odd One Out,248871788,Khushi2004,GNU C++20 (64),True,,0,0,0,1709185920.0
+1915,C - Can I Square?,248871689,cyyyyyyyy,Go,False,Answer,2,343,2100,1709185860.0
+1915,B - Not Quite Latin Square,248871517,26082004,GNU C++17,False,Answer,2,15,0,1709185740.0
+1915,A - Odd One Out,248871386,lashv,PyPy 3-64,True,,0,61,0,1709185680.0
+1915,B - Not Quite Latin Square,248871230,cyyyyyyyy,Go,True,,0,15,0,1709185620.0
+1915,A - Odd One Out,248871052,robert_1256,GNU C++17,True,,0,0,0,1709185500.0
+1915,A - Odd One Out,248870987,robert_1256,GNU C++17,False,Compilation,0,0,0,1709185440.0
+1915,B - Not Quite Latin Square,248870523,robert_1256,GNU C++17,True,,0,0,0,1709185200.0
+1915,A - Odd One Out,248870344,cyyyyyyyy,Go,True,,0,15,0,1709185140.0
+1915,C - Can I Square?,248870298,BikashDebnath,GNU C++17 (64),True,,0,421,0,1709185080.0
+1915,C - Can I Square?,248870042,BikashDebnath,GNU C++17 (64),False,Answer,3,358,0,1709184960.0
+1915,C - Can I Square?,248869984,robert_1256,GNU C++17,True,,0,420,1600,1709184900.0
+1915,C - Can I Square?,248869635,Prathamesh_Kumar_Sah,GNU C++17,True,,0,421,0,1709184720.0
+1915,C - Can I Square?,248869605,robert_1256,GNU C++17,False,Answer,3,312,100,1709184720.0
+1915,A - Odd One Out,248869525,Konoiko_Nikita,GNU C++20 (64),True,,0,0,0,1709184660.0
+1915,C - Can I Square?,248869461,robert_1256,GNU C++17,False,Compilation,0,0,0,1709184600.0
+1915,A - Odd One Out,248869354,Konoiko_Nikita,GNU C++20 (64),False,Answer,1,0,0,1709184600.0
+1915,D - Unnatural Language Processing,248867799,_Migi_,GNU C++20 (64),False,Time,3,1000,1900,1709183700.0
+1915,D - Unnatural Language Processing,248867700,_Migi_,GNU C++20 (64),False,Answer,1,0,0,1709183640.0
+1915,A - Odd One Out,248867430,Sultan-G-027-2028,GNU C++20 (64),True,,0,0,0,1709183520.0
+1915,F - Greetings,248867403,Hafez,GNU C++17,True,,0,280,8500,1709183520.0
+1915,E - Romantic Glasses,248867388,szx233,GNU C++17,True,,0,124,10400,1709183520.0
+1915,F - Greetings,248867309,Hafez,GNU C++17,False,Answer,3,233,8500,1709183460.0
+1915,E - Romantic Glasses,248867086,szx233,GNU C++17,False,Answer,2,15,2400,1709183340.0
+1915,D - Unnatural Language Processing,248866874,_Migi_,GNU C++20 (64),True,,0,15,1200,1709183220.0
+1915,C - Can I Square?,248866797,luv29,GNU C++17,True,,0,421,0,1709183160.0
+1915,A - Odd One Out,248866769,Tunggg,GNU C++17,True,,0,15,0,1709183160.0
+1915,D - Unnatural Language Processing,248866641,_Migi_,GNU C++20 (64),False,Time,3,1000,3000,1709183100.0
+1915,C - Can I Square?,248866045,GeoJuventino,GNU C++20 (64),True,,0,46,1600,1709182740.0
+1915,C - Can I Square?,248866041,Prathamesh_Kumar_Sah,GNU C++17,False,Time,3,1000,0,1709182740.0
+1915,C - Can I Square?,248865919,GeoJuventino,GNU C++20 (64),False,Answer,3,31,100,1709182680.0
+1915,C - Can I Square?,248865766,GeoJuventino,GNU C++20 (64),False,Answer,2,15,0,1709182620.0
+1915,A - Odd One Out,248865760,shuklaji23,GNU C++17,True,,0,0,0,1709182620.0
+1915,A - Odd One Out,248865415,dhanush_bondu,GNU C11,True,,0,31,200,1709182440.0
+1915,A - Odd One Out,248865146,dhanush_bondu,Python 2,False,Runtime,1,15,0,1709182320.0
+1915,A - Odd One Out,248864564,The_Dice,GNU C++20 (64),True,,0,0,0,1709182020.0
+1915,A - Odd One Out,248864354,xxxtk,GNU C++20 (64),True,,0,0,0,1709181900.0
+1915,E - Romantic Glasses,248864291,Badger666,GNU C++17,True,,0,156,15500,1709181840.0
+1915,C - Can I Square?,248864285,chilled_koala,Java 21,False,Answer,3,326,0,1709181840.0
+1915,C - Can I Square?,248864262,kavya_vasikarla,GNU C++17 (64),False,Time,9,1000,1600,1709181840.0
+1915,E - Romantic Glasses,248864120,Badger666,GNU C++17,False,Time,11,1000,14600,1709181780.0
+1915,E - Romantic Glasses,248863937,Badger666,GNU C++17,False,Time,11,1000,14600,1709181660.0
+1915,D - Unnatural Language Processing,248863628,duoxichangan,GNU C++17 (64),True,,0,31,1400,1709181480.0
+1915,C - Can I Square?,248863242,chilled_koala,Java 21,False,Answer,3,311,0,1709181240.0
+1915,D - Unnatural Language Processing,248862982,szx233,GNU C++17,True,,0,31,500,1709181120.0
+1915,B - Not Quite Latin Square,248862668,kavya_vasikarla,GNU C++17 (64),True,,0,0,0,1709180940.0
+1915,D - Unnatural Language Processing,248862411,duoxichangan,GNU C++17 (64),False,Compilation,0,0,0,1709180820.0
+1915,D - Unnatural Language Processing,248862060,GYash18,GNU C++17,True,,0,46,1200,1709180640.0
+1915,D - Unnatural Language Processing,248861973,MavLin,GNU C++20 (64),True,,0,31,500,1709180580.0
+1915,E - Romantic Glasses,248860727,jnidv,GNU C++20 (64),True,,0,108,10200,1709179920.0
+1915,D - Unnatural Language Processing,248860508,suchendrabharadwaj,GNU C++20 (64),True,,0,31,500,1709179800.0
+1915,E - Romantic Glasses,248860426,jnidv,PyPy 3-64,False,Time,14,1000,34100,1709179740.0
+1915,E - Romantic Glasses,248860287,viraj777,GNU C++20 (64),True,,0,514,26700,1709179680.0
+1915,E - Romantic Glasses,248860254,jnidv,PyPy 3-64,False,Time,14,1000,32500,1709179620.0
+1915,E - Romantic Glasses,248860029,jnidv,PyPy 3-64,False,Time,14,1000,34000,1709179500.0
+1915,F - Greetings,248860027,Ishan_Savaliya,GNU C++20 (64),True,,0,982,15700,1709179500.0
+1915,D - Unnatural Language Processing,248859860,suchendrabharadwaj,GNU C++17,False,Answer,1,15,0,1709179440.0
+1915,E - Romantic Glasses,248859789,viraj777,GNU C++20 (64),False,Answer,3,436,5400,1709179380.0
+1915,E - Romantic Glasses,248859305,Ventraks,GNU C++20 (64),True,,0,421,15700,1709179140.0
+1915,C - Can I Square?,248858770,duoxichangan,GNU C++17 (64),True,,0,46,0,1709178840.0
+1915,D - Unnatural Language Processing,248858424,jnidv,PyPy 3-64,True,,0,93,9100,1709178660.0
+1915,G - Bicycles,248858218,sweet_hope25,GNU C++20 (64),True,,0,31,8500,1709178540.0
+1915,G - Bicycles,248858077,sweet_hope25,GNU C++20 (64),False,Runtime,2,0,0,1709178480.0
+1915,E - Romantic Glasses,248857690,adityateltia22,GNU C++17 (64),True,,0,452,14200,1709178300.0
+1915,E - Romantic Glasses,248857617,adityateltia22,GNU C++17 (64),False,Answer,3,373,2800,1709178240.0
+1915,E - Romantic Glasses,248857549,Buctpeng,GNU C++17,True,,0,124,9600,1709178240.0
+1915,C - Can I Square?,248857426,jnidv,PyPy 3-64,True,,0,374,23500,1709178120.0
+1915,B - Not Quite Latin Square,248857268,Meheraz,GNU C++17,True,,0,0,0,1709178060.0
+1915,B - Not Quite Latin Square,248857118,jnidv,PyPy 3-64,True,,0,46,0,1709178000.0
+1915,A - Odd One Out,248856740,jnidv,PyPy 3-64,True,,0,46,0,1709177820.0
+1915,A - Odd One Out,248856702,jnidv,GNU C++20 (64),False,Compilation,0,0,0,1709177760.0
+1915,E - Romantic Glasses,248856453,Ventraks,GNU C++20 (64),False,Runtime,3,265,3500,1709177640.0
+1915,E - Romantic Glasses,248855510,Ventraks,GNU C++20 (64),False,Runtime,3,217,3500,1709177160.0
+1915,E - Romantic Glasses,248855389,yertugan06,GNU C++20 (64),True,,0,420,14200,1709177100.0
+1915,E - Romantic Glasses,248855269,Ventraks,GNU C++20 (64),False,Runtime,3,140,1700,1709177040.0
+1915,F - Greetings,248855106,HLJzc,GNU C++17 (64),True,,0,109,6300,1709176920.0
+1915,C - Can I Square?,248854862,Meheraz,GNU C++17,True,,0,421,800,1709176800.0
+1915,E - Romantic Glasses,248854713,yertugan06,GNU C++20 (64),False,Answer,3,296,2800,1709176740.0
+1915,B - Not Quite Latin Square,248854411,ritsss,Java 8,True,,0,124,0,1709176620.0
+1915,E - Romantic Glasses,248854148,yertugan06,GNU C++20 (64),False,Answer,1,0,0,1709176500.0
+1915,E - Romantic Glasses,248853777,yertugan06,GNU C++20 (64),False,Answer,1,0,0,1709176260.0
+1915,E - Romantic Glasses,248853688,yertugan06,GNU C++20 (64),False,Answer,1,0,0,1709176260.0
+1915,B - Not Quite Latin Square,248853669,undefined-ux,GNU C++17 (64),True,,0,0,0,1709176260.0
+1915,E - Romantic Glasses,248853510,yertugan06,PyPy 3-64,False,Time,11,1000,28200,1709176140.0
+1915,A - Odd One Out,248852779,Ahamad.ODN,Java 21,True,,0,248,400,1709175780.0
+1915,E - Romantic Glasses,248852472,sadQ,GNU C++20 (64),True,,0,436,25100,1709175600.0
+1915,E - Romantic Glasses,248852393,sadQ,GNU C++20 (64),False,Answer,3,390,10100,1709175540.0
+1915,A - Odd One Out,248852320,vjudge.9,PyPy 3-64,True,,0,62,0,1709175480.0
+1915,E - Romantic Glasses,248852303,sadQ,GNU C++20 (64),False,Answer,1,0,7800,1709175480.0
+1915,F - Greetings,248852090,Dhruv_Goel,GNU C++20 (64),True,,0,187,13600,1709175360.0
+1915,B - Not Quite Latin Square,248852047,ritsss,Java 8,False,Compilation,0,0,0,1709175360.0
+1915,A - Odd One Out,248852040,21241A0595,Java 21,True,,0,265,0,1709175360.0
+1915,B - Not Quite Latin Square,248851941,ritsss,Java 8,False,Compilation,0,0,0,1709175300.0
+1915,A - Odd One Out,248851927,mr_anshu,GNU C++17,True,,0,15,0,1709175240.0
+1915,E - Romantic Glasses,248851882,riju1999,GNU C++20 (64),False,Answer,1,0,0,1709175240.0
+1915,B - Not Quite Latin Square,248851767,ritsss,Java 8,False,Compilation,0,0,0,1709175180.0
+1915,A - Odd One Out,248851635,21241A0595,Java 21,False,Compilation,0,0,0,1709175120.0
+1915,B - Not Quite Latin Square,248851298,ritsss,Java 8,False,Compilation,0,0,0,1709174940.0
+1915,B - Not Quite Latin Square,248850683,ritsss,Java 8,False,Compilation,0,0,0,1709174580.0
+1915,B - Not Quite Latin Square,248850674,duoxichangan,GNU C++17 (64),True,,0,0,0,1709174580.0
+1915,B - Not Quite Latin Square,248850641,duoxichangan,GNU C11,False,Compilation,0,0,0,1709174580.0
+1915,B - Not Quite Latin Square,248850404,ritsss,Java 8,False,Compilation,0,0,0,1709174400.0
+1915,B - Not Quite Latin Square,248850158,ritsss,Java 8,False,Compilation,0,0,0,1709174280.0
+1915,A - Odd One Out,248850062,akshadamodak06,GNU C++17,True,,0,15,0,1709174220.0
+1915,A - Odd One Out,248849837,kimpors,Rust 2021,True,,0,15,400,1709174100.0
+1915,C - Can I Square?,248849754,AnAndrw,GNU C++20 (64),True,,0,46,0,1709174100.0
+1915,E - Romantic Glasses,248849533,sadQ,GNU C++20 (64),False,Answer,2,62,3900,1709173980.0
+1915,E - Romantic Glasses,248849436,sadQ,GNU C++20 (64),False,Compilation,0,0,0,1709173920.0
+1915,C - Can I Square?,248849369,AnAndrw,GNU C++20 (64),False,Answer,2,0,0,1709173860.0
+1915,E - Romantic Glasses,248849208,sadQ,GNU C++20 (64),False,Compilation,0,0,0,1709173740.0
+1915,E - Romantic Glasses,248848674,sadQ,GNU C++20 (64),False,Answer,2,61,3900,1709173500.0
+1915,E - Romantic Glasses,248848370,sadQ,GNU C++20 (64),False,Answer,2,46,3900,1709173320.0
+1915,C - Can I Square?,248848368,AnAndrw,GNU C++20 (64),False,Answer,2,15,0,1709173320.0
+1915,E - Romantic Glasses,248848031,sadQ,GNU C++20 (64),False,Runtime,2,0,3900,1709173140.0
+1915,A - Odd One Out,248847468,duoxichangan,Java 21,True,,0,264,300,1709172780.0
+1915,E - Romantic Glasses,248847273,sadQ,GNU C++20 (64),False,Runtime,2,0,3900,1709172720.0
+1915,E - Romantic Glasses,248847152,sadQ,GNU C++20 (64),False,Runtime,2,0,3900,1709172660.0
+1915,A - Odd One Out,248846856,time360,GNU C++20 (64),True,,0,0,0,1709172480.0
+1915,D - Unnatural Language Processing,248846760,homdang,GNU C++20 (64),True,,0,15,1200,1709172420.0
+1915,E - Romantic Glasses,248846704,singlanitin661,GNU C++17,True,,0,124,9600,1709172420.0
+1915,E - Romantic Glasses,248846630,sadQ,GNU C++20 (64),False,Answer,1,0,3900,1709172360.0
+1915,A - Odd One Out,248846517,time360,GNU C11,False,Compilation,0,0,0,1709172360.0
+1915,E - Romantic Glasses,248846457,sadQ,GNU C++20 (64),False,Answer,1,0,3900,1709172300.0
+1915,C - Can I Square?,248846306,abutaher003,GNU C++20 (64),True,,0,436,0,1709172240.0
+1915,B - Not Quite Latin Square,248846095,Halbmond,GNU C++17,True,,0,0,0,1709172120.0
+1915,E - Romantic Glasses,248845957,sadQ,GNU C++20 (64),False,Runtime,2,0,3900,1709172000.0
+1915,C - Can I Square?,248845821,abutaher003,GNU C++20 (64),False,Answer,3,373,100,1709171940.0
+1915,F - Greetings,248845760,Bytecode1234,GNU C++17,True,,0,842,9600,1709171940.0
+1915,A - Odd One Out,248844539,vjudge5,Python 3,True,,0,46,0,1709171220.0
+1915,C - Can I Square?,248844462,abutaher003,GNU C++20 (64),False,Answer,1,0,0,1709171160.0
+1915,C - Can I Square?,248844423,newbie_38,GNU C++20 (64),True,,0,46,0,1709171160.0
+1915,C - Can I Square?,248844342,abutaher003,GNU C++20 (64),False,Compilation,0,0,0,1709171100.0
+1915,C - Can I Square?,248844142,newbie_38,GNU C++20 (64),False,Answer,3,15,0,1709170980.0
+1915,C - Can I Square?,248844106,abutaher003,GNU C11,False,Compilation,0,0,0,1709170920.0
+1915,A - Odd One Out,248843672,ritsss,Java 8,True,,0,139,0,1709170680.0
+1915,A - Odd One Out,248843616,bkifhr7,Python 3,False,Answer,1,15,0,1709170620.0
+1915,A - Odd One Out,248843533,ritsss,Java 8,False,Runtime,1,92,0,1709170620.0
+1915,A - Odd One Out,248843369,vjudge.8,Python 3,False,Answer,1,30,0,1709170500.0
+1915,A - Odd One Out,248843295,bkifhr9,Python 3,False,Answer,1,31,0,1709170440.0
+1915,C - Can I Square?,248842801,kantuta98776,GNU C++20 (64),False,Answer,2,62,0,1709170140.0
+1915,A - Odd One Out,248842756,Karthickrp001,Python 3,True,,0,46,0,1709170140.0
+1915,C - Can I Square?,248842509,kantuta98776,GNU C11,False,Compilation,0,0,0,1709169960.0
+1915,A - Odd One Out,248842485,kavya_vasikarla,GNU C++17,True,,0,15,0,1709169960.0
+1915,C - Can I Square?,248842424,kantuta98776,GNU C11,False,Compilation,0,0,0,1709169900.0
+1915,F - Greetings,248842390,Wilbert1124,GNU C++17,True,,0,421,15100,1709169900.0
+1915,F - Greetings,248842266,Wilbert1124,GNU C++17,False,Answer,3,358,12000,1709169840.0
+1915,C - Can I Square?,248842072,nicetryan,GNU C++20 (64),True,,0,421,800,1709169720.0
+1915,A - Odd One Out,248841654,vjudge.10,Python 3,True,,0,46,0,1709169480.0
+1915,A - Odd One Out,248841629,vjudge.8,Python 3,True,,0,30,0,1709169480.0
+1915,A - Odd One Out,248841533,vjudge.2,Python 3,True,,0,46,0,1709169420.0
+1915,A - Odd One Out,248841497,bkifhr10,Python 3,True,,0,15,0,1709169360.0
+1915,A - Odd One Out,248841314,Sk_ameen,GNU C++20 (64),True,,0,0,0,1709169300.0
+1915,A - Odd One Out,248841275,bkifhr6,Python 3,False,Answer,1,31,0,1709169240.0
+1915,A - Odd One Out,248841224,vjudge2,Python 3,False,Answer,1,31,0,1709169240.0
+1915,D - Unnatural Language Processing,248841177,proglohas,Python 3,True,,0,62,9400,1709169180.0
+1915,A - Odd One Out,248841118,bkifhr6,Python 3,True,,0,46,0,1709169180.0
+1915,A - Odd One Out,248841011,vjudge.8,Python 3,False,Runtime,1,30,0,1709169060.0
+1915,A - Odd One Out,248840997,vjudge.5,PyPy 3-64,True,,0,62,0,1709169060.0
+1915,A - Odd One Out,248840916,vjudge4,PyPy 3-64,False,Answer,1,46,0,1709169000.0
+1915,A - Odd One Out,248840854,vjudge2,Python 3,False,Answer,1,31,0,1709169000.0
+1915,A - Odd One Out,248840778,vjudge.2,PyPy 3,True,,0,93,0,1709168940.0
+1915,A - Odd One Out,248840749,bkifhr9,Python 3,True,,0,46,0,1709168940.0
+1915,A - Odd One Out,248840717,vjudge.7,PyPy 3-64,False,Answer,1,46,0,1709168880.0
+1915,A - Odd One Out,248840686,vjudge.10,PyPy 2,False,Runtime,1,30,0,1709168880.0
+1915,A - Odd One Out,248840682,bkifhr7,Rust 2021,True,,0,15,0,1709168880.0
+1915,A - Odd One Out,248840679,vjudge.2,Python 3,False,Runtime,1,31,0,1709168880.0
+1915,E - Romantic Glasses,248840663,bhatte_here,GNU C++20 (64),True,,0,124,14200,1709168880.0
+1915,A - Odd One Out,248840658,vjudge3,PyPy 3-64,True,,0,61,0,1709168880.0
+1915,A - Odd One Out,248840653,vjudge1,Python 3,True,,0,31,0,1709168880.0
+1915,A - Odd One Out,248840639,vjudge.5,Python 3,True,,0,30,0,1709168820.0
+1915,A - Odd One Out,248840615,vjudge.1,PyPy 3-64,False,Answer,1,46,0,1709168820.0
+1915,A - Odd One Out,248840588,vjudge.3,Rust 2021,False,Runtime,1,0,0,1709168820.0
+1915,A - Odd One Out,248840572,bkifhr7,PyPy 3-64,False,Answer,1,31,0,1709168820.0
+1915,A - Odd One Out,248840566,vjudge.10,Python 3,False,Runtime,1,46,0,1709168820.0
+1915,A - Odd One Out,248840562,vjudge4,Python 3,False,Compilation,0,0,0,1709168820.0
+1915,A - Odd One Out,248840534,vjudge1,Python 2,False,Runtime,1,30,0,1709168760.0
+1915,A - Odd One Out,248840517,bkifhr9,Python 3,False,Answer,1,15,0,1709168760.0
+1915,A - Odd One Out,248840485,bkifhr8,Python 3,False,Answer,1,31,0,1709168760.0
+1915,A - Odd One Out,248840480,vjudge4,Python 3,True,,0,15,0,1709168760.0
+1915,A - Odd One Out,248840437,bkifhr6,Python 3,False,Runtime,1,15,0,1709168700.0
+1915,A - Odd One Out,248840408,bkifhr6,PyPy 3-64,True,,0,46,0,1709168700.0
+1915,A - Odd One Out,248840385,bkifhr9,Rust 2021,False,Runtime,1,0,0,1709168700.0
+1915,A - Odd One Out,248840331,vjudge.10,Python 3,False,Runtime,1,15,0,1709168640.0
+1915,A - Odd One Out,248840329,bkifhr9,Python 3,True,,0,31,0,1709168640.0
+1915,A - Odd One Out,248840312,vjudge3,PyPy 3,True,,0,77,0,1709168640.0
+1915,A - Odd One Out,248840294,vjudge.7,Python 3,True,,0,31,0,1709168640.0
+1915,A - Odd One Out,248840224,mert_sakallioglu23,GNU C11,True,,0,15,0,1709168580.0
+1915,A - Odd One Out,248840202,vjudge.4,PyPy 3-64,True,,0,61,0,1709168580.0
+1915,A - Odd One Out,248840187,vjudge.4,PyPy 3,True,,0,77,0,1709168580.0
+1915,A - Odd One Out,248840172,vjudge.9,Python 3,True,,0,46,0,1709168520.0
+1915,B - Not Quite Latin Square,248840124,nicetryan,GNU C++20 (64),True,,0,0,0,1709168520.0
+1915,A - Odd One Out,248840071,vjudge.4,Python 3,False,Runtime,1,15,0,1709168460.0
+1915,A - Odd One Out,248840038,vjudge2,Python 3,False,Runtime,1,31,0,1709168460.0
+1915,A - Odd One Out,248839997,vjudge1,Python 3,False,Answer,1,15,0,1709168460.0
+1915,C - Can I Square?,248839951,Rimi_03,GNU C++17,True,,0,421,1600,1709168400.0
+1915,A - Odd One Out,248839903,bkifhr9,Python 3,False,Compilation,0,0,0,1709168340.0
+1915,C - Can I Square?,248839875,proglohas,Python 3,True,,0,124,25700,1709168340.0
+1915,A - Odd One Out,248839829,vjudge.10,Python 3,False,Answer,1,15,0,1709168280.0
+1915,A - Odd One Out,248839823,vjudge.2,Python 3,False,Runtime,1,15,0,1709168280.0
+1915,A - Odd One Out,248839818,bkifhr6,Python 3,True,,0,30,0,1709168280.0
+1915,A - Odd One Out,248839778,vjudge.8,PyPy 3-64,True,,0,62,0,1709168280.0
+1915,A - Odd One Out,248839651,bkifhr6,Python 3,True,,0,31,0,1709168160.0
+1915,A - Odd One Out,248839583,bkifhr9,Python 3,False,Answer,1,15,0,1709168100.0
+1915,B - Not Quite Latin Square,248839553,proglohas,Python 3,True,,0,30,0,1709168100.0
+1915,A - Odd One Out,248839545,bkifhr7,Python 3,False,Runtime,1,30,0,1709168100.0
+1915,C - Can I Square?,248839507,Rimi_03,GNU C++17,False,Compilation,0,0,0,1709168040.0
+1915,A - Odd One Out,248839498,bkifhr7,Python 3,True,,0,46,0,1709168040.0
+1915,A - Odd One Out,248839379,bkifhr7,Python 3,False,Runtime,1,15,0,1709167980.0
+1915,C - Can I Square?,248839356,Anis.Abdusamad,Python 3,True,,0,187,26200,1709167980.0
+1915,A - Odd One Out,248839305,vjudge.5,Python 3,True,,0,31,0,1709167920.0
+1915,B - Not Quite Latin Square,248839268,Anis.Abdusamad,Python 3,False,Runtime,1,15,0,1709167920.0
+1915,A - Odd One Out,248839259,vjudge.9,Python 3,True,,0,31,0,1709167920.0
+1915,A - Odd One Out,248839251,vjudge.10,Rust 2021,True,,0,15,0,1709167860.0
+1915,A - Odd One Out,248839210,bkifhr9,Python 3,True,,0,31,0,1709167860.0
+1915,A - Odd One Out,248839178,vjudge.9,Python 3,False,Runtime,1,15,0,1709167860.0
+1915,A - Odd One Out,248839144,vjudge.7,Clang++20 Diagnostics,True,,0,30,0,1709167800.0
+1915,A - Odd One Out,248839139,vjudge2,PyPy 3-64,False,Answer,1,30,0,1709167800.0
+1915,A - Odd One Out,248839133,bkifhr9,Python 3,False,Runtime,1,15,0,1709167800.0
+1915,A - Odd One Out,248839126,bkifhr6,Python 3,True,,0,31,0,1709167800.0
+1915,A - Odd One Out,248839107,bkifhr8,Python 3,False,Answer,1,31,0,1709167800.0
+1915,A - Odd One Out,248839095,vjudge.4,Python 3,True,,0,31,0,1709167740.0
+1915,E - Romantic Glasses,248839093,Wilbert1124,GNU C++17,True,,0,124,11100,1709167740.0
+1915,A - Odd One Out,248839081,bkifhr7,Python 3,False,Runtime,1,15,0,1709167740.0
+1915,A - Odd One Out,248839025,jaypatel13,Java 21,True,,0,280,0,1709167740.0
+1915,A - Odd One Out,248838987,vjudge.9,Clang++20 Diagnostics,True,,0,30,0,1709167680.0
+1915,A - Odd One Out,248838977,bkifhr6,GNU C++17,True,,0,31,0,1709167680.0
+1915,A - Odd One Out,248838972,vjudge.10,Python 3,False,Runtime,1,15,0,1709167680.0
+1915,A - Odd One Out,248838945,bkifhr10,Clang++17 Diagnostics,False,Answer,1,15,0,1709167620.0
+1915,A - Odd One Out,248838930,vjudge1,Python 3,True,,0,30,0,1709167620.0
+1915,A - Odd One Out,248838849,vjudge1,Rust 2021,False,Runtime,1,0,0,1709167560.0
+1915,A - Odd One Out,248838816,vjudge3,Clang++20 Diagnostics,False,Answer,1,15,0,1709167560.0
+1915,C - Can I Square?,248838802,Rimi_03,GNU C++17,False,Answer,3,358,100,1709167560.0
+1915,A - Odd One Out,248838794,vjudge.9,Python 3,False,Runtime,1,30,0,1709167560.0
+1915,A - Odd One Out,248838791,vjudge5,Python 3,True,,0,46,0,1709167560.0
+1915,A - Odd One Out,248838733,sujanrokad,GNU C++20 (64),True,,0,0,0,1709167500.0
+1915,A - Odd One Out,248838724,vjudge.4,Python 3,True,,0,30,0,1709167500.0
+1915,A - Odd One Out,248838720,vjudge2,Python 3,True,,0,31,0,1709167500.0
+1915,A - Odd One Out,248838710,bkifhr7,Python 3,True,,0,31,0,1709167500.0
+1915,A - Odd One Out,248838699,vjudge4,GNU C++20 (64),True,,0,15,0,1709167440.0
+1915,A - Odd One Out,248838685,vjudge.9,Python 3,False,Runtime,1,30,0,1709167440.0
+1915,A - Odd One Out,248838656,sujanrokad,GNU C++20 (64),False,Answer,1,0,0,1709167440.0
+1915,A - Odd One Out,248838645,vjudge.8,PyPy 3-64,True,,0,46,0,1709167440.0
+1915,A - Odd One Out,248838629,vjudge5,Python 3,False,Runtime,1,31,0,1709167440.0
+1915,A - Odd One Out,248838556,vjudge.9,Python 3,False,Runtime,1,30,0,1709167380.0
+1915,C - Can I Square?,248838481,Lawrence_bishnoi36,GNU C++17,True,,0,78,0,1709167320.0
+1915,A - Odd One Out,248838479,vjudge4,Python 3,True,,0,31,0,1709167320.0
+1915,A - Odd One Out,248838469,vjudge5,Python 3,False,Runtime,1,30,0,1709167320.0
+1915,C - Can I Square?,248838468,Rimi_03,GNU C++17,False,Answer,3,312,100,1709167320.0
+1915,A - Odd One Out,248838381,vjudge5,GNU C++20 (64),False,Answer,1,0,0,1709167260.0
+1915,A - Odd One Out,248838316,bkifhr7,Clang++20 Diagnostics,False,Answer,1,15,0,1709167200.0
+1915,B - Not Quite Latin Square,248838313,Anis.Abdusamad,Python 3,True,,0,30,0,1709167200.0
+1915,A - Odd One Out,248838307,sunluyang521,GNU C++17 (64),True,,0,0,0,1709167200.0
+1915,A - Odd One Out,248838295,bkifhr8,PyPy 3-64,True,,0,46,0,1709167200.0
+1915,A - Odd One Out,248838290,bkifhr8,Python 3,True,,0,31,0,1709167200.0
+1915,A - Odd One Out,248838274,vjudge.7,Python 3,True,,0,46,0,1709167140.0
+1915,A - Odd One Out,248838257,vjudge.7,Python 3,True,,0,31,0,1709167140.0
+1915,A - Odd One Out,248838248,vjudge.9,Java 21,True,,0,296,400,1709167140.0
+1915,C - Can I Square?,248838221,Rimi_03,GNU C++17,False,Answer,3,343,100,1709167140.0
+1915,A - Odd One Out,248838219,bkifhr10,MS C++ 2017,True,,0,0,0,1709167140.0
+1915,A - Odd One Out,248838212,vjudge3,GNU C++20 (64),True,,0,0,0,1709167140.0
+1915,E - Romantic Glasses,248838193,tjuacm,GNU C++17,True,,0,124,7200,1709167140.0
+1915,A - Odd One Out,248838162,bkifhr8,Python 3,True,,0,31,0,1709167080.0
+1915,A - Odd One Out,248838131,vjudge.3,GNU C++20 (64),False,Runtime,1,0,0,1709167080.0
+1915,A - Odd One Out,248838115,vjudge.9,Python 3,True,,0,31,0,1709167080.0
+1915,C - Can I Square?,248838101,Lawrence_bishnoi36,GNU C++17,False,Answer,1,0,0,1709167020.0
+1915,A - Odd One Out,248838014,vjudge.9,PyPy 3-64,True,,0,46,0,1709166960.0
+1915,C - Can I Square?,248837964,szx233,GNU C++17,True,,0,78,0,1709166960.0
+1915,C - Can I Square?,248837766,Lawrence_bishnoi36,GNU C++17,False,Answer,1,0,0,1709166780.0
+1915,A - Odd One Out,248837632,luogu_bot2,GNU C++17 (64),True,,0,0,0,1709166660.0
+1915,A - Odd One Out,248837578,luogu_bot3,GNU C++17 (64),False,Compilation,0,0,0,1709166600.0
+1915,G - Bicycles,248837470,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709166540.0
+1915,E - Romantic Glasses,248837419,YOUNG_0503,GNU C++20 (64),True,,0,420,15700,1709166480.0
+1915,G - Bicycles,248837413,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709166480.0
+1915,G - Bicycles,248837371,DarkestNightmare,GNU C++17,False,Answer,2,15,100,1709166480.0
+1915,G - Bicycles,248837293,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709166420.0
+1915,G - Bicycles,248837209,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709166360.0
+1915,G - Bicycles,248837158,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709166300.0
+1915,G - Bicycles,248837050,DarkestNightmare,GNU C++17,False,Answer,2,0,200,1709166240.0
+1915,G - Bicycles,248836965,DarkestNightmare,GNU C++17,False,Answer,2,0,200,1709166180.0
+1915,G - Bicycles,248836918,DarkestNightmare,GNU C++17,False,Answer,2,15,200,1709166120.0
+1915,E - Romantic Glasses,248836892,YOUNG_0503,GNU C++20 (64),True,,0,420,15800,1709166120.0
+1915,G - Bicycles,248836875,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709166120.0
+1915,G - Bicycles,248836795,DarkestNightmare,GNU C++17,False,Answer,2,15,100,1709166060.0
+1915,G - Bicycles,248836735,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709166000.0
+1915,B - Not Quite Latin Square,248836688,szx233,GNU C++17,True,,0,0,0,1709166000.0
+1915,G - Bicycles,248836684,DarkestNightmare,GNU C++17,False,Answer,2,15,200,1709165940.0
+1915,G - Bicycles,248836636,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709165940.0
+1915,G - Bicycles,248836591,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709165880.0
+1915,G - Bicycles,248836515,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709165820.0
+1915,G - Bicycles,248836448,DarkestNightmare,GNU C++17,False,Answer,2,0,200,1709165760.0
+1915,G - Bicycles,248836401,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709165760.0
+1915,E - Romantic Glasses,248836387,tjuacm,GNU C++17,False,Answer,3,78,2500,1709165760.0
+1915,G - Bicycles,248836303,DarkestNightmare,GNU C++17,False,Answer,2,15,100,1709165640.0
+1915,A - Odd One Out,248836238,szx233,GNU C++17,True,,0,15,0,1709165640.0
+1915,G - Bicycles,248836157,DarkestNightmare,GNU C++17,False,Answer,1,15,0,1709165520.0
+1915,D - Unnatural Language Processing,248836121,Bharadwaj_Janapala,Java 21,True,,0,623,900,1709165520.0
+1915,G - Bicycles,248835226,DarkestNightmare,GNU C++17,False,Answer,1,0,0,1709164860.0
+1915,G - Bicycles,248834822,DarkestNightmare,GNU C++17,False,Answer,1,0,0,1709164560.0
+1915,G - Bicycles,248834561,DarkestNightmare,GNU C++17,False,Answer,2,0,100,1709164320.0
+1915,B - Not Quite Latin Square,248834456,Bek_Najot,Python 3,True,,0,30,0,1709164260.0
+1915,F - Greetings,248834082,thaCoder345,Java 21,True,,0,3088,13600,1709163960.0
+1915,F - Greetings,248833943,thaCoder345,Java 21,False,Answer,3,1731,13200,1709163840.0
+1915,F - Greetings,248833870,thaCoder345,Java 21,False,Compilation,0,0,0,1709163780.0
+1915,A - Odd One Out,248833840,habibaahmedd,GNU C++17,True,,0,15,0,1709163720.0
+1915,A - Odd One Out,248833269,saurav13kr,GNU C++17,True,,0,15,0,1709163240.0
+1915,A - Odd One Out,248833159,rishiKKK,GNU C++20 (64),True,,0,0,0,1709163120.0
+1915,D - Unnatural Language Processing,248833029,_Migi_,GNU C++20 (64),False,Time,3,1000,2900,1709163000.0
+1915,D - Unnatural Language Processing,248832301,_Migi_,GNU C++20 (64),False,Time,3,1000,2900,1709162340.0
+1915,D - Unnatural Language Processing,248832085,_Migi_,GNU C++20 (64),False,Time,3,1000,3100,1709162100.0
+1915,A - Odd One Out,248831376,Abdullah340,GNU C++17,True,,0,15,0,1709161440.0
+1915,D - Unnatural Language Processing,248831315,Wilbert1124,GNU C++17,True,,0,31,5700,1709161380.0
+1915,B - Not Quite Latin Square,248830478,sebas456,GNU C++17,True,,0,0,0,1709160540.0
+1915,C - Can I Square?,248830128,Wilbert1124,GNU C++17,True,,0,93,0,1709160180.0
+1915,A - Odd One Out,248830001,Anis.Abdusamad,Python 3,True,,0,31,0,1709160000.0
+1915,D - Unnatural Language Processing,248829977,zero_coding,GNU C11,False,Time,3,1000,500,1709160000.0
+1915,F - Greetings,248829687,VitaLemonTea,PyPy 3-64,True,,0,1466,80000,1709159700.0
+1915,A - Odd One Out,248829505,__Shiroyasha__,GNU C++17,True,,0,15,0,1709159460.0
+1915,B - Not Quite Latin Square,248829392,Wilbert1124,GNU C++17,True,,0,0,0,1709159340.0
+1915,B - Not Quite Latin Square,248829082,lgyzero,GNU C++17 (64),True,,0,0,0,1709158980.0
+1915,A - Odd One Out,248828958,Wilbert1124,GNU C++17,True,,0,0,0,1709158800.0
+1915,C - Can I Square?,248828833,sebas456,GNU C++17,True,,0,77,800,1709158680.0
+1915,A - Odd One Out,248828726,RebecaC,GNU C++20 (64),True,,0,15,0,1709158500.0
+1915,C - Can I Square?,248828686,sebas456,GNU C++17,True,,0,78,800,1709158440.0
+1915,A - Odd One Out,248828681,lgyzero,GNU C++17 (64),True,,0,0,0,1709158440.0
+1915,F - Greetings,248828674,hg3141,Java 21,True,,0,2963,20300,1709158440.0
+1915,C - Can I Square?,248828635,sebas456,GNU C++17,False,Answer,3,62,100,1709158380.0
+1915,F - Greetings,248828556,hg3141,Java 21,False,Answer,3,2636,5700,1709158260.0
+1915,C - Can I Square?,248828362,RebecaC,GNU C++20 (64),True,,0,436,0,1709158020.0
+1915,C - Can I Square?,248828082,RebecaC,GNU C++20 (64),False,Answer,3,343,0,1709157720.0
+1915,E - Romantic Glasses,248828021,10121011,GNU C++17,False,Answer,3,966,400,1709157600.0
+1915,F - Greetings,248827181,hg3141,Java 21,False,Time,3,5000,300,1709156520.0
+1915,A - Odd One Out,248826793,Tunggg,GNU C++17,True,,0,0,0,1709156040.0
+1915,E - Romantic Glasses,248826213,dejongh93,GNU C++17,True,,0,140,9600,1709155320.0
+1915,D - Unnatural Language Processing,248825507,RebecaC,GNU C++20 (64),True,,0,31,1200,1709154540.0
+1915,G - Bicycles,248825363,atharvd,GNU C++17,True,,0,93,8600,1709154360.0
+1915,F - Greetings,248825345,HLJzc,GNU C++17 (64),False,Time,3,5000,3100,1709154300.0
+1915,D - Unnatural Language Processing,248822839,WagnerYFV,GNU C++17,True,,0,31,1400,1709150580.0
+1915,A - Odd One Out,248822642,Subhadip3042004,GNU C++17,True,,0,15,0,1709150280.0
+1915,D - Unnatural Language Processing,248822443,WagnerYFV,GNU C++17,False,Answer,1,15,100,1709149980.0
+1915,D - Unnatural Language Processing,248822419,WagnerYFV,GNU C++20 (64),False,Answer,1,0,0,1709149980.0
+1915,D - Unnatural Language Processing,248822137,Linzhixuan,GNU C++20 (64),True,,0,31,7500,1709149500.0
+1915,C - Can I Square?,248821386,Linzhixuan,GNU C++20 (64),True,,0,46,1600,1709148300.0
+1915,C - Can I Square?,248821359,Linzhixuan,GNU C++20 (64),False,Answer,3,31,100,1709148240.0
+1915,B - Not Quite Latin Square,248821258,Linzhixuan,GNU C++20 (64),True,,0,0,0,1709148120.0
+1915,A - Odd One Out,248820948,Linzhixuan,GNU C++20 (64),True,,0,0,0,1709147580.0
+1915,E - Romantic Glasses,248820801,Maro,GNU C++20 (64),True,,0,202,155000,1709147280.0
+1915,B - Not Quite Latin Square,248820539,Hill_06,PyPy 3-64,True,,0,61,0,1709146860.0
+1915,B - Not Quite Latin Square,248819945,Hill_06,PyPy 3-64,False,Answer,2,77,0,1709145900.0
+1915,A - Odd One Out,248819462,Hill_06,PyPy 3-64,True,,0,62,0,1709145120.0
+1915,A - Odd One Out,248817384,sajidayman,GNU C++20 (64),True,,0,0,0,1709142120.0
+1915,A - Odd One Out,248817184,sajidayman,GNU C++20 (64),False,Answer,1,0,0,1709141880.0
+1915,A - Odd One Out,248817120,sajidayman,GNU C++20 (64),False,Answer,1,15,0,1709141820.0
+1915,A - Odd One Out,248816997,sajidayman,GNU C++20 (64),False,Answer,1,0,0,1709141700.0
+1915,B - Not Quite Latin Square,248816072,moohameed,Clang++17 Diagnostics,True,,0,15,0,1709140620.0
+1915,E - Romantic Glasses,248815791,vjudge.4,GNU C++20 (64),True,,0,93,13400,1709140320.0
+1915,C - Can I Square?,248815750,Sohaybhajjaj,Java 8,True,,0,452,0,1709140260.0
+1915,B - Not Quite Latin Square,248815569,Eman237,GNU C++20 (64),True,,0,0,0,1709140020.0
+1915,C - Can I Square?,248815515,Sohaybhajjaj,Java 8,False,Answer,1,77,0,1709140020.0
+1915,A - Odd One Out,248815384,moohameed,Clang++17 Diagnostics,True,,0,31,0,1709139840.0
+1915,C - Can I Square?,248815037,Sohaybhajjaj,Java 8,False,Answer,1,108,0,1709139480.0
+1915,C - Can I Square?,248814331,Ms.HANA,GNU C++17,True,,0,62,0,1709138820.0
+1915,C - Can I Square?,248814268,Ms.HANA,GNU C++17,False,Answer,3,46,0,1709138760.0
+1915,C - Can I Square?,248814203,Ms.HANA,GNU C++17,False,Compilation,0,0,0,1709138700.0
+1915,C - Can I Square?,248813362,26082004,GNU C++17,True,,0,421,0,1709138040.0
+1915,C - Can I Square?,248813268,26082004,GNU C++17,False,Answer,3,343,0,1709137920.0
+1915,C - Can I Square?,248812220,AbdelrahmanAtef,GNU C++17,True,,0,108,17300,1709137140.0
+1915,A - Odd One Out,248811249,zainabbgamal101,GNU C++20 (64),True,,0,0,0,1709136420.0
+1915,B - Not Quite Latin Square,248810073,NAVADEEP154,GNU C++17 (64),True,,0,15,0,1709135580.0
+1915,B - Not Quite Latin Square,248809845,NAVADEEP154,GNU C++17 (64),False,Answer,1,0,0,1709135400.0
+1915,A - Odd One Out,248809809,NAVADEEP154,GNU C++17 (64),False,Answer,1,0,0,1709135400.0
+1915,A - Odd One Out,248808182,NAVADEEP154,GNU C++17 (64),True,,0,0,0,1709134380.0
+1915,C - Can I Square?,248807844,NAVADEEP154,GNU C++17 (64),True,,0,483,800,1709134140.0
+1915,C - Can I Square?,248807441,NAVADEEP154,GNU C++17 (64),False,Answer,3,343,100,1709133900.0
+1915,C - Can I Square?,248807219,Dert30,PyPy 3-64,True,,0,187,22600,1709133780.0
+1915,B - Not Quite Latin Square,248807115,Mahmoud.Nassar,GNU C++20 (64),False,Answer,1,0,0,1709133720.0
+1915,A - Odd One Out,248806849,Mohanadomar,GNU C++17,True,,0,15,0,1709133540.0
+1915,F - Greetings,248805991,dijkstra_bull,PyPy 3-64,False,Time,3,5000,48800,1709132940.0
+1915,C - Can I Square?,248805477,vjudge2,GNU C++20 (64),False,Answer,2,46,0,1709132640.0
+1915,D - Unnatural Language Processing,248804768,daveshub,Python 3,True,,0,124,1700,1709132160.0
+1915,D - Unnatural Language Processing,248804581,daveshub,Python 3,False,Answer,2,15,0,1709132040.0
+1915,A - Odd One Out,248804144,IshaanKapoor,Python 3,True,,0,31,0,1709131740.0
+1915,C - Can I Square?,248803626,daveshub,Python 3,True,,0,249,26200,1709131440.0
+1915,F - Greetings,248803495,SaVAgE_BoGgiE,GNU C++20 (64),True,,0,858,13500,1709131320.0
+1915,A - Odd One Out,248803440,IshaanKapoor,Python 3,True,,0,46,0,1709131320.0
+1915,C - Can I Square?,248802827,rp20,GNU C++20 (64),True,,0,421,1500,1709130900.0
+1915,B - Not Quite Latin Square,248802814,Mazen_1,GNU C++17,True,,0,0,0,1709130840.0
+1915,C - Can I Square?,248802592,vjudge1,GNU C++20 (64),True,,0,452,1500,1709130720.0
+1915,A - Odd One Out,248802524,Michealzeleke,PyPy 3-64,True,,0,46,0,1709130660.0
+1915,C - Can I Square?,248802437,vjudge.1,GNU C++20 (64),False,Answer,3,343,100,1709130600.0
+1915,C - Can I Square?,248802422,karimwalid74,GNU C++20 (64),True,,0,62,1600,1709130600.0
+1915,C - Can I Square?,248803626,daveshub,Python 3,True,,0,249,26200,1709131440.0
+1915,F - Greetings,248803495,SaVAgE_BoGgiE,GNU C++20 (64),True,,0,858,13500,1709131320.0
+1915,A - Odd One Out,248803440,IshaanKapoor,Python 3,True,,0,46,0,1709131320.0
+1915,C - Can I Square?,248802827,rp20,GNU C++20 (64),True,,0,421,1500,1709130900.0
+1915,B - Not Quite Latin Square,248802814,Mazen_1,GNU C++17,True,,0,0,0,1709130840.0
+1915,C - Can I Square?,248802592,vjudge1,GNU C++20 (64),True,,0,452,1500,1709130720.0
+1915,A - Odd One Out,248802524,Michealzeleke,PyPy 3-64,True,,0,46,0,1709130660.0
+1915,C - Can I Square?,248802437,vjudge.1,GNU C++20 (64),False,Answer,3,343,100,1709130600.0
+1915,C - Can I Square?,248802422,karimwalid74,GNU C++20 (64),True,,0,62,1600,1709130600.0
+1915,C - Can I Square?,248802297,bkifhr7,GNU C++20 (64),False,Answer,3,343,100,1709130540.0
+1915,C - Can I Square?,248802216,vjudge.8,GNU C++20 (64),False,Answer,2,46,0,1709130480.0
+1915,C - Can I Square?,248801751,vjudge3,GNU C++20 (64),True,,0,436,0,1709130180.0
+1915,A - Odd One Out,248801399,Georggg999,GNU C++20 (64),True,,0,0,0,1709129940.0
+1915,E - Romantic Glasses,248801296,lakshh113,GNU C++20 (64),True,,0,436,14200,1709129880.0
+1915,B - Not Quite Latin Square,248801255,Georggg999,GNU C++20 (64),True,,0,0,0,1709129880.0
+1915,E - Romantic Glasses,248801198,dsanurag520,PyPy 3-64,True,,0,218,33700,1709129820.0
+1915,E - Romantic Glasses,248801034,lakshh113,GNU C++20 (64),False,Answer,3,374,2700,1709129700.0
+1915,C - Can I Square?,248801020,Georggg999,GNU C++20 (64),True,,0,46,0,1709129700.0
+1915,C - Can I Square?,248800907,karimwalid74,GNU C++20 (64),False,Answer,2,31,0,1709129640.0
+1915,B - Not Quite Latin Square,248800854,karimwalid74,GNU C++20 (64),False,Answer,1,0,0,1709129640.0
+1915,E - Romantic Glasses,248800408,leogomesanholetto,GNU C++20 (64),True,,0,124,38400,1709129340.0
+1915,A - Odd One Out,248800374,CodeBird_Juthi,GNU C++17,True,,0,15,0,1709129340.0
+1915,B - Not Quite Latin Square,248800258,CodeBird_Juthi,GNU C++17,True,,0,15,0,1709129280.0
+1915,C - Can I Square?,248800210,bkifhr10,GNU C++20 (64),False,Answer,2,46,0,1709129280.0
+1915,E - Romantic Glasses,248800103,dsanurag520,PyPy 3-64,True,,0,170,31200,1709129220.0
+1915,D - Unnatural Language Processing,248800060,NaifH,Python 3,True,,0,343,700,1709129160.0
+1915,C - Can I Square?,248800055,CodeBird_Juthi,GNU C++17,True,,0,421,1600,1709129160.0
+1915,C - Can I Square?,248799821,vraj_100,GNU C++17,False,Answer,3,358,0,1709129040.0
+1915,C - Can I Square?,248799820,vjudge5,GNU C++20 (64),False,Answer,2,46,0,1709129040.0
+1915,B - Not Quite Latin Square,248799757,karimwalid74,GNU C++20 (64),True,,0,0,0,1709128980.0
+1915,B - Not Quite Latin Square,248799657,karimwalid74,GNU C++20 (64),False,Answer,1,0,0,1709128920.0
+1915,C - Can I Square?,248799641,bkifhr10,GNU C++20 (64),False,Answer,1,0,0,1709128920.0
+1915,C - Can I Square?,248799425,vjudge.3,GNU C++17,False,Answer,3,312,100,1709128800.0
+1915,E - Romantic Glasses,248799134,dsanurag520,PyPy 3-64,False,Answer,1,30,600,1709128680.0
+1915,E - Romantic Glasses,248799042,dsanurag520,PyPy 3-64,False,Time,11,1000,31200,1709128620.0
+1915,A - Odd One Out,248798688,riyad102,C# 10,True,,0,31,100,1709128380.0
+1915,C - Can I Square?,248798559,zenil_r,GNU C++17,False,Answer,3,358,0,1709128320.0
+1915,A - Odd One Out,248797770,karimwalid74,GNU C++20 (64),True,,0,0,0,1709127840.0
+1915,B - Not Quite Latin Square,248797751,voidrunner7,Python 3,True,,0,31,0,1709127840.0
+1915,B - Not Quite Latin Square,248797620,voidrunner7,Python 3,False,Answer,1,31,0,1709127780.0
+1915,B - Not Quite Latin Square,248797262,hojiakbarumarov9,GNU C++17,True,,0,15,0,1709127600.0
+1915,A - Odd One Out,248795779,voidrunner7,Python 3,True,,0,31,0,1709126820.0
+1915,A - Odd One Out,248795452,voidrunner7,PyPy 2,False,Runtime,1,46,0,1709126640.0
+1915,D - Unnatural Language Processing,248795421,NaifH,GNU C++17,True,,0,31,500,1709126640.0
+1915,A - Odd One Out,248795388,Swami02,GNU C++17,True,,0,0,0,1709126640.0
+1915,A - Odd One Out,248795318,alomaneya,PyPy 3-64,True,,0,61,0,1709126580.0
+1915,C - Can I Square?,248794694,vraj_100,GNU C++17,False,Answer,3,312,0,1709126280.0
+1915,C - Can I Square?,248794565,uditpudit,GNU C++20 (64),True,,0,46,0,1709126220.0
+1915,C - Can I Square?,248794314,vraj_100,GNU C++17,False,Answer,3,296,0,1709126100.0
+1915,B - Not Quite Latin Square,248794304,ramankethoriya410,GNU C++17,True,,0,0,0,1709126100.0
+1915,E - Romantic Glasses,248794073,Salman9966,GNU C++17,True,,0,124,7200,1709125980.0
+1915,C - Can I Square?,248793498,vraj_100,GNU C++17,False,Answer,3,312,0,1709125680.0
+1915,F - Greetings,248793195,utkarsgupta17,GNU C++20 (64),True,,0,327,16800,1709125560.0
+1915,B - Not Quite Latin Square,248792836,anjum01,Java 21,True,,0,218,300,1709125380.0
+1915,F - Greetings,248792516,AbhaySingh96,GNU C++20 (64),True,,0,4430,10500,1709125260.0
+1915,C - Can I Square?,248792347,Jobayer05,GNU C++17,True,,0,108,0,1709125140.0
+1915,B - Not Quite Latin Square,248792268,robiulcse4th,GNU C++17,True,,0,0,0,1709125140.0
+1915,A - Odd One Out,248792236,ankitkr09,GNU C++20 (64),True,,0,15,0,1709125140.0
+1915,A - Odd One Out,248791650,Jobayer05,GNU C++17,True,,0,15,0,1709124900.0
+1915,A - Odd One Out,248790928,yash_fsoc,PyPy 3-64,True,,0,61,0,1709124540.0
+1915,A - Odd One Out,248790828,SahariaOni,GNU C++20 (64),True,,0,15,0,1709124540.0
+1915,A - Odd One Out,248790221,SahariaOni,GNU C++20 (64),False,Answer,1,0,0,1709124240.0
+1915,A - Odd One Out,248790211,BIT_00,GNU C++20 (64),True,,0,15,0,1709124240.0
+1915,B - Not Quite Latin Square,248789616,CodeGoat_Sazid,GNU C++20 (64),True,,0,15,0,1709123940.0
+1915,G - Bicycles,248789497,_-_H-_-,GNU C++20 (64),True,,0,93,8500,1709123880.0
+1915,A - Odd One Out,248789475,CodeGoat_Sazid,GNU C++20 (64),True,,0,15,0,1709123880.0
+1915,C - Can I Square?,248789264,CodeGoat_Sazid,GNU C++20 (64),True,,0,436,1500,1709123820.0
+1915,F - Greetings,248789258,AbhaySingh96,GNU C++20 (64),False,Answer,3,2979,10500,1709123820.0
+1915,C - Can I Square?,248788651,kh_oiiisha.10,GNU C++17,False,Answer,2,61,100,1709123520.0
+1915,C - Can I Square?,248788492,Luffy2.0,GNU C++20 (64),True,,0,46,0,1709123460.0
+1915,C - Can I Square?,248787704,Luffy2.0,GNU C++20 (64),False,Answer,3,46,0,1709123040.0
+1915,A - Odd One Out,248787417,vijay4145,GNU C++17,True,,0,0,0,1709122920.0
+1915,C - Can I Square?,248787323,Luffy2.0,GNU C++20 (64),False,Answer,3,15,0,1709122920.0
+1915,C - Can I Square?,248786054,joynul310,GNU C++17,True,,0,436,1600,1709122320.0
+1915,A - Odd One Out,248785810,robiulcse4th,GNU C++17,True,,0,0,0,1709122200.0
+1915,A - Odd One Out,248785238,Tunggg,GNU C++17,False,Answer,1,0,0,1709121960.0
+1915,A - Odd One Out,248784988,Tunggg,GNU C++17,True,,0,15,0,1709121840.0
+1915,D - Unnatural Language Processing,248784376,Spicytaco,GNU C++20 (64),True,,0,779,7300,1709121540.0
+1915,B - Not Quite Latin Square,248784057,kh_oiiisha.10,GNU C++17,True,,0,0,0,1709121420.0
+1915,D - Unnatural Language Processing,248783980,Spicytaco,GNU C++20 (64),False,Time,3,1000,10800,1709121360.0
+1915,A - Odd One Out,248783882,gianjuti.csecu,GNU C++17,True,,0,15,0,1709121300.0
+1915,A - Odd One Out,248781940,ZahraAhad_SundarSTEM,Python 3,True,,0,30,0,1709120460.0
+1915,C - Can I Square?,248781284,sohail_hasan,GNU C++20 (64),True,,0,46,1600,1709120160.0
+1915,A - Odd One Out,248781092,atashka.mashadov,PyPy 3-64,True,,0,62,0,1709120100.0
+1915,C - Can I Square?,248781075,AnanERA,GNU C++17 (64),True,,0,514,1600,1709120100.0
+1915,C - Can I Square?,248780798,AnanERA,GNU C++17 (64),False,Answer,3,358,100,1709119980.0
+1915,A - Odd One Out,248780760,kh_oiiisha.10,GNU C++17,True,,0,15,0,1709119920.0
+1915,F - Greetings,248779437,Trb8,GNU C++20 (64),True,,0,234,11000,1709119380.0
+1915,F - Greetings,248779098,Trb8,GNU C++17,False,Runtime,2,0,0,1709119200.0
+1915,A - Odd One Out,248778994,manansinghal0103,GNU C++17,True,,0,15,0,1709119140.0
+1915,A - Odd One Out,248777936,soumya_067,Java 21,True,,0,264,100,1709118660.0
+1915,D - Unnatural Language Processing,248777674,nikitha_reddy_10,Python 3,False,Compilation,0,0,0,1709118540.0
+1915,A - Odd One Out,248777561,chandel_shivam,GNU C++17,True,,0,0,0,1709118540.0
+1915,B - Not Quite Latin Square,248777307,AnanERA,GNU C++17 (64),True,,0,0,0,1709118420.0
+1915,A - Odd One Out,248777024,csea562sushma,Java 21,True,,0,217,300,1709118240.0
+1915,D - Unnatural Language Processing,248776852,aish_pundir,GNU C++20 (64),False,Answer,1,0,0,1709118180.0
+1915,D - Unnatural Language Processing,248776081,aish_pundir,GNU C++20 (64),False,Answer,1,0,0,1709117820.0
+1915,A - Odd One Out,248774298,AnanERA,GNU C++17 (64),True,,0,15,0,1709117040.0
+1915,A - Odd One Out,248773489,mayankhere567,GNU C++17,True,,0,15,0,1709116680.0
+1915,D - Unnatural Language Processing,248772176,saadsbr,Python 3,True,,0,108,9600,1709116140.0

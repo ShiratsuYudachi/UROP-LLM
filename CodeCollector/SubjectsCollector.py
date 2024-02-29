@@ -1,12 +1,12 @@
 import json
 from Utils import *
-from FetchManager import fetch_submission_code
+from FetchManager import fetch_submission_code_error
 from tqdm import tqdm
 
 def filter_lang(submissions):
     filtered_submissions = []
     for submission in submissions:
-        lang = submission["lang"]
+        lang = submission.lang
         if lang in acceptedLangs:
             filtered_submissions.append(submission)
     return filtered_submissions
@@ -14,11 +14,11 @@ def filter_lang(submissions):
 def find_pairs(submissions):
     authors_dict = {}
     for submission in filter_lang(submissions):
-        author = submission["author"]
+        author = submission.author
         if author not in authors_dict:
             authors_dict[author] = {"accepted": [], "rejected": []}
         
-        if submission["verdict"]["isAccepted"]:
+        if submission.isAccepted:
             authors_dict[author]["accepted"].append(submission)
         else:
             authors_dict[author]["rejected"].append(submission)
@@ -29,8 +29,8 @@ def find_pairs(submissions):
             closest_rejected = None
             min_time_diff = float("inf")
             for rejected in submissions["rejected"]:
-                if accepted["submissionTime"] > rejected["submissionTime"]:
-                    time_diff = accepted["submissionTime"] - rejected["submissionTime"]
+                if accepted.submissionTime > rejected.submissionTime:
+                    time_diff = accepted.submissionTime - rejected.submissionTime
                     if time_diff < min_time_diff:
                         min_time_diff = time_diff
                         closest_rejected = rejected
@@ -72,20 +72,22 @@ def print_pairs(pairs):
 def get_subject_from_pairs(cf_pairs):
     results = []
     for submission_pair in tqdm(cf_pairs):
-        accepted_code = fetch_submission_code(submission_pair[0].contestID, submission_pair[0].submissionID)
-        rejected_code = fetch_submission_code(submission_pair[1].contestID, submission_pair[1].submissionID)
+        accepted_code = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)[0]
+        rejected = fetch_submission_code_error(submission_pair[1].contestID, submission_pair[1].submissionID, submission_pair[1].errorCaseNo)
         subject = CFSubject(acceptedSubmission=submission_pair[0],
                             rejectedSubmission=submission_pair[1],
                             acceptedCode=accepted_code,
-                            rejectedCode=rejected_code)
+                            rejectedCode=rejected[0],
+                            failedTestCase=rejected[1],
+                            )
         results.append(subject)
     return results
 
 def getSubjects(contestID):
-    submissions = read_submissions(contestID)
+    submissions = CFSubmission.read_from_csv(contestID)
     pairs = find_pairs(submissions)
-    cf_pairs = convert_to_CFSubmission(pairs)
-    print_pairs(cf_pairs)
-    return get_subject_from_pairs(cf_pairs)
+    #cf_pairs = convert_to_CFSubmission(pairs)
+    print_pairs(pairs)
+    return get_subject_from_pairs(pairs)
     
 

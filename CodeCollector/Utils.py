@@ -1,6 +1,7 @@
 import time
 import json
 from datetime import datetime
+import csv
 
 acceptedLangs = ["Python 3", "Python 2", "PyPy 2", "PyPy 3", "PyPy 3-64"]
 
@@ -13,56 +14,54 @@ def wrapDir(dir: str):
 submissionsPath = "/Users/tsuyue/Documents/GitHub/UROP-LLM/CodeCollector/submissions/"
 subjectPath = "/Users/tsuyue/Documents/GitHub/UROP-LLM/CodeCollector/subjects/"
 
-
-class Verdict:
-    class ErrorType:
-        COMPILATION = 0
-        RUNTIME = 1
-        TIME = 2
-        ANSWER = 3
-        OTHER = 4
-    
-    def __init__(self, isAccepted:bool, errorType:int, errorCase:int=None) -> None:
-        self.isAccepted = isAccepted
-        self.errorType = errorType
-        self.errorCase = errorCase
-    
-    def to_dict(self):
-        return {
-            'isAccepted': self.isAccepted,
-            'errorType': self.errorType,
-            'errorCase': self.errorCase
-        }
-    
-    @staticmethod
-    def parse_dict(text):
-        if "Accepted" in text:
-            return Verdict(True, Verdict.ErrorType.OTHER)
-        elif "Wrong answer" in text:
-            return Verdict(False, Verdict.ErrorType.ANSWER, int(text.split(' ')[-1]))
-        elif "Compilation error" in text:
-            return Verdict(False, Verdict.ErrorType.COMPILATION)
-        elif "Runtime error" in text:
-            return Verdict(False, Verdict.ErrorType.RUNTIME, int(text.split(' ')[-1]))
-        elif "Time limit exceeded" in text:
-            return Verdict(False, Verdict.ErrorType.TIME, int(text.split(' ')[-1]))
-        else:
-            return Verdict(False, Verdict.ErrorType.OTHER)
-
-
 # CF for Codeforces
 class CFSubmission:
-    def __init__(self, contestID:str, problem:str, submissionID:str, author:str, lang:str, verdict:Verdict, runTime:int, memory:int, submissionTime:int) -> None:
+    def __init__(self, contestID:str, problem:str, submissionID:str, author:str, lang:str, isAccepted:bool, errorType:str, errorCaseNo:int, runTime:int, memory:int, submissionTime:int) -> None:
         self.contestID = contestID
         self.problem = problem
         self.submissionID = submissionID
         self.author = author
         self.lang = lang
-        self.verdict = verdict
+        self.isAccepted = isAccepted
+        self.errorType = errorType
+        self.errorCaseNo = errorCaseNo
         self.runTime = runTime
         self.memory = memory
         self.submissionTime = submissionTime
-        
+    
+
+    @staticmethod
+    def save_to_csv(submissions, contestID):
+        filename = get_submission_csv_name(contestID)
+        with open(filename, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            # 写入列标题
+            writer.writerow(['contestID', 'problem', 'submissionID', 'author', 'lang', 'isAccepted', 'errorType', 'errorCaseNo', 'runTime', 'memory', 'submissionTime'])
+            # 写入每个提交的数据
+            for submission in submissions:
+                writer.writerow([submission.contestID, submission.problem, submission.submissionID, submission.author, submission.lang, submission.isAccepted, submission.errorType, submission.errorCaseNo, submission.runTime, submission.memory, submission.submissionTime])
+
+    @staticmethod
+    def read_from_csv(contestID):
+        filename = get_submission_csv_name(contestID)
+        submissions = []
+        with open(filename, mode='r') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                submission = CFSubmission(row['contestID'], row['problem'], row['submissionID'], row['author'], row['lang'], row['isAccepted'] == 'True', row['errorType'], int(row['errorCaseNo']), int(row['runTime']), int(row['memory']), int(float(row['submissionTime'])))
+                submissions.append(submission)
+        return submissions
+    
+    @staticmethod
+    def append_to_csv(submissions, contestID):
+        filename = get_submission_csv_name(contestID)
+        with open(filename, mode='a', newline='') as file:  # 使用追加模式'a'
+            writer = csv.writer(file)
+            # 直接写入每个提交的数据，不需要再写列标题
+            for submission in submissions:
+                writer.writerow([submission.contestID, submission.problem, submission.submissionID, submission.author, submission.lang, submission.isAccepted, submission.errorType, submission.errorCaseNo, submission.runTime, submission.memory, submission.submissionTime])
+    
+    
     def to_dict(self):
         return {
             'contestID': self.contestID,
@@ -70,12 +69,15 @@ class CFSubmission:
             'submissionID': self.submissionID,
             'author': self.author,
             'lang': self.lang,
-            'verdict': self.verdict.to_dict(),
+            'isAccepted': self.isAccepted,
+            'errorType': self.errorType,
+            'errorCaseNo': self.errorCaseNo,
             'runTime': self.runTime,
             'memory': self.memory,
             'submissionTime': self.submissionTime
         }
     
+    # NOT USABLE
     @staticmethod
     def parse_dict(submissionDict):
         contestID = submissionDict['contestID']
@@ -83,25 +85,30 @@ class CFSubmission:
         submissionID = submissionDict['submissionID']
         author = submissionDict['author']
         lang = submissionDict['lang']
-        verdict = Verdict.parse_dict(submissionDict['verdict'])
+        isAccepted = submissionDict['isAccepted']
+        errorType = submissionDict['errorType']
+        errorCaseNo = submissionDict['errorCaseNo']
         runTime = submissionDict['runTime']
         memory = submissionDict['memory']
         submissionTime = submissionDict['submissionTime']
 
-        return CFSubmission(contestID=contestID, problem=problem, submissionID=submissionID, author=author, lang=lang, verdict=verdict, runTime=runTime, memory=memory, submissionTime=submissionTime)
+        return CFSubmission(contestID=contestID, problem=problem, submissionID=submissionID, author=author, lang=lang, isAccepted=isAccepted, errorType=errorType, errorCaseNo=errorCaseNo, runTime=runTime, memory=memory, submissionTime=submissionTime)
 
+    # NOT USABLE
     @staticmethod
     def parse_dict_list(ls): # ls: CFSubmission[] type
         return [CFSubmission.parse_dict(x) for x in ls]
     
+
+    
     
 class CFSubject:
-    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, errorCase={}, errorLine:int=0) -> None:
+    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, failedTestCase={}, errorLine:int=0) -> None:
         self.acceptedSubmission = acceptedSubmission
         self.rejectedSubmission = rejectedSubmission
         self.acceptedCode = acceptedCode
         self.rejectedCode = rejectedCode
-        self.errorCase = errorCase
+        self.failedTestCase = failedTestCase
         self.errorLine = errorLine
         
     def to_dict(self):
@@ -110,7 +117,7 @@ class CFSubject:
             'rejectedSubmission': self.rejectedSubmission.to_dict(),
             'acceptedCode': self.acceptedCode,
             'rejectedCode': self.rejectedCode,
-            'errorCase': self.errorCase,
+            'failedTestCase': self.failedTestCase,
             'errorLine': self.errorLine
         }
     
@@ -120,7 +127,7 @@ class CFSubject:
         rejectedSubmission = CFSubmission.parse_dict(subjectDict['rejectedSubmission'])
         acceptedCode = subjectDict['acceptedCode']
         rejectedCode = subjectDict['rejectedCode']
-        errorCase = subjectDict['errorCase']
+        failedTestCase = subjectDict['failedTestCase']
         errorLine = subjectDict.get('errorLine', 0)  # Use .get() to handle missing errorLine with default 0
 
         return CFSubject(
@@ -128,31 +135,17 @@ class CFSubject:
             rejectedSubmission=rejectedSubmission,
             acceptedCode=acceptedCode,
             rejectedCode=rejectedCode,
-            errorCase=errorCase,
+            failedTestCase=failedTestCase,
             errorLine=errorLine
         )
 
-    
-    
     
 
 def get_subject_json_name(contestID):
     return subjectPath+str(contestID)+'.json'
 
-def get_submission_json_name(contestID):
-    return submissionsPath+str(contestID)+'.json'
-
-def save_submissions(submissions, contestID):
-    submissions_dicts = [submission.to_dict() for submission in submissions]
-    filename = get_submission_json_name(contestID)
-    with open(filename, 'w') as file:
-        json.dump(submissions_dicts, file, indent=4)
-
-def read_submissions(contestID):
-    filename = get_submission_json_name(contestID)
-    with open(filename, 'r') as file:
-        submissions = json.load(file)
-    return submissions
+def get_submission_csv_name(contestID):
+    return submissionsPath+str(contestID)+'.csv'
 
 
 def colorPrint(info:str , color: str):

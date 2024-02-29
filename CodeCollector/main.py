@@ -23,13 +23,13 @@ if __name__ == "__main__":
         url_template = "https://codeforces.com/contest/{contestID}/status/page/{page}?order=BY_ARRIVED_DESC"
         submissions = []
         startPage = 1
-        if os.path.exists(get_submission_json_name(contestID)):
-            submissionsDict = read_submissions(contestID)
-            submissions = CFSubmission.parse_dict_list(submissionsDict)
-            dictLen = len(submissionsDict)
-            startPage = dictLen//50 + 1
-            print(f"imported {dictLen} entries, starting from page {startPage}")
-            if (startPage == 7049 and dictLen/50 - dictLen//50 > 0):
+        
+        if os.path.exists(get_submission_csv_name(contestID)):
+            submissions = CFSubmission.read_from_csv(contestID)
+            len = len(submissions)
+            startPage = len//50 + 1
+            print(f"imported {len} entries, starting from page {startPage}")
+            if (startPage == 7049 and len/50 - len//50 > 0):
                 startPage = 7050
                 colorPrint("INFO: contest already fully fetched", "yellow")
 
@@ -38,10 +38,14 @@ if __name__ == "__main__":
             page_submissions = fetch_submissions(url)
             if page_submissions != None:
                 submissions.extend(page_submissions)
-                save_submissions(submissions, contestID)
+                if os.path.exists(get_submission_csv_name(contestID)):
+                    CFSubmission.append_to_csv(page_submissions, contestID)
+                else:
+                    CFSubmission.save_to_csv(submissions, contestID)
             else:
                 colorPrint('exit with error!', 'red')
                 # http error happenned
+                # TODO: auto wait 5min and redo
                 break
 
     elif (option == "2"):
@@ -55,5 +59,5 @@ if __name__ == "__main__":
         save_subjects(subjects, contestID)
         pass
     else:
-        # test branch
+        fetch_submissions("https://codeforces.com/contest/1915/status?order=BY_ARRIVED_DESC")
         pass
