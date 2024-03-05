@@ -5,6 +5,8 @@ from Comparator import compare_code_lines
 from tqdm import tqdm
 import os
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
 
 if __name__ == "__main__":
@@ -22,7 +24,6 @@ if __name__ == "__main__":
             contestID = default_contestID
         
         url_template = "https://codeforces.com/contest/{contestID}/status/page/{page}?order=BY_ARRIVED_DESC"
-        submissions = []
         startPage = 1
         
         if os.path.exists(get_submission_csv_name(contestID)):
@@ -34,20 +35,35 @@ if __name__ == "__main__":
                 startPage = 7050
                 colorPrint("INFO: contest already fully fetched", "yellow")
 
-        for page in tqdm(range(startPage, 7050)):  # TODO: fetch page number
-            url = url_template.format(page=page, contestID=contestID)
-            page_submissions = fetch_submissions(url)
-            if page_submissions != None:
-                submissions.extend(page_submissions)
-                if os.path.exists(get_submission_csv_name(contestID)):
-                    CFSubmission.append_to_csv(page_submissions, contestID)
+        lock = threading.Lock()
+            
+        with ThreadPoolExecutor(max_workers=30) as executor:
+            total = 7050-startPage
+            pbar = tqdm(total=total)
+
+            def task(url):
+                submissions = []
+                page_submissions = fetch_submissions(url)
+                if page_submissions != None:
+                    submissions.extend(page_submissions)
+                    with lock:
+                        if os.path.exists(get_submission_csv_name(contestID)):
+                            CFSubmission.append_to_csv(page_submissions, contestID)
+                        else:
+                            colorPrint('csv created!', 'green')
+                            CFSubmission.save_to_csv(submissions, contestID)
+                        pbar.update(1)
                 else:
-                    CFSubmission.save_to_csv(submissions, contestID)
-            else:
-                colorPrint('exit with error!', 'red')
-                # http error happenned
-                # TODO: auto wait 5min and redo
-                break
+                    colorPrint('exit with error!', 'red')
+                    # http error happenned
+                    # TODO: auto wait 5min and redo
+                    exit()
+            for page in range(startPage, 7050):  # TODO: fetch page number
+                url = url_template.format(page=page, contestID=contestID)
+                executor.submit(task, url)
+                time.sleep(0.1)
+
+            
 
     elif (option == "2"):
         # fetch all submissions of the below contest
