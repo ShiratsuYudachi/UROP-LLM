@@ -4,7 +4,7 @@ from datetime import datetime
 from Utils import *
 
 def fetch_submissions(url):
-    response = requests.get(url)
+    response = requests.get(url, proxies=proxies)
     soup = BeautifulSoup(response.text, 'html.parser')
     if response.status_code == 200:
         table_rows = soup.find('table', class_='status-frame-datatable').find_all('tr')[1:]  # skip header row
@@ -86,7 +86,10 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
     # Build the URL from the given contest_id and submission_id
     url = f"https://codeforces.com/contest/{contest_id}/submission/{submission_id}"
     session = requests.Session()
-    response = session.get(url)
+    response = session.get(url,proxies=proxies)
+    if response.status_code!=200:
+        colorPrint("HTTP Error: "+str(response.status_code), "red")
+        return None
     
     soup = BeautifulSoup(response.text, 'html.parser')
     
@@ -104,6 +107,7 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
 
     # find failed test cases
     if errorCaseNo:
+        # to make fetch successful, referer and csrf_token is needed
         meta_tag = soup.find('meta', attrs={'name': 'X-Csrf-Token'})
         if not meta_tag:
             colorPrint("ERROR: CSRF token Not Found in submission page")
@@ -128,7 +132,7 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
             "submissionId": submission_id,
             "csrf_token": csrf_token
         }
-        response = session.post(submitSource_url, headers=headers, data=data).json()
+        response = session.post(submitSource_url, headers=headers, data=data, proxies=proxies).json()
         errorCase = {
             'input': response[f'input#{errorCaseNo}'],
             'output': response[f'output#{errorCaseNo}'],

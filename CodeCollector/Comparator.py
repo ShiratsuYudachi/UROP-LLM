@@ -35,13 +35,36 @@ def recompareAll(contestID):
     subjects = CFSubject.load_list_from_json(contestID)
     for subject in subjects:
         same_count, first_diff_line = compare_code_lines(subject.acceptedCode, subject.rejectedCode)
-        lineCount_code1 = len(subject.acceptedCode.split('\n'))
-        lineCount_code2 = len(subject.rejectedCode.split('\n'))
+        lineCount_code1 = len(subject.acceptedCode.strip().split('\n'))
+        lineCount_code2 = len(subject.rejectedCode.strip().split('\n'))
         max_lineCount = max(lineCount_code1,lineCount_code2)
         if (first_diff_line > 0 and max_lineCount - same_count <= thresh_diff_lines):
             # TODO: remove this case
             pass
         subject.errorLine = first_diff_line
+
+        # check error type
+        if same_count == max_lineCount-1:   
+            subject.errorType = "single_line"
+        else:
+            code1 = subject.acceptedCode.strip().split('\n')
+            code2 = subject.rejectedCode.strip().split('\n')
+            
+            # the first sameline after different line
+            sameline = None
+            for i in range(first_diff_line, lineCount_code1):
+                for j in range(first_diff_line,lineCount_code2):
+                    if code1[i]==code2[j]:
+                        sameline = [i,j]
+                        break
+                if sameline:
+                    break
+            
+            if sameline and compare_code_lines('\n'.join(code1[sameline[0]:]), '\n'.join(code2[sameline[1]:]))[1] != 0:
+                subject.errorType = "multi_hunks"
+            else:
+                subject.errorType = "single_hunk"
+
     CFSubject.save_list_to_json(subjects,contestID)
 
 def test():

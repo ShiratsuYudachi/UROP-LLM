@@ -34,7 +34,8 @@
             "expectedOutput": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO...",
             "CheckerComment": "wrong answer expected YES, found NO [16th token]\r\n"
         },
-        "errorLine": 2
+        "errorLine": 2,
+        "errorType": "multi_hunks"
     },
     {
         "acceptedSubmission": {
@@ -71,7 +72,8 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "multi_hunks"
     },
     {
         "acceptedSubmission": {
@@ -108,7 +110,8 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "single_hunk"
     },
     {
         "acceptedSubmission": {
@@ -145,7 +148,8 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "single_hunk"
     },
     {
         "acceptedSubmission": {
@@ -182,7 +186,8 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 6
+        "errorLine": 6,
+        "errorType": "single_hunk"
     },
     {
         "acceptedSubmission": {
@@ -219,7 +224,8 @@
             "expectedOutput": "1\r\n3\r\n6\r\n7\r\n0\r\n6\r\n8\r\n5\r\n5\r\n7\r\n",
             "CheckerComment": "wrong answer 1st numbers differ - expected: '1', found: '3'\r\n"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "multi_hunks"
     },
     {
         "acceptedSubmission": {
@@ -256,7 +262,8 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "multi_hunks"
     },
     {
         "acceptedSubmission": {
@@ -293,7 +300,8 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "single_hunk"
     },
     {
         "acceptedSubmission": {
@@ -330,7 +338,8 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "single_hunk"
     },
     {
         "acceptedSubmission": {
@@ -367,6 +376,1621 @@
             "expectedOutput": "",
             "CheckerComment": "Exit code is 1"
         },
-        "errorLine": 1
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248840202",
+            "author": "vjudge.4",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 61,
+            "memory": 0,
+            "submissionTime": 1709168580
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248840071",
+            "author": "vjudge.4",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 15,
+            "memory": 0,
+            "submissionTime": 1709168460
+        },
+        "acceptedCode": "def find_unique_value(a, b, c):\n    if a == b:\n        return c\n    elif a == c:\n        return b\n    else:\n        return a\n\n# Input number of test cases\nt = int(input())\n\n# Iterate through each test case\nfor _ in range(t):\n    # Input three digits\n    a, b, c = map(int, input().split())\n    \n    # Find and output the value that occurs exactly once\n    print(find_unique_value(a, b, c))\n\t \t    \t\t    \t   \t \t\t \t\t \t \t\t\t\t",
+        "rejectedCode": "a, b, c = map(int, input().split())\n\nif a != b and a != c:\n    print(a)\nelif b != a and b != c:\n    print(b)\nelif c != a and c != b:\n    print(c)\n\t\t  \t \t   \t \t\t\t   \t   \t \t  \t",
+        "failedTestCase": {
+            "input": "10\r\n1 2 2\r\n4 3 4\r\n5 5 6\r\n7 8 8\r\n9 0 9\r\n3 6 3\r\n2 8 2\r\n5 7 7\r\n7 7 5\r\n5 7 5\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248839356",
+            "author": "Anis.Abdusamad",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 187,
+            "memory": 26200,
+            "submissionTime": 1709167980
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "248839268",
+            "author": "Anis.Abdusamad",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 15,
+            "memory": 0,
+            "submissionTime": 1709167920
+        },
+        "acceptedCode": "from math import*\r\nfor _ in range(int(input())):\r\n    a=int(input())\r\n    n=list(map(int,input().split()))\r\n    s=sum(n)\r\n    w=sqrt(s)\r\n    p=(int(w))\r\n    if p**2==s:\r\n        print('YES')\r\n    else:\r\n        print('NO')\r\n",
+        "rejectedCode": "from math import*\r\nfor _ in range(int(input())):\r\n    a=int(input())\r\n    n=list(map(int,input().split()))\r\n    s=sum(n)\r\n    w=sqrt(s)\r\n    p=(int(w))\r\n    if p**2==s:\r\n        print('YES')\r\n    else:\r\n        print('NO')\r\n",
+        "failedTestCase": {
+            "input": "3\r\nABC\r\nC?B\r\nBCA\r\nBCA\r\nCA?\r\nABC\r\n?AB\r\nBCA\r\nABC\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 0,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "248820539",
+            "author": "Hill_06",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 61,
+            "memory": 0,
+            "submissionTime": 1709146860
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "248819945",
+            "author": "Hill_06",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 2,
+            "runTime": 77,
+            "memory": 0,
+            "submissionTime": 1709145900
+        },
+        "acceptedCode": "for _ in range(int(input())):\r\n    a = {'A': 0, 'B': 0, 'C': 0}\r\n    b = ''\r\n\r\n    for _ in range(3):\r\n        c = input().strip()\r\n        for i in c:\r\n            if i != '?':\r\n                a[i] += 1\r\n\r\n    for i, count in a.items():\r\n        if count == 2:\r\n            b = i\r\n            break\r\n    \r\n    print(b)",
+        "rejectedCode": "for _ in range(int(input())):\r\n    b=['A','B','C']\r\n    for j in range(3):\r\n        a = list(map(str,input()))\r\n        if '?' in a:\r\n            for k in range(3):\r\n                if b[k] not in a:\r\n                    print(b[k])\r\n                    break\r\n            break",
+        "failedTestCase": {
+            "input": "108\r\n?BC\r\nBCA\r\nCAB\r\nA?C\r\nBCA\r\nCAB\r\nAB?\r\nBCA\r\nCAB\r\nABC\r\n?CA\r\nCAB\r\nABC\r\nB?A\r\nCAB\r\nABC\r\nBC?\r\nCAB\r\nABC\r\nBCA\r\n?AB\r\nABC\r\nBCA\r\nC?B\r\nABC\r\nBCA\r\nCA?\r\n?BC\r\nCAB\r\nBCA\r\nA?C\r\nCAB\r\nBCA\r\nAB?\r\nCAB\r\nBCA\r\nABC\r\n?AB\r\nBCA\r\nABC\r\nC?B\r\nBCA\r\nABC\r\nCA?\r\nBCA\r\nABC\r\nCAB\r\n?CA\r\nABC\r\nCAB\r\nB?A\r\nABC\r\nCAB\r\nBC?\r\n?CB\r\nBAC\r\nCBA\r\nA?B\r\nBAC\r\nCBA\r\nAC?\r\nBAC\r\nCBA\r\nACB\r\n?AC\r\nCBA\r\nACB\r\nB?C\r\nCBA\r\nACB\r\nBA?\r\nCBA\r\nACB\r\nBAC\r\n?BA\r\nACB\r\nBAC\r\nC?A\r\nACB\r\nBAC\r\nCB?\r\n?CB\r\nCBA\r\nBAC\r\nA?B\r\nCBA\r\nBAC\r\nAC?\r\nCBA\r\nBAC\r\nACB\r\n?BA\r\nBAC\r\nACB\r\nC?A\r\nBAC\r\nACB\r\nCB?\r\nBAC\r\nACB\r\nCBA\r\n?...",
+            "output": "A\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\n",
+            "expectedOutput": "A\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\n",
+            "CheckerComment": "wrong answer Unexpected EOF in the participants output\r\n"
+        },
+        "errorLine": 2,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248804768",
+            "author": "daveshub",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 124,
+            "memory": 1700,
+            "submissionTime": 1709132160
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248804581",
+            "author": "daveshub",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 2,
+            "runTime": 15,
+            "memory": 0,
+            "submissionTime": 1709132040
+        },
+        "acceptedCode": "for _ in range(int(input())):\r\n    n = int(input())\r\n    s = input()\r\n    V, C = 'ae', 'bcd'\r\n    result = s[:2]\r\n    for i in range(2, n-1):\r\n        c1, c2 = s[i], s[i+1]\r\n        if c1 in C:\r\n            if c2 in V:\r\n                result += '.'\r\n        result += c1\r\n    print((result, result+s[-1])[n > 2])",
+        "rejectedCode": "for _ in range(int(input())):\r\n    n = int(input())\r\n    s = input()\r\n    V, C = 'ae', 'bcd'\r\n    result = s[:2]\r\n    for i in range(2, n-1):\r\n        c1, c2 = s[i], s[i+1]\r\n        if c1 in C:\r\n            if c2 in V:\r\n                result += '.'\r\n        result += c1\r\n    print(result+s[-1])",
+        "failedTestCase": {
+            "input": "100\r\n2\r\nba\r\n2\r\nca\r\n2\r\nda\r\n2\r\nbe\r\n2\r\nce\r\n2\r\nde\r\n3\r\nbab\r\n3\r\nbac\r\n3\r\nbad\r\n3\r\nbeb\r\n3\r\nbec\r\n3\r\nbed\r\n3\r\ncab\r\n3\r\ncac\r\n3\r\ncad\r\n3\r\nceb\r\n3\r\ncec\r\n3\r\nced\r\n3\r\ndab\r\n3\r\ndac\r\n3\r\ndad\r\n3\r\ndeb\r\n3\r\ndec\r\n3\r\nded\r\n4\r\nbaba\r\n4\r\nbaca\r\n4\r\nbada\r\n4\r\nbabe\r\n4\r\nbace\r\n4\r\nbade\r\n4\r\ncaba\r\n4\r\ncaca\r\n4\r\ncada\r\n4\r\ncabe\r\n4\r\ncace\r\n4\r\ncade\r\n4\r\ndaba\r\n4\r\ndaca\r\n4\r\ndada\r\n4\r\ndabe\r\n4\r\ndace\r\n4\r\ndade\r\n4\r\nbeba\r\n5\r\nbabba\r\n5\r\nbabca\r\n5\r\nbabda\r\n5\r\nbabbe\r\n5\r\nbabce\r\n5\r\nbabde\r\n5\r\nbacba\r\n5\r\nbacca\r\n5\r\nbacda\r\n5\r\nbacbe\r\n5\r\nbacce\r\n5\r\nbacde\r\n5\r\nbadba\r\n5\r\nbadca\r\n5\r\nbadda\r...",
+            "output": "baa\r\ncaa\r\ndaa\r\nbee\r\ncee\r\ndee\r\nbab\r\nbac\r\nbad\r\nbeb\r\nbec\r\nbed\r\ncab\r\ncac\r\ncad\r\nceb\r\ncec\r\nced\r\ndab\r\ndac\r\ndad\r\ndeb\r\ndec\r\nded\r\nba.ba\r\nba.ca\r\nba.da\r\nba.be\r\nba.ce\r\nba.de\r\nca.ba\r\nca.ca\r\nca.da\r\nca.be\r\nca.ce\r\nca.de\r\nda.ba\r\nda.ca\r\nda.da\r\nda.be\r\nda.ce\r\nda.de\r\nbe.ba\r\nbab.ba\r\nbab.ca\r\nbab.da\r\nbab.be\r\nbab.ce\r\nbab.de\r\nbac.ba\r\nbac.ca\r\nbac.da\r\nbac.be\r\nbac.ce\r\nbac.de\r\nbad.ba\r\nbad.ca\r\nbad.da\r\nbad.be\r\nbad.ce\r\nbad.de\r\nbeb.ba\r\nba.bab\r\nba.bac\r\nba.bad\r\nba.beb\r\nba.bec\r\nba.bed\r\nba.cab\r\nba.cac\r\nba.cad\r\nba.ceb\r\nba.cec\r\nba.ced\r\nba.dab\r\nba...",
+            "expectedOutput": "ba\r\nca\r\nda\r\nbe\r\nce\r\nde\r\nbab\r\nbac\r\nbad\r\nbeb\r\nbec\r\nbed\r\ncab\r\ncac\r\ncad\r\nceb\r\ncec\r\nced\r\ndab\r\ndac\r\ndad\r\ndeb\r\ndec\r\nded\r\nba.ba\r\nba.ca\r\nba.da\r\nba.be\r\nba.ce\r\nba.de\r\nca.ba\r\nca.ca\r\nca.da\r\nca.be\r\nca.ce\r\nca.de\r\nda.ba\r\nda.ca\r\nda.da\r\nda.be\r\nda.ce\r\nda.de\r\nbe.ba\r\nbab.ba\r\nbab.ca\r\nbab.da\r\nbab.be\r\nbab.ce\r\nbab.de\r\nbac.ba\r\nbac.ca\r\nbac.da\r\nbac.be\r\nbac.ce\r\nbac.de\r\nbad.ba\r\nbad.ca\r\nbad.da\r\nbad.be\r\nbad.ce\r\nbad.de\r\nbeb.ba\r\nba.bab\r\nba.bac\r\nba.bad\r\nba.beb\r\nba.bec\r\nba.bed\r\nba.cab\r\nba.cac\r\nba.cad\r\nba.ceb\r\nba.cec\r\nba.ced\r\nba.dab\r\nba.dac\r\n...",
+            "CheckerComment": "wrong answer 1st words differ - expected: 'ba', found: 'baa'\r\n"
+        },
+        "errorLine": 12,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "E - Romantic Glasses",
+            "submissionID": "248801198",
+            "author": "dsanurag520",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 218,
+            "memory": 33700,
+            "submissionTime": 1709129820
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "E - Romantic Glasses",
+            "submissionID": "248799134",
+            "author": "dsanurag520",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 30,
+            "memory": 600,
+            "submissionTime": 1709128680
+        },
+        "acceptedCode": "from collections import defaultdict\r\nimport sys\r\nfrom random import getrandbits\r\n\r\nRANDOM = getrandbits(32)\r\ninput=sys.stdin.readline\r\n\r\nfor i in range(int(input())):\r\n    n = int(input())\r\n    a = list(map(int,input().split()))\r\n    visited = set()\r\n    visited.add(0+RANDOM)\r\n    res = [0,0]\r\n    flag = False\r\n    for id,e in enumerate(a):\r\n        if id%2:\r\n            res[0]+=e\r\n        else:\r\n            res[1]+=e\r\n        if res[1]-res[0]+RANDOM in visited:\r\n            flag = True\r\n            break\r\n        visited.add(res[1]-res[0]+RANDOM)\r\n    if flag:\r\n        print('yes')\r\n    else:\r\n        print('no')",
+        "rejectedCode": "from collections import defaultdict\r\nimport sys\r\nimport random\r\ninput=sys.stdin.readline\r\n\r\nfor i in range(int(input())):\r\n    n = int(input())\r\n    a = list(map(int,input().split()))\r\n    random.shuffle(a)\r\n    visited = set()\r\n    visited.add(0)\r\n    res = [0,0]\r\n    flag = False\r\n    for id,e in enumerate(a):\r\n        if id%2:\r\n            res[0]+=e\r\n        else:\r\n            res[1]+=e\r\n        if res[1]-res[0] in visited:\r\n            flag = True\r\n            break\r\n        visited.add(res[1]-res[0])\r\n    if flag:\r\n        print('yes')\r\n    else:\r\n        print('no')",
+        "failedTestCase": {
+            "input": "6\r\n3\r\n1 3 2\r\n6\r\n1 1 1 1 1 1\r\n10\r\n1 6 9 8 55 3 14 2 7 2\r\n8\r\n1 2 11 4 1 5 1 2\r\n6\r\n2 6 1 5 7 8\r\n9\r\n2 5 10 4 4 9 6 7 8\r\n",
+            "output": "no\r\nyes\r\nyes\r\nyes\r\nyes\r\nyes\r\n",
+            "expectedOutput": "YES\r\nYES\r\nNO\r\nYES\r\nNO\r\nYES\r\n",
+            "CheckerComment": "wrong answer expected YES, found NO [1st token]\r\n"
+        },
+        "errorLine": 3,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "248797751",
+            "author": "voidrunner7",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1709127840
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "248797620",
+            "author": "voidrunner7",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1709127780
+        },
+        "acceptedCode": "for i in range(int(input())):\r\n    x=input()\r\n    y=input()\r\n    z=input()\r\n    l=x+y+z\r\n    for k in l:\r\n        if l.count(k)==2:\r\n            print(k)\r\n            break",
+        "rejectedCode": "for i in range(int(input())):\r\n    x=input()\r\n    y=input()\r\n    z=input()\r\n    l=x+y+z\r\n    print(l)\r\n    for k in l:\r\n        if l.count(k)==2:\r\n            print(k)\r\n            break",
+        "failedTestCase": {
+            "input": "3\r\nABC\r\nC?B\r\nBCA\r\nBCA\r\nCA?\r\nABC\r\n?AB\r\nBCA\r\nABC\r\n",
+            "output": "ABCC?BBCA\r\nA\r\nBCACA?ABC\r\nB\r\n?ABBCAABC\r\nC\r\n",
+            "expectedOutput": "A\r\nB\r\nC\r\n",
+            "CheckerComment": "wrong answer 1st words differ - expected: 'A', found: 'ABCC?BBCA'\r\n"
+        },
+        "errorLine": 6,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248772176",
+            "author": "saadsbr",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 108,
+            "memory": 9600,
+            "submissionTime": 1709116140
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "247642722",
+            "author": "saadsbr",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 2,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1708515780
+        },
+        "acceptedCode": "# D. Unnatural Language Processing\r\nt = int(input())\r\nfor _ in range(t):\r\n    n = int(input())\r\n    s = input()\r\n    V = [\"a\", \"e\"]\r\n    syllables = []\r\n    i = n-1\r\n    while i > 0:\r\n        if s[i] in V:\r\n            syllables.append(s[i-1:i+1])\r\n            i -= 2\r\n        else:\r\n            syllables.append(s[i-2:i+1])\r\n            i -= 3\r\n    print(\".\".join(syllables[::-1]))\r\n",
+        "rejectedCode": "t = int(input())\r\nfor _ in range(t):\r\n    row1 = input()\r\n    row2 = input()\r\n    row3 = input()\r\n    if \"A\" not in row1 or \"A\" not in row2 or \"A\" not in row2:\r\n        print(\"A\")\r\n    elif \"B\" not in row1 or \"B\" not in row2 or \"B\" not in row2:\r\n        print(\"B\")\r\n    else:\r\n        print(\"C\")",
+        "failedTestCase": {
+            "input": "108\r\n?BC\r\nBCA\r\nCAB\r\nA?C\r\nBCA\r\nCAB\r\nAB?\r\nBCA\r\nCAB\r\nABC\r\n?CA\r\nCAB\r\nABC\r\nB?A\r\nCAB\r\nABC\r\nBC?\r\nCAB\r\nABC\r\nBCA\r\n?AB\r\nABC\r\nBCA\r\nC?B\r\nABC\r\nBCA\r\nCA?\r\n?BC\r\nCAB\r\nBCA\r\nA?C\r\nCAB\r\nBCA\r\nAB?\r\nCAB\r\nBCA\r\nABC\r\n?AB\r\nBCA\r\nABC\r\nC?B\r\nBCA\r\nABC\r\nCA?\r\nBCA\r\nABC\r\nCAB\r\n?CA\r\nABC\r\nCAB\r\nB?A\r\nABC\r\nCAB\r\nBC?\r\n?CB\r\nBAC\r\nCBA\r\nA?B\r\nBAC\r\nCBA\r\nAC?\r\nBAC\r\nCBA\r\nACB\r\n?AC\r\nCBA\r\nACB\r\nB?C\r\nCBA\r\nACB\r\nBA?\r\nCBA\r\nACB\r\nBAC\r\n?BA\r\nACB\r\nBAC\r\nC?A\r\nACB\r\nBAC\r\nCB?\r\n?CB\r\nCBA\r\nBAC\r\nA?B\r\nCBA\r\nBAC\r\nAC?\r\nCBA\r\nBAC\r\nACB\r\n?BA\r\nBAC\r\nACB\r\nC?A\r\nBAC\r\nACB\r\nCB?\r\nBAC\r\nACB\r\nCBA\r\n?...",
+            "output": "A\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nC\r\nC\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nC\r\nC\r\nC\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nC\r\nC\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nC\r\nC\r\nC\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\nC\r\nC\r\nC\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nC\r\nC\r\nC\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nC\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nC\r\nC\r\nC\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nC\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nC\r\nC\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nC\r\nC\r\nC\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nC\r\nC\r\nC\r\n",
+            "expectedOutput": "A\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nC\r\nA\r\nB\r\nA\r\nB\r\nC\r\nB\r\nC\r\nA\r\nC\r\nA\r\nB\r\nB\r\nC\r\nA\r\nA\r\nB\r\nC\r\nC\r\nB\r\nA\r\nA\r\nC\r\nB\r\nB\r\nA\r\nC\r\nC\r\nB\r\nA\r\nB\r\nA\r\nC\r\nA\r\nC\r\nB\r\n",
+            "CheckerComment": "wrong answer 8th words differ - expected: 'A', found: 'C'\r\n"
+        },
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248767825",
+            "author": "sravan_03",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 186,
+            "memory": 26200,
+            "submissionTime": 1709114100
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248767232",
+            "author": "sravan_03",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 1200,
+            "submissionTime": 1709113800
+        },
+        "acceptedCode": "from math import isqrt\r\nt=int(input())\r\nfor tc in  range(t):\r\n\tn=int(input())\r\n\tsam=list(map(int,input().split()))\r\n\tans=sum(sam)\r\n\tif isqrt(ans)**2==ans:\r\n\t\tprint(\"YES\")\r\n\telse:\r\n\t\tprint('NO')\r\n\r\n\t\t",
+        "rejectedCode": "t=int(input())\r\nfor tc in  range(t):\r\n\tn=int(input())\r\n\tsam=list(map(int,input().split()))\r\n\tans=sum(sam)\r\n\tc=0\r\n\tfor j in range(1,int(ans**0.5)+1):\r\n\t\tif j*j==ans:\r\n\t\t\tc+=1\r\n\t\t\tbreak\r\n\tif c==1:\r\n\t\tprint(\"YES\")\r\n\telse:\r\n\t\tprint(\"NO\")\r\n\t\t",
+        "failedTestCase": {
+            "input": "50\r\n4357\r\n17784254 299683852 139062553 11272599 367943339 29588402 1711198 106764331 2951854 16055780 173763010 4769982 128568802 41683021 36457034 215748324 156861382 112669086 45143474 133051082 199445135 85521140 39695514 333223198 120574438 120349332 10915381 60910474 137612992 1573273 134051089 22057162 257834395 57348483 162678780 87422565 76648229 60756360 10422864 121092505 34225369 95541161 85403066 18911618 36807331 177522386 68037839 68031985 238605184 69019078 73336969 415511377 31215468 549745...",
+            "output": "YES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\n",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248732783",
+            "author": "rahulraman_28",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 46,
+            "memory": 0,
+            "submissionTime": 1709100720
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248732677",
+            "author": "rahulraman_28",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Compilation",
+            "errorCaseNo": 0,
+            "runTime": 0,
+            "memory": 0,
+            "submissionTime": 1709100660
+        },
+        "acceptedCode": "for _ in range(int(input())) :\r\n    a,b,c=map(int,input().split())\r\n    print(a^b^c)",
+        "rejectedCode": "for _ in range(int(input()) :\r\n    a,b,c=map(int,input().split())\r\n    print(a^b^c)",
+        "failedTestCase": null,
+        "errorLine": 1,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "248714271",
+            "author": "Dima__Sam",
+            "lang": "PyPy 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 77,
+            "memory": 0,
+            "submissionTime": 1709092200
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "248713490",
+            "author": "Dima__Sam",
+            "lang": "PyPy 3",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 92,
+            "memory": 2100,
+            "submissionTime": 1709091900
+        },
+        "acceptedCode": "e = int(input())\r\nfor i in range(e):\r\n    s1 = 0\r\n    s2 = 0\r\n    s3 = 0\r\n    a = input()\r\n    b = input()\r\n    c = input()\r\n    d = a + b + c\r\n    for g in range(len(d)):\r\n        if d[g] == \"A\":\r\n            s1 += 1\r\n    for k in range(len(d)):\r\n        if d[k] == \"B\":\r\n            s2 += 1\r\n    for l in range(len(d)):\r\n        if d[l] == \"C\":\r\n            s3 += 1\r\n    q = min(s1, s2, s3)\r\n    if q == s1:\r\n        print(\"A\")\r\n    elif q == s2:\r\n        print(\"B\")\r\n    else:\r\n        print(\"C\")",
+        "rejectedCode": "e = int(input())\r\nfor i in range(e * 3):\r\n    s1 = 0\r\n    s2 = 0\r\n    s3 = 0\r\n    a = input()\r\n    b = input()\r\n    c = input()\r\n    d = a + b + c\r\n    for g in range(len(d)):\r\n        if d[g] == \"A\":\r\n            s1 += 1\r\n    for k in range(len(d)):\r\n        if d[g] == \"B\":\r\n            s2 += 1\r\n    for l in range(len(d)):\r\n        if d[g] == \"C\":\r\n            s3 += 1\r\n    q = min(s1, s2, s3)\r\n    if q == s1:\r\n        print(\"A\")\r\n    elif q == s2:\r\n        print(\"B\")\r\n    else:\r\n        print(\"C\")",
+        "failedTestCase": {
+            "input": "3\r\nABC\r\nC?B\r\nBCA\r\nBCA\r\nCA?\r\nABC\r\n?AB\r\nBCA\r\nABC\r\n",
+            "output": "B\r\nB\r\nB\r\n",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 2,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248712613",
+            "author": "niemand3755",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 30,
+            "memory": 0,
+            "submissionTime": 1709091360
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248709403",
+            "author": "niemand3755",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 15,
+            "memory": 0,
+            "submissionTime": 1709089620
+        },
+        "acceptedCode": "t = int(input())\nfor i in range(t):\n    a, b, c = map(int,input().split())\n    if a == b:\n        print(c)\n    elif a == c:\n        print(b)\n    else:\n        print(a)",
+        "rejectedCode": "t = int(input())\nfor i in range(t):\n    a, b, c = map(int,input().split())\n    if a < b and a < c:\n        print(a)\n    elif b < a and b < c:\n        print(b)\n    else:\n        print(c)",
+        "failedTestCase": {
+            "input": "10\r\n1 2 2\r\n4 3 4\r\n5 5 6\r\n7 8 8\r\n9 0 9\r\n3 6 3\r\n2 8 2\r\n5 7 7\r\n7 7 5\r\n5 7 5\r\n",
+            "output": "1\r\n3\r\n6\r\n7\r\n0\r\n3\r\n2\r\n5\r\n5\r\n5\r\n",
+            "expectedOutput": "1\r\n3\r\n6\r\n7\r\n0\r\n6\r\n8\r\n5\r\n5\r\n7\r\n",
+            "CheckerComment": "wrong answer 6th numbers differ - expected: '6', found: '3'\r\n"
+        },
+        "errorLine": 4,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248713477",
+            "author": "PyIVA",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 186,
+            "memory": 20200,
+            "submissionTime": 1709091840
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248712847",
+            "author": "PyIVA",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 1800,
+            "submissionTime": 1709091480
+        },
+        "acceptedCode": "t = int(input())\r\n\r\nanswers = []\r\n\r\nfor i1 in range(t):\r\n    n = int(input())\r\n\r\n    s = input().split()\r\n\r\n    ss = 0\r\n\r\n    for e in s:\r\n        ss += int(e)\r\n\r\n    if int(ss ** 0.5) ** 2 == ss:\r\n        answers.append(\"Yes\")\r\n    else:\r\n        answers.append(\"No\")\r\n\r\nfor ans in answers:\r\n    print(ans)\r\n",
+        "rejectedCode": "t = int(input())\r\n\r\npar = [0] * t\r\n\r\nfor i in range(t):\r\n    n = int(input())\r\n\r\n    r = 0\r\n\r\n    for e in input().split():\r\n        r += int(e)\r\n\r\n    par[i] = r\r\n\r\nfor i in par:\r\n    a = 0\r\n\r\n    while a * a < i:\r\n        a += 1\r\n\r\n    if a * a == i:\r\n        print(\"Yes\")\r\n    else:\r\n        print(\"No\")\r\n",
+        "failedTestCase": {
+            "input": "50\r\n4357\r\n17784254 299683852 139062553 11272599 367943339 29588402 1711198 106764331 2951854 16055780 173763010 4769982 128568802 41683021 36457034 215748324 156861382 112669086 45143474 133051082 199445135 85521140 39695514 333223198 120574438 120349332 10915381 60910474 137612992 1573273 134051089 22057162 257834395 57348483 162678780 87422565 76648229 60756360 10422864 121092505 34225369 95541161 85403066 18911618 36807331 177522386 68037839 68031985 238605184 69019078 73336969 415511377 31215468 549745...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 3,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248680486",
+            "author": "aljipa",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 187,
+            "memory": 20200,
+            "submissionTime": 1709067780
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248680441",
+            "author": "aljipa",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 2,
+            "runTime": 264,
+            "memory": 100,
+            "submissionTime": 1709067720
+        },
+        "acceptedCode": "from math import sqrt, floor\n\n\nt = int(input())\nfor _ in range(t):\n    n, a = int(input()), (int(i) for i in input().split())\n    s = sum(a)\n    sq = floor(sqrt(s))\n    res = \"YES\" if sq * sq == s else \"NO\"\n    print(res)\n",
+        "rejectedCode": "from math import sqrt\n\n\nt = int(input())\nfor _ in range(t):\n    n, a = int(input()), (int(i) for i in input().split())\n    s = sum(a)\n    sq = sqrt(s)\n    res = \"YES\" if sq * sq == s else \"NO\"\n    print(res)\n",
+        "failedTestCase": {
+            "input": "10000\r\n2\r\n5 6\r\n5\r\n2 1 7 9 7\r\n2\r\n5 5\r\n2\r\n4 7\r\n1\r\n2\r\n2\r\n8 7\r\n2\r\n9 8\r\n1\r\n9\r\n1\r\n10\r\n3\r\n8 6 10\r\n3\r\n3 9 1\r\n5\r\n5 8 1 10 7\r\n3\r\n4 8 6\r\n5\r\n1 10 2 5 1\r\n2\r\n7 4\r\n1\r\n4\r\n5\r\n4 5 10 1 5\r\n1\r\n2\r\n5\r\n1 2 3 6 2\r\n4\r\n9 7 6 2\r\n2\r\n8 3\r\n5\r\n2 4 10 4 8\r\n4\r\n2 9 10 3\r\n1\r\n1\r\n2\r\n10 7\r\n2\r\n5 7\r\n2\r\n8 10\r\n1\r\n4\r\n3\r\n10 6 1\r\n3\r\n9 3 2\r\n4\r\n2 5 5 9\r\n4\r\n7 9 2 5\r\n5\r\n10 8 9 2 10\r\n2\r\n9 8\r\n1\r\n10\r\n1\r\n3\r\n4\r\n5 1 10 5\r\n3\r\n8 7 5\r\n3\r\n2 10 1\r\n4\r\n8 4 4 3\r\n4\r\n5 6 4 2\r\n2\r\n6 8\r\n3\r\n2 7 10\r\n1\r\n1\r\n5\r\n8 5 10 4 10\r\n2\r\n7 3\r\n5\r\n3 9 10 6 3\r\n2\r\n5 9\r\n2\r\n3 9\r\n1\r\n6\r\n5\r\n7 10 3...",
+            "output": "YES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nYES\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nYES\r\nYES\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nYES\r\nYES\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nN...",
+            "expectedOutput": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO...",
+            "CheckerComment": "wrong answer expected NO, found YES [1st token]\r\n"
+        },
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248492595",
+            "author": "nissarshaik",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1709026020
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248492307",
+            "author": "nissarshaik",
+            "lang": "PyPy 2",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 46,
+            "memory": 0,
+            "submissionTime": 1709025900
+        },
+        "acceptedCode": "t=int(input())\r\nfor i in range(t):\r\n    (a,b,c)=map(int,input().split())\r\n    if a==b:\r\n        print(c)\r\n    elif b==c:\r\n        print(a)\r\n    else:\r\n        print(b)",
+        "rejectedCode": "t=int(input())\r\nfor i in range(t):\r\n    (a,b,c)=map(int,input().split())\r\n    if a==b:\r\n        print(c)\r\n    elif b==c:\r\n        print(a)\r\n    else:\r\n        print(b)",
+        "failedTestCase": {
+            "input": "10\r\n1 2 2\r\n4 3 4\r\n5 5 6\r\n7 8 8\r\n9 0 9\r\n3 6 3\r\n2 8 2\r\n5 7 7\r\n7 7 5\r\n5 7 5\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 0,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248491528",
+            "author": "sadhvika_badri30",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 30,
+            "memory": 0,
+            "submissionTime": 1709025540
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248491468",
+            "author": "sadhvika_badri30",
+            "lang": "Python 2",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 46,
+            "memory": 0,
+            "submissionTime": 1709025480
+        },
+        "acceptedCode": "t=int(input())\r\nfor i in range(t):\r\n    a,b,c=map(int,input().split())\r\n    if(a==b):\r\n        print(c)\r\n    elif(b==c):\r\n        print(a)\r\n    else:\r\n        print(b)",
+        "rejectedCode": "t=int(input())\r\nfor i in range(1,t+1):\r\n    a,b,c=map(int,input().split())\r\n    if(a==b):\r\n        print(c)\r\n    elif(b==c):\r\n        print(a)\r\n    else:\r\n        print(b)",
+        "failedTestCase": {
+            "input": "10\r\n1 2 2\r\n4 3 4\r\n5 5 6\r\n7 8 8\r\n9 0 9\r\n3 6 3\r\n2 8 2\r\n5 7 7\r\n7 7 5\r\n5 7 5\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 2,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248480073",
+            "author": "atharvakalele",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 265,
+            "memory": 26200,
+            "submissionTime": 1709020860
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248479920",
+            "author": "atharvakalele",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 30,
+            "memory": 0,
+            "submissionTime": 1709020800
+        },
+        "acceptedCode": "for t in range(int(input())):\r\n    n = int(input())\r\n    a = list(map(int, input().split()))\r\n    total_sum = sum(a)  # Calculate the total sum of elements in the list\r\n\r\n    start = 1\r\n    end = int(1e9)\r\n    f = False\r\n\r\n    while start <= end:\r\n        mid = (start + end) // 2\r\n        if mid * mid > total_sum:\r\n            end = mid - 1\r\n        elif mid * mid < total_sum:\r\n            start = mid + 1\r\n        else:\r\n            f = True\r\n            break\r\n\r\n    if f:\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")\r\n",
+        "rejectedCode": "for t in range(int(input())):\r\n    n = int(input())\r\n    a = list(map(int,input().split()))\r\n    sum=0\r\n    for i in range(n):\r\n        sum+=a[i]\r\n    start=1\r\n    end=(1e+9)\r\n    f = 0\r\n    while(start<=end):\r\n        mid = (start+(end-start)/2)\r\n        if(mid*mid>sum):end=mid-1\r\n        elif(mid*mid<sum):start=mid+1\r\n        else:\r\n            f=1\r\n            break\r\n    if(f):print(\"YES\")\r\n    else : print(\"NO\")\r\n    ",
+        "failedTestCase": {
+            "input": "5\r\n1\r\n9\r\n2\r\n14 2\r\n7\r\n1 2 3 4 5 6 7\r\n6\r\n1 3 5 7 9 11\r\n4\r\n2 2 2 2\r\n",
+            "output": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\n",
+            "expectedOutput": "YES\r\nYES\r\nNO\r\nYES\r\nNO\r\n",
+            "CheckerComment": "wrong answer expected YES, found NO [1st token]\r\n"
+        },
+        "errorLine": 3,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "E - Romantic Glasses",
+            "submissionID": "248461569",
+            "author": "Muslim2003",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 155,
+            "memory": 26900,
+            "submissionTime": 1709011500
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "E - Romantic Glasses",
+            "submissionID": "248461269",
+            "author": "Muslim2003",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 14,
+            "runTime": 1000,
+            "memory": 34400,
+            "submissionTime": 1709011320
+        },
+        "acceptedCode": "import sys\r\ninput = sys.stdin.buffer.readline\r\nfor i in range(int(input())):\r\n    n = int(input())\r\n    k = 0\r\n    m = sorted([0]+[k:=k+(j if i&1 else -j) for i, j in enumerate(map(int, input().split()))])\r\n    print('YES' if any(i==j for i, j in zip(m[1:], m)) else 'NO')",
+        "rejectedCode": "import sys, os, io\r\nfrom collections import Counter as c\r\ninput = io.BytesIO(os.read(0, os.fstat(0).st_size)).readline\r\nfor i in range(int(input())):\r\n    n = int(input())\r\n    k = 0\r\n    m = [0]+[k:=k+(j if i&1 else -j) for i, j in enumerate(map(int, input().split()))]\r\n    print('YES' if max(c(m).values())>1 else 'NO')",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\n1 4 2 6 2 8 3 15 9 18 8 19 5 9 2 6 2 15 8 20 6 10 1 11 8 18 3 24 19 22 1 10 4 11 4 21 10 24 2 18 4 16 6 14 2 5 2 20 4 11 1 10 6 14 5 9 2 8 5 21 14 19 1 14 7 39 31 36 4 7 1 5 2 19 15 18 1 21 14 23 4 19 1 6 3 13 2 4 1 5 3 11 1 25 12 15 1 7 5 27 7 16 3 15 2 12 9 35 3 23 8 25 14 20 3 12 2 21 2 12 2 4 1 3 1 4 1 15 7 13 2 5 2 18 15 20 3 19 4 13 7 11 1 11 7 11 2 26 3 21 10 42 6 9 1 17 2 11 1 19 10 15 3 12 4 26 12 18 4 38 3 17 6 19 11 25 13 21 7 16 7 19 11 28 11 21 9 30 6 9 1 8 4 15 6 31 21 24 2 19 5 27...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "E - Romantic Glasses",
+            "submissionID": "248434879",
+            "author": "laala",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 202,
+            "memory": 28800,
+            "submissionTime": 1708996140
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "E - Romantic Glasses",
+            "submissionID": "248434608",
+            "author": "laala",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 11,
+            "runTime": 1000,
+            "memory": 33300,
+            "submissionTime": 1708995960
+        },
+        "acceptedCode": "tc = int(input())\r\nfor _ in range(tc):\r\n  n = int(input())\r\n  ls = list(map(int,input().split()))\r\n  curr = 0\r\n  flag = 0\r\n  mp = set()\r\n  mp.add(0)\r\n  for i in range(n):\r\n    if(i%2 == 1):\r\n      curr -= ls[i]\r\n    else:\r\n      curr+=ls[i]\r\n    if(curr in mp):\r\n      flag = 1\r\n      break\r\n    else:\r\n      mp.add(curr)\r\n  if(flag == 0):\r\n    print(\"NO\")\r\n  else:\r\n    print(\"YES\")\r\n\r\n",
+        "rejectedCode": "tc = int(input())\r\nfor _ in range(tc):\r\n  n = int(input())\r\n  ls = list(map(int,input().split()))\r\n  for i in range(n):\r\n      if(i%2 == 1):\r\n        ls[i] = -1*ls[i]\r\n  curr = 0\r\n  flag = 0\r\n  mp = set()\r\n  mp.add(0)\r\n  for i in range(n):\r\n    curr += ls[i]\r\n    if(curr in mp):\r\n      flag = 1\r\n      break\r\n    else:\r\n      mp.add(curr)\r\n  if(flag == 0):\r\n    print(\"NO\")\r\n  else:\r\n    print(\"YES\")",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\n3 2 6 2 8 3 15 9 18 8 19 5 9 2 6 2 15 8 20 6 10 1 11 8 18 3 24 19 22 1 10 4 11 4 21 10 24 2 18 4 16 6 14 2 5 2 20 4 11 1 10 6 14 5 9 2 8 5 21 14 19 1 14 7 39 31 36 4 7 1 5 2 19 15 18 1 21 14 23 4 19 1 6 3 13 2 4 1 5 3 11 1 25 12 15 1 7 5 27 7 16 3 15 2 12 9 35 3 23 8 25 14 20 3 12 2 21 2 12 2 4 1 3 1 4 1 15 7 13 2 5 2 18 15 20 3 19 4 13 7 11 1 11 7 11 2 26 3 21 10 42 6 9 1 17 2 11 1 19 10 15 3 12 4 26 12 18 4 38 3 17 6 19 11 25 13 21 7 16 7 19 11 28 11 21 9 30 6 9 1 8 4 15 6 31 21 24 2 19 5 27 9...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 5,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248425948",
+            "author": "srinii",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1708989240
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248425873",
+            "author": "srinii",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 30,
+            "memory": 0,
+            "submissionTime": 1708989180
+        },
+        "acceptedCode": "t = int(input())\r\nfor _ in range(t):\r\n    a,b,c = map(int,input().split())\r\n    if(a==b and a!=c):\r\n        print(c)\r\n    elif(a==c and a!=b):\r\n        print(b)\r\n    else:\r\n        print(a)",
+        "rejectedCode": "t = int(input())\r\nfor _ in range(t):\r\n    a = int(input())\r\n    b = int(input())\r\n    c = int(input())\r\n    if(a==b and a!=c):\r\n        print(c)\r\n    elif(a==c and a!=b):\r\n        print(b)\r\n    else:\r\n        print(a)",
+        "failedTestCase": {
+            "input": "10\r\n1 2 2\r\n4 3 4\r\n5 5 6\r\n7 8 8\r\n9 0 9\r\n3 6 3\r\n2 8 2\r\n5 7 7\r\n7 7 5\r\n5 7 5\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 3,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248379614",
+            "author": "mohd_fariq",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 31,
+            "memory": 300,
+            "submissionTime": 1708947360
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248379520",
+            "author": "mohd_fariq",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Compilation",
+            "errorCaseNo": 0,
+            "runTime": 0,
+            "memory": 0,
+            "submissionTime": 1708947300
+        },
+        "acceptedCode": "from collections import Counter\r\nfor _ in range(int(input())):\r\n    l=list(map(int,input().split()))\r\n    h_map=Counter(l)\r\n    for i in h_map:\r\n        if h_map[i]==1:\r\n            print(i)\r\n            break\r\n    ",
+        "rejectedCode": "from collections import Counter\r\nfor _ in range(int(input()):\r\n    l=list(map(int,input().split()))\r\n    h_map=Counter(l)\r\n    for i in h_map:\r\n        if h_map[i]==1:\r\n            print(i)\r\n            break\r\n    ",
+        "failedTestCase": null,
+        "errorLine": 2,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248364673",
+            "author": "Jopson",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 171,
+            "memory": 23800,
+            "submissionTime": 1708940760
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248363971",
+            "author": "Jopson",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 12200,
+            "submissionTime": 1708940400
+        },
+        "acceptedCode": "for _ in range(int(input())):\r\n    n = int(input())\r\n    word = input()\r\n    i = n - 1\r\n    res = []\r\n    while i > 0:\r\n        if word[i] in 'bcd':\r\n            res.append(word[i - 2: i + 1])\r\n            res.append('.')\r\n            i -= 3\r\n        else:\r\n            res.append(word[i - 1: i + 1])\r\n            res.append('.')\r\n            i -= 2\r\n    print(*res[::-1][1:], sep=\"\")",
+        "rejectedCode": "for _ in range(int(input())):\r\n    n = int(input())\r\n    word = input()\r\n    i = n - 1\r\n    res = \"\"\r\n    while i > 0:\r\n        if word[i] in 'bcd':\r\n            res = '.' + word[i - 2: i + 1] + res\r\n            i -= 3\r\n        else:\r\n            res = '.' + word[i - 1: i + 1] + res\r\n            i -= 2\r\n    print(res[1:])",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\nbedebacacadcababcabdedacceddadacebbacacacedbacacececedacabedabadbadabecebdababbabacacacebbababecbebabedcacbecadededdebebbadecbebadabdadedadcebebedabcadcecabebababadedababecabdededecacacacababdacecabecadacdadadceccecacabacadaddedecebadeccedbabaccededcededebbacadcecacadebedacabeddebbacabecebedebebabacedadbedbaccababedaccacacabedbebecedadaddebbacdacdabacedededabedcadbadabececacebedecbabcedecbabacbecacabebdedadecececadabacabcedcacbadacdabebeddabecedceddacacacabedbecbacadedcadedababecadcabeccebdacada...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 5,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "G - Bicycles",
+            "submissionID": "248300177",
+            "author": "1000chw",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 654,
+            "memory": 44800,
+            "submissionTime": 1708903260
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "G - Bicycles",
+            "submissionID": "248299804",
+            "author": "1000chw",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 4000,
+            "memory": 128900,
+            "submissionTime": 1708902900
+        },
+        "acceptedCode": "import sys\r\nfrom collections import defaultdict\r\nfrom heapq import heappop, heappush\r\ninput = sys.stdin.readline\r\nINF = float('inf')\r\n\r\nfor _ in range(int(input())):\r\n    n, m = map(int, input().split())\r\n    roads = defaultdict(list)\r\n    for _ in range(m):\r\n        u, v, w = map(int, input().split())\r\n        roads[u].append((v, w))\r\n        roads[v].append((u, w))\r\n    bikes = [0] + list(map(int, input().split()))\r\n    dp = [[INF]*1002 for _ in range(1001)]\r\n    dp[1][1001] = 0\r\n    pq = [(0, 1001, 1)]\r\n    ans = 0\r\n    while pq:\r\n        t, s, ind = heappop(pq)\r\n        if dp[ind][s] != t:\r\n            continue\r\n        if ind == n:\r\n            ans = t\r\n            break\r\n        if s > bikes[ind]:\r\n            s = bikes[ind]\r\n        for nc, w in roads[ind]:\r\n            if dp[nc][s] > t + s*w:\r\n                dp[nc][s] = t + s * w\r\n                heappush(pq, (t + s*w, s, nc))\r\n    print(ans)\r\n",
+        "rejectedCode": "import sys\r\nfrom collections import defaultdict\r\nfrom heapq import heappop, heappush\r\ninput = sys.stdin.readline\r\nINF = float('inf')\r\n\r\nfor _ in range(int(input())):\r\n    n, m = map(int, input().split())\r\n    roads = defaultdict(list)\r\n    for _ in range(m):\r\n        u, v, w = map(int, input().split())\r\n        roads[u].append((v, w))\r\n        roads[v].append((u, w))\r\n    bikes = [0] + list(map(int, input().split()))\r\n\r\n    pq = [(0, 1, 1001)]\r\n    ans = 0\r\n    while pq:\r\n        t, ind, s = heappop(pq)\r\n        if ind == n:\r\n            ans = t\r\n            break\r\n        if s > bikes[ind]:\r\n            s = bikes[ind]\r\n        for nc, w in roads[ind]:\r\n            heappush(pq, (t + s*w, nc, s))\r\n    print(ans)\r\n",
+        "failedTestCase": {
+            "input": "100\r\n32 32\r\n27 19 57692\r\n3 30 29668\r\n8 27 23566\r\n12 9 73575\r\n16 21 87459\r\n11 18 81865\r\n10 3 49315\r\n7 23 52484\r\n17 25 28452\r\n1 20 14330\r\n26 10 62826\r\n26 19 40406\r\n6 29 76017\r\n13 18 26193\r\n21 2 53802\r\n20 25 16119\r\n9 2 9987\r\n1 5 23049\r\n15 7 77194\r\n31 6 72869\r\n22 31 20083\r\n15 5 23523\r\n12 32 76184\r\n4 14 88353\r\n8 11 86753\r\n14 29 24642\r\n22 28 53222\r\n24 4 99187\r\n17 16 94833\r\n23 24 22799\r\n28 30 39432\r\n4 9 75381\r\n711 634 597 278 665 815 211 92 854 819 631 865 621 798 632 416 189 159 193 321 572 239 905 521 388 374 3...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 15,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248287410",
+            "author": "haleemborham3",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 78,
+            "memory": 8800,
+            "submissionTime": 1708881960
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248174091",
+            "author": "haleemborham3",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1708798620
+        },
+        "acceptedCode": "for _ in range(int(input())):\r\n    n=int(input())\r\n    s=list(input())\r\n    for i in range(2,n):\r\n        if s[i] in \"ae\":\r\n            s[i-1]='.'+s[i-1]\r\n    print(\"\".join(s))       ",
+        "rejectedCode": "def split_into_syllables(word):\r\n    syllables = []\r\n    i = 0\r\n    while i < len(word):\r\n        if i < len(word) - 2 and word[i] not in 'ae' and word[i+1] in 'ae' and word[i+2] not in 'ae':\r\n            syllables.append(word[i:i+2])\r\n            i += 2\r\n        else:\r\n            syllables.append(word[i])\r\n            i += 1\r\n    return '.'.join(syllables)\r\n\r\nt = int(input())\r\nwhile t:\r\n    t-=1\r\n    number = int(input())\r\n    x = input()\r\n    print(split_into_syllables(x))",
+        "failedTestCase": {
+            "input": "6\r\n8\r\nbacedbab\r\n4\r\nbaba\r\n13\r\ndaddecabeddad\r\n3\r\ndac\r\n6\r\ndacdac\r\n22\r\ndababbabababbabbababba\r\n",
+            "output": "ba.ce.d.ba.b\r\nba.b.a\r\nda.d.de.ca.be.d.da.d\r\nda.c\r\nda.c.da.c\r\nda.ba.b.ba.ba.ba.b.ba.b.ba.ba.b.b.a\r\n",
+            "expectedOutput": "ba.ced.bab\r\nba.ba\r\ndad.de.ca.bed.dad\r\ndac\r\ndac.dac\r\nda.bab.ba.ba.bab.bab.ba.bab.ba\r\n",
+            "CheckerComment": "wrong answer 1st words differ - expected: 'ba.ced.bab', found: 'ba.ce.d.ba.b'\r\n"
+        },
+        "errorLine": 1,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248273334",
+            "author": "mariamalkaseh",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 78,
+            "memory": 11700,
+            "submissionTime": 1708869900
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248270479",
+            "author": "mariamalkaseh",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1708868100
+        },
+        "acceptedCode": "test_cases = int(input())\r\ncon = {'d', 'b', 'c'}\r\nfor v in range (test_cases):\r\n    word_length = int(input())\r\n    word = list(input())\r\n    syllables = []\r\n    i = len(word) - 1\r\n    while i > 0:\r\n        letter = word[i]\r\n        if letter in con:\r\n            syllables.append(word[i-2] + word[i-1] + word[i])\r\n            i -= 3\r\n        else:\r\n            syllables.append(word[i-1] + word[i])\r\n            i -= 2\r\n    syllables = reversed(syllables)\r\n    print(\".\".join(syllables))",
+        "rejectedCode": "test_cases = int(input())\r\ncon = {'d', 'b', 'c'}\r\nfor v in range (test_cases):\r\n    word_length = int(input())\r\n    word = list(input())\r\n    syllables = []\r\n    i = len(word) - 1\r\n    while i > 0:\r\n        letter = word[i]\r\n        if letter in con:\r\n            syllables.append(word[i-2] + word[i-1] + word[i])\r\n            i -= 3\r\n        else:\r\n            syllables.append(word[i-1] + word[i])\r\n            i -= 2\r\n    print(\".\".join(syllables))\r\n   ",
+        "failedTestCase": {
+            "input": "6\r\n8\r\nbacedbab\r\n4\r\nbaba\r\n13\r\ndaddecabeddad\r\n3\r\ndac\r\n6\r\ndacdac\r\n22\r\ndababbabababbabbababba\r\n",
+            "output": "bab.ced.ba\r\nba.ba\r\ndad.bed.ca.de.dad\r\ndac\r\ndac.dac\r\nba.bab.ba.bab.bab.ba.ba.bab.da\r\n",
+            "expectedOutput": "ba.ced.bab\r\nba.ba\r\ndad.de.ca.bed.dad\r\ndac\r\ndac.dac\r\nda.bab.ba.ba.bab.bab.ba.bab.ba\r\n",
+            "CheckerComment": "wrong answer 1st words differ - expected: 'ba.ced.bab', found: 'bab.ced.ba'\r\n"
+        },
+        "errorLine": 16,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248268858",
+            "author": "el3zaby2002",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 77,
+            "memory": 8800,
+            "submissionTime": 1708867200
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248268801",
+            "author": "el3zaby2002",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Compilation",
+            "errorCaseNo": 0,
+            "runTime": 0,
+            "memory": 0,
+            "submissionTime": 1708867140
+        },
+        "acceptedCode": "for _ in range(int(input())):\r\n    n=int(input())\r\n    s=list(input())\r\n    for i in range(2,n):\r\n        if s[i] in \"ae\":\r\n            s[i-1]='.'+s[i-1]\r\n    print(\"\".join(s))\r\n",
+        "rejectedCode": "or _ in range(int(input())):\r\n    n=int(input())\r\n    s=list(input())\r\n    for i in range(2,n):\r\n        if s[i] in \"ae\":\r\n            s[i-1]='.'+s[i-1]\r\n    print(\"\".join(s))",
+        "failedTestCase": null,
+        "errorLine": 1,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248263952",
+            "author": "bhanupriya_6251",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 187,
+            "memory": 26200,
+            "submissionTime": 1708864500
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248263613",
+            "author": "bhanupriya_6251",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 15,
+            "memory": 0,
+            "submissionTime": 1708864320
+        },
+        "acceptedCode": "import math\r\nt = int(input())\r\nwhile t>0:\r\n    n = int(input())\r\n    a = list(map(int,input().split()))\r\n    k = sum(a)\r\n    if k**.5%1==0:\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")\r\n    t-=1\r\n    ",
+        "rejectedCode": "import math\r\nt = int(input())\r\nwhile t>0:\r\n    n = int(input())\r\n    a = list(map(int,input().split()))\r\n    k = sum(a)\r\n    if k.isqrt()==True:\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")\r\n    t-=1\r\n    ",
+        "failedTestCase": {
+            "input": "5\r\n1\r\n9\r\n2\r\n14 2\r\n7\r\n1 2 3 4 5 6 7\r\n6\r\n1 3 5 7 9 11\r\n4\r\n2 2 2 2\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 7,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248247079",
+            "author": "AbhinavSE",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 140,
+            "memory": 1700,
+            "submissionTime": 1708855080
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248247021",
+            "author": "AbhinavSE",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 10900,
+            "submissionTime": 1708855020
+        },
+        "acceptedCode": "for t in range(int(input())):\r\n    n = int(input())\r\n    s = input()\r\n    syll = ''\r\n    form = ''\r\n    for i in range(n-1, -1, -1):\r\n        syll += s[i]\r\n        if s[i] in ['b', 'c', 'd']:\r\n            form = 'C' + form\r\n        else:\r\n            form = 'V' + form\r\n        if form in ['CVC', 'CV']:\r\n            form = ''\r\n            syll += '.'\r\n    print(syll[::-1][1:])",
+        "rejectedCode": "for t in range(int(input())):\r\n    n = int(input())\r\n    s = input()\r\n    syll = ''\r\n    form = ''\r\n    for i in range(n-1, -1, -1):\r\n        syll += s[i]\r\n        if s[i] in ['b', 'c', 'd']:\r\n            form = 'C' + form\r\n        else:\r\n            form = 'V' + form\r\n        if form in ['CVC', 'CV']:\r\n            form = ''\r\n            syll += '.'\r\n    print(syll[::-1][1:])",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\nbedebacacadcababcabdedacceddadacebbacacacedbacacececedacabedabadbadabecebdababbabacacacebbababecbebabedcacbecadededdebebbadecbebadabdadedadcebebedabcadcecabebababadedababecabdededecacacacababdacecabecadacdadadceccecacabacadaddedecebadeccedbabaccededcededebbacadcecacadebedacabeddebbacabecebedebebabacedadbedbaccababedaccacacabedbebecedadaddebbacdacdabacedededabedcadbadabececacebedecbabcedecbabacbecacabebdedadecececadabacabcedcacbadacdabebeddabecedceddacacacabedbecbacadedcadedababecadcabeccebdacada...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 0,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248247274",
+            "author": "i0stream",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 78,
+            "memory": 11200,
+            "submissionTime": 1708855140
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248247135",
+            "author": "i0stream",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 15,
+            "memory": 0,
+            "submissionTime": 1708855080
+        },
+        "acceptedCode": "vow = {'a', 'e'}\ncon = {'b', 'c', 'd'}\n\n\ndef split_words(words):\n    res = []\n    i = len(words) - 1\n\n    while i > 0:\n        l = words[i]\n        if l in con:\n            res.append(words[i-2] + words[i-1] + words[i])\n            i -= 3\n        else:\n            res.append(words[i-1] + words[i])\n            i -= 2\n    return list(reversed(res))\n\n\n    \n\n\n\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    words = input()\n    print(\".\".join(split_words(list(words))))\n",
+        "rejectedCode": "vow = {'a', 'e'}\ncon = {'b', 'c', 'd'}\n\ndef is_cv(letters: list[str]):\n    if len(letters) != 2:\n        return False\n    if letters[0] in con and letters[1] in vow:\n        return True\n    return False\n\ndef is_cvc(letters: list[str]):\n    if len(letters) != 3:\n        return False\n    if letters[0] in con and letters[1] in vow and letters[2] in con:\n        return True\n    return False\n\n\ndef split_words(words: list[str]) -> list[str]:\n    res: list[str] = []\n    i = len(words) - 1\n\n    while i > 0:\n        print(i)\n        l = words[i]\n        if l in con:\n            res.append(words[i-2] + words[i-1] + words[i])\n            i -= 3\n        else:\n            res.append(words[i-1] + words[i])\n            i -= 2\n    return list(reversed(res))\n\n\n    \n\n\n\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    words = input()\n    print(\".\".join(split_words(list(words))))\n",
+        "failedTestCase": {
+            "input": "6\r\n8\r\nbacedbab\r\n4\r\nbaba\r\n13\r\ndaddecabeddad\r\n3\r\ndac\r\n6\r\ndacdac\r\n22\r\ndababbabababbabbababba\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 4,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248239670",
+            "author": "youssefalaraby",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 124,
+            "memory": 2200,
+            "submissionTime": 1708851060
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248236911",
+            "author": "youssefalaraby",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 30,
+            "memory": 0,
+            "submissionTime": 1708849680
+        },
+        "acceptedCode": "t=int(input())\r\nsol=[]\r\nx=0\r\nv=['a','e']\r\nwhile t:\r\n    lnth=int(input())\r\n    word=list(input())\r\n    tmp=''\r\n    while len(word)!=0:\r\n        if word[-1] in v:\r\n            x=2\r\n        else:\r\n            x=3\r\n        while x:\r\n            tmp+=word.pop()\r\n            x-=1\r\n        tmp+='.'\r\n    tmp=tmp[::-1][1:]             \r\n    sol.append(tmp)\r\n    t-=1\r\n\r\nfor solution in sol:\r\n    print(solution)",
+        "rejectedCode": "t=int(input())\r\nsol=[]\r\nx=0\r\nv=['a','e']\r\nwhile t:\r\n    lnth=int(input())\r\n    word=list(input())\r\n    tmp=''\r\n    if lnth == 2 or lnth == 3:\r\n        sol.append(word)\r\n    else:\r\n        while len(word)!=0:\r\n            if word[-1] in v:\r\n                x=2\r\n            else:\r\n                x=3\r\n            while x:\r\n                tmp+=word.pop()\r\n                x-=1\r\n            tmp+='.'\r\n    tmp=tmp[::-1][1:]              \r\n    sol.append(tmp)\r\n    t-=1\r\n\r\nfor solution in sol:\r\n    print(solution)",
+        "failedTestCase": {
+            "input": "6\r\n8\r\nbacedbab\r\n4\r\nbaba\r\n13\r\ndaddecabeddad\r\n3\r\ndac\r\n6\r\ndacdac\r\n22\r\ndababbabababbabbababba\r\n",
+            "output": "ba.ced.bab\r\nba.ba\r\ndad.de.ca.bed.dad\r\n['d', 'a', 'c']\r\n\r\ndac.dac\r\nda.bab.ba.ba.bab.bab.ba.bab.ba\r\n",
+            "expectedOutput": "ba.ced.bab\r\nba.ba\r\ndad.de.ca.bed.dad\r\ndac\r\ndac.dac\r\nda.bab.ba.ba.bab.bab.ba.bab.ba\r\n",
+            "CheckerComment": "wrong answer 4th words differ - expected: 'dac', found: '['d','\r\n"
+        },
+        "errorLine": 9,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248238866",
+            "author": "manojvn2612",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 202,
+            "memory": 26200,
+            "submissionTime": 1708850640
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248238679",
+            "author": "manojvn2612",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 2,
+            "runTime": 124,
+            "memory": 100,
+            "submissionTime": 1708850580
+        },
+        "acceptedCode": "import math\r\n\r\ndef can_build_square(n, squares):\r\n    total_squares = sum(squares)\r\n    side_length = int(math.sqrt(total_squares))\r\n    return side_length * side_length == total_squares\r\n\r\nt = int(input())\r\nfor _ in range(t):\r\n    n = int(input())\r\n    squares = list(map(int, input().split()))\r\n    if can_build_square(n, squares):\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")\r\n",
+        "rejectedCode": "import math\r\ndef can_make_square(square):\r\n    sum_sq = sum(square)\r\n    root = math.sqrt(sum_sq)\r\n    return True if root * root == sum_sq else False\r\n        \r\nt = int(input())\r\nfor _ in range(t):\r\n    n = int(input())\r\n    sq = list(map(int,input().split(\" \")))\r\n    if can_make_square(sq):\r\n        print(\"Yes\")\r\n    else:\r\n        print(\"No\")",
+        "failedTestCase": {
+            "input": "10000\r\n2\r\n5 6\r\n5\r\n2 1 7 9 7\r\n2\r\n5 5\r\n2\r\n4 7\r\n1\r\n2\r\n2\r\n8 7\r\n2\r\n9 8\r\n1\r\n9\r\n1\r\n10\r\n3\r\n8 6 10\r\n3\r\n3 9 1\r\n5\r\n5 8 1 10 7\r\n3\r\n4 8 6\r\n5\r\n1 10 2 5 1\r\n2\r\n7 4\r\n1\r\n4\r\n5\r\n4 5 10 1 5\r\n1\r\n2\r\n5\r\n1 2 3 6 2\r\n4\r\n9 7 6 2\r\n2\r\n8 3\r\n5\r\n2 4 10 4 8\r\n4\r\n2 9 10 3\r\n1\r\n1\r\n2\r\n10 7\r\n2\r\n5 7\r\n2\r\n8 10\r\n1\r\n4\r\n3\r\n10 6 1\r\n3\r\n9 3 2\r\n4\r\n2 5 5 9\r\n4\r\n7 9 2 5\r\n5\r\n10 8 9 2 10\r\n2\r\n9 8\r\n1\r\n10\r\n1\r\n3\r\n4\r\n5 1 10 5\r\n3\r\n8 7 5\r\n3\r\n2 10 1\r\n4\r\n8 4 4 3\r\n4\r\n5 6 4 2\r\n2\r\n6 8\r\n3\r\n2 7 10\r\n1\r\n1\r\n5\r\n8 5 10 4 10\r\n2\r\n7 3\r\n5\r\n3 9 10 6 3\r\n2\r\n5 9\r\n2\r\n3 9\r\n1\r\n6\r\n5\r\n7 10 3...",
+            "output": "Yes\r\nNo\r\nNo\r\nYes\r\nNo\r\nNo\r\nYes\r\nYes\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nYes\r\nYes\r\nYes\r\nNo\r\nYes\r\nNo\r\nYes\r\nNo\r\nNo\r\nYes\r\nYes\r\nNo\r\nNo\r\nYes\r\nYes\r\nYes\r\nYes\r\nNo\r\nYes\r\nYes\r\nNo\r\nNo\r\nYes\r\nNo\r\nNo\r\nNo\r\nYes\r\nYes\r\nNo\r\nYes\r\nNo\r\nNo\r\nNo\r\nYes\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nYes\r\nNo\r\nYes\r\nYes\r\nNo\r\nNo\r\nNo\r\nYes\r\nYes\r\nYes\r\nYes\r\nYes\r\nNo\r\nYes\r\nNo\r\nNo\r\nYes\r\nYes\r\nYes\r\nNo\r\nNo\r\nNo\r\nNo\r\nYes\r\nNo\r\nYes\r\nNo\r\nNo\r\nNo\r\nYes\r\nNo\r\nNo\r\nNo\r\nYes\r\nYes\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nYes\r\nYes\r\nNo\r\nYes\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nNo\r\nYes\r\nNo\r\nNo\r\nYes\r\nYes\r\nNo\r\nYes\r\nNo\r\nNo\r\nNo\r\nNo\r\nN...",
+            "expectedOutput": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO...",
+            "CheckerComment": "wrong answer expected NO, found YES [1st token]\r\n"
+        },
+        "errorLine": 2,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248029661",
+            "author": "quangthenpc",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 343,
+            "memory": 25000,
+            "submissionTime": 1708717320
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "B - Not Quite Latin Square",
+            "submissionID": "247957897",
+            "author": "quangthenpc",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 46,
+            "memory": 0,
+            "submissionTime": 1708686000
+        },
+        "acceptedCode": "t = int(input())\r\nlst = [[[int(i) for i in input()], [int(j) for j in input().split()]] for _ in range(t)]\r\n\r\nimport math\r\n\r\nfor i in range(t):\r\n    a = sum(lst[i][1])\r\n    \r\n    if math.sqrt(a) % int(math.sqrt(a)) == 0.0:\r\n        print('YES')\r\n    else:\r\n        print('NO')",
+        "rejectedCode": "t = int(input())\r\nlst1 = [[[_ for _ in input()] for i in range(3)] for j in range(t)]\r\nlst2 = ['A', 'B', 'C']\r\n\r\n\r\nfor j in range(t):\r\n    a = 0\r\n    \r\n    for i in range(2):\r\n        if '?' in lst1[j][i]:\r\n            a = 1\r\n            \r\n            for _ in range(2):\r\n                if lst2[_] not in lst1[j][i]:\r\n                    print(lst2[_])\r\n                    break",
+        "failedTestCase": {
+            "input": "3\r\nABC\r\nC?B\r\nBCA\r\nBCA\r\nCA?\r\nABC\r\n?AB\r\nBCA\r\nABC\r\n",
+            "output": "A\r\nB\r\n",
+            "expectedOutput": "A\r\nB\r\nC\r\n",
+            "CheckerComment": "wrong answer Unexpected EOF in the participants output\r\n"
+        },
+        "errorLine": 2,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248217164",
+            "author": "cat.lover",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 78,
+            "memory": 8800,
+            "submissionTime": 1708838760
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248216516",
+            "author": "cat.lover",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 7100,
+            "submissionTime": 1708838400
+        },
+        "acceptedCode": "#https://codeforces.com/contest/1915/submission/247916890\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    l1 = list(input())\n    for i in range(2,n):\n        if l1[i] in  \"ae\":\n            l1[i-1] = \".\" + l1[i-1]\n    print(\"\".join(l1))",
+        "rejectedCode": "t = int(input())\nfor _ in range(t):\n    n = int(input())\n    l1 = str(input())\n    l1 = [str(i) for i in l1]\n\n    dots = []\n    i = 0\n    while i < n-3:\n        #can be -4 too\n        if l1[i] in [\"a\", \"e\"] and l1[i+2] in [\"a\",\"e\"]:\n            dots.append(i)\n\n        if l1[i] in [\"a\", \"e\"] and l1[i+3] in [\"a\", \"e\"]:\n            dots.append(i+1)\n\n        i += 1\n    \n    while i < n - 2:\n        if l1[i] in [\"a\", \"e\"] and l1[i+2] in [\"a\",\"e\"]:\n            dots.append(i)\n        i += 1\n\n    # print(dots)\n    for i in range(len(dots)):\n        l1.insert(dots[i] + i+1, \".\")\n    print(\"\".join(l1))",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\nbedebacacadcababcabdedacceddadacebbacacacedbacacececedacabedabadbadabecebdababbabacacacebbababecbebabedcacbecadededdebebbadecbebadabdadedadcebebedabcadcecabebababadedababecabdededecacacacababdacecabecadacdadadceccecacabacadaddedecebadeccedbabaccededcededebbacadcecacadebedacabeddebbacabecebedebebabacedadbedbaccababedaccacacabedbebecedadaddebbacdacdabacedededabedcadbadabececacebedecbabcedecbabacbecacabebdedadecececadabacabcedcacbadacdabebeddabecedceddacacacabedbecbacadedcadedababecadcabeccebdacada...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248170101",
+            "author": "YetI705",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 124,
+            "memory": 21800,
+            "submissionTime": 1708793160
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248169515",
+            "author": "YetI705",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 2,
+            "runTime": 249,
+            "memory": 8100,
+            "submissionTime": 1708792500
+        },
+        "acceptedCode": "for _ in range(int(input())):\r\n    n = int(input())\r\n    x = list(input())\r\n    ans = []\r\n    while x:\r\n        y = x.pop()\r\n        ans.append(y)\r\n        if y in ['a', 'e']:\r\n            ans.append(x.pop())\r\n            ans.append('.')\r\n        else:\r\n            ans.append(x.pop())\r\n            ans.append(x.pop())\r\n            ans.append('.')\r\n    ans.pop()\r\n    print(''.join(ans[::-1]))\r\n",
+        "rejectedCode": "for _ in range(int(input())):\r\n    x = sum(list(map(int, input().split())))\r\n    if x ** 0.5 == int(x ** 0.5):\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")\r\n",
+        "failedTestCase": {
+            "input": "10000\r\n2\r\n5 6\r\n5\r\n2 1 7 9 7\r\n2\r\n5 5\r\n2\r\n4 7\r\n1\r\n2\r\n2\r\n8 7\r\n2\r\n9 8\r\n1\r\n9\r\n1\r\n10\r\n3\r\n8 6 10\r\n3\r\n3 9 1\r\n5\r\n5 8 1 10 7\r\n3\r\n4 8 6\r\n5\r\n1 10 2 5 1\r\n2\r\n7 4\r\n1\r\n4\r\n5\r\n4 5 10 1 5\r\n1\r\n2\r\n5\r\n1 2 3 6 2\r\n4\r\n9 7 6 2\r\n2\r\n8 3\r\n5\r\n2 4 10 4 8\r\n4\r\n2 9 10 3\r\n1\r\n1\r\n2\r\n10 7\r\n2\r\n5 7\r\n2\r\n8 10\r\n1\r\n4\r\n3\r\n10 6 1\r\n3\r\n9 3 2\r\n4\r\n2 5 5 9\r\n4\r\n7 9 2 5\r\n5\r\n10 8 9 2 10\r\n2\r\n9 8\r\n1\r\n10\r\n1\r\n3\r\n4\r\n5 1 10 5\r\n3\r\n8 7 5\r\n3\r\n2 10 1\r\n4\r\n8 4 4 3\r\n4\r\n5 6 4 2\r\n2\r\n6 8\r\n3\r\n2 7 10\r\n1\r\n1\r\n5\r\n8 5 10 4 10\r\n2\r\n7 3\r\n5\r\n3 9 10 6 3\r\n2\r\n5 9\r\n2\r\n3 9\r\n1\r\n6\r\n5\r\n7 10 3...",
+            "output": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r...",
+            "expectedOutput": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO...",
+            "CheckerComment": "wrong answer expected YES, found NO [8th token]\r\n"
+        },
+        "errorLine": 2,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248129226",
+            "author": "_BREEZE_",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 108,
+            "memory": 1700,
+            "submissionTime": 1708775460
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248128177",
+            "author": "_BREEZE_",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 12900,
+            "submissionTime": 1708775040
+        },
+        "acceptedCode": "def solve():\r\n    n = int(input())\r\n    a = input()\r\n    ans = ''\r\n    cur = ''\r\n    for i in range(n - 1):\r\n        cur += a[i]\r\n        if len(cur) == 3:\r\n            if a[i + 1] in 'bcd':\r\n                ans += cur\r\n                cur = ''\r\n            else:\r\n                ans += cur[:-1]\r\n                cur = cur[-1]\r\n            ans += '.'\r\n    print(ans + cur + a[-1])\r\n\r\nt = int(input())\r\nfor _ in range(t):\r\n    solve()",
+        "rejectedCode": "def solve():\r\n    n = int(input())\r\n    a = input()\r\n    ans = ''\r\n    cur = ''\r\n    for i in range(n - 1):\r\n        cur += a[i]\r\n        if len(cur) == 3:\r\n            if a[i + 1] in 'bcd':\r\n                ans += cur\r\n                cur = ''\r\n            else:\r\n                ans += cur[:-1]\r\n                cur = cur[-1]\r\n            ans += '.'\r\n    print(ans + cur + a[-1])\r\n\r\nt = int(input())\r\nfor _ in range(t):\r\n    solve()",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\nbedebacacadcababcabdedacceddadacebbacacacedbacacececedacabedabadbadabecebdababbabacacacebbababecbebabedcacbecadededdebebbadecbebadabdadedadcebebedabcadcecabebababadedababecabdededecacacacababdacecabecadacdadadceccecacabacadaddedecebadeccedbabaccededcededebbacadcecacadebedacabeddebbacabecebedebebabacedadbedbaccababedaccacacabedbebecedadaddebbacdacdabacedededabedcadbadabececacebedecbabcedecbabacbecacabebdedadecececadabacabcedcacbadacdabebeddabecedceddacacacabedbecbacadedcadedababecadcabeccebdacada...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 0,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248128048",
+            "author": "2022014789",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 77,
+            "memory": 17100,
+            "submissionTime": 1708774980
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248126798",
+            "author": "2022014789",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 13200,
+            "submissionTime": 1708774260
+        },
+        "acceptedCode": "def solve():\r\n    n = int(input())\r\n    a = list(input())\r\n    for i in range(2,n):\r\n        if a[i] in 'ae':\r\n            a[i - 1] = '.' + a[i - 1]\r\n    print(''.join(a))\r\n\r\nt = int(input())\r\nfor _ in range(t):\r\n    solve()",
+        "rejectedCode": "def solve():\r\n    n = int(input())\r\n    a = input()\r\n    ans = ''\r\n    cur = ''\r\n    for i in range(n - 1):\r\n        cur += a[i]\r\n        if len(cur) == 3:\r\n            if a[i + 1] in 'bcd':\r\n                ans += cur\r\n                cur = ''\r\n            else:\r\n                ans += cur[:-1]\r\n                cur = cur[-1]\r\n            ans += '.'\r\n    print(ans + cur + a[-1])\r\n\r\nt = int(input())\r\nfor _ in range(t):\r\n    solve()",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\nbedebacacadcababcabdedacceddadacebbacacacedbacacececedacabedabadbadabecebdababbabacacacebbababecbebabedcacbecadededdebebbadecbebadabdadedadcebebedabcadcecabebababadedababecabdededecacacacababdacecabecadacdadadceccecacabacadaddedecebadeccedbabaccededcededebbacadcecacadebedacabeddebbacabecebedebebabacedadbedbaccababedaccacacabedbebecedadaddebbacdacdabacedededabedcadbadabececacebedecbabcedecbabacbecacabebdedadecececadabacabcedcacbadacdabebeddabecedceddacacacabedbecbacadedcadedababecadcabeccebdacada...",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 3,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248127913",
+            "author": "Yusif_Okasha",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 93,
+            "memory": 8800,
+            "submissionTime": 1708774860
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248121256",
+            "author": "Yusif_Okasha",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 7200,
+            "submissionTime": 1708771740
+        },
+        "acceptedCode": "TestCases = int(input())\r\nCons = {'b','c','d'} \r\nfor _ in range (TestCases) :\r\n    length = int(input())\r\n    word = input()\r\n    syllables = []\r\n    i = 0\r\n    while length > i+3 :\r\n       if word[i+2] in Cons and word[i+3] in Cons :\r\n          i+=3\r\n          syllable = word[i-3:i]\r\n       else :\r\n          i+=2\r\n          syllable = word[i-2:i] \r\n       syllables.append(syllable)\r\n     \r\n    syllables.append(word[i:])\r\n   \r\n    print(\".\".join(syllables))",
+        "rejectedCode": "TestCases = int(input())\r\nCons = {'b','c','d'} \r\nVows = {'a','e'}\r\nfor _ in range (1,TestCases+1) :\r\n    lengh = input()\r\n    word = input()\r\n    syllables = []\r\n    while len(word) > 3 :\r\n       if word[2] in Cons and word[3] in Cons :\r\n          syllable = word[:3]\r\n          word = word[3:] \r\n       else :\r\n          syllable = word[:2] \r\n          word = word[2:] \r\n       syllables.append(syllable)\r\n     \r\n    syllables.append(word)\r\n   \r\n    print(\".\".join(syllables))",
+        "failedTestCase": {
+            "input": "1\r\n200000\r\nbedebacacadcababcabdedacceddadacebbacacacedbacacececedacabedabadbadabecebdababbabacacacebbababecbebabedcacbecadededdebebbadecbebadabdadedadcebebedabcadcecabebababadedababecabdededecacacacababdacecabecadacdadadceccecacabacadaddedecebadeccedbabaccededcededebbacadcecacadebedacabeddebbacabecebedebebabacedadbedbaccababedaccacacabedbebecedadaddebbacdacdabacedededabedcadbadabececacebedecbabcedecbabacbecacabebdedadecececadabacabcedcacbadacdabebeddabecedceddacacacabedbecbacadedcadedababecadcabeccebdacada...",
+            "output": "be.de.ba.ca.cad.ca.bab.cab.de.dac.ced.da.da.ceb.ba.ca.ca.ced.ba.ca.ce.ce.ce.da.ca.be.da.bad.ba.da.be.ceb.da.bab.ba.ba.ca.ca.ceb.ba.ba.bec.be.ba.bed.cac.be.ca.de.ded.de.beb.ba.dec.be.ba.dab.da.de.dad.ce.be.be.dab.cad.ce.ca.be.ba.ba.ba.de.da.ba.be.cab.de.de.de.ca.ca.ca.ca.bab.da.ce.ca.be.ca.dac.da.dad.cec.ce.ca.ca.ba.ca.dad.de.de.ce.ba.dec.ced.ba.bac.ce.ded.ce.de.deb.ba.cad.ce.ca.ca.de.be.da.ca.bed.deb.ba.ca.be.ce.be.de.be.ba.ba.ce.dad.bed.bac.ca.ba.be.dac.ca.ca.ca.bed.be.be.ce.da.dad.deb.bac.dac.da.ba.ce.de...",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 3,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248118244",
+            "author": "V1rence",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 155,
+            "memory": 1100,
+            "submissionTime": 1708770480
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "D - Unnatural Language Processing",
+            "submissionID": "248117063",
+            "author": "V1rence",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Runtime",
+            "errorCaseNo": 1,
+            "runTime": 15,
+            "memory": 0,
+            "submissionTime": 1708769940
+        },
+        "acceptedCode": "import sys\r\ninput = sys.stdin.readline\r\nt = int(input())\r\nfor _ in range(t):\r\n    n = int(input())\r\n    word = input()\r\n    word_syllables = ''\r\n    i = 0\r\n    while i < n:\r\n        if n - i == 2:\r\n            word_syllables += word[i] + word[i + 1]\r\n            break\r\n        if n - i == 3:\r\n            word_syllables += word[i] + word[i + 1] + word[i + 2]\r\n            break\r\n        if word[i + 3] == 'a' or word[i + 3] == 'e':\r\n            word_syllables += word[i] + word[i + 1] + '.'\r\n            i += 2\r\n        else:\r\n            word_syllables += word[i] + word[i + 1] + word[i + 2] + '.'\r\n            i += 3\r\n    print(word_syllables)",
+        "rejectedCode": "import io,os\r\ninput = io.BytesIO(os.read(0,os.fstat(0).st_size)).readline\r\nt = int(input())\r\nfor _ in range(t):\r\n    n = int(input())\r\n    word = input()\r\n    word_syllables = ''\r\n    i = 0\r\n    while i < n:\r\n        if n - i == 2:\r\n            word_syllables += word[i] + word[i + 1]\r\n            break\r\n        if n - i == 3:\r\n            word_syllables += word[i] + word[i + 1] + word[i + 2]\r\n            break\r\n        if word[i + 3] == 'a' or word[i + 3] == 'e':\r\n            word_syllables += word[i] + word[i + 1] + '.'\r\n            i += 2\r\n        else:\r\n            word_syllables += word[i] + word[i + 1] + word[i + 2] + '.'\r\n            i += 3\r\n    print(word_syllables)",
+        "failedTestCase": {
+            "input": "6\r\n8\r\nbacedbab\r\n4\r\nbaba\r\n13\r\ndaddecabeddad\r\n3\r\ndac\r\n6\r\ndacdac\r\n22\r\ndababbabababbabbababba\r\n",
+            "output": "",
+            "expectedOutput": "",
+            "CheckerComment": "Exit code is 1"
+        },
+        "errorLine": 1,
+        "errorType": "single_hunk"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248099084",
+            "author": "depressed-_-",
+            "lang": "PyPy 3-64",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 61,
+            "memory": 0,
+            "submissionTime": 1708762020
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248098783",
+            "author": "depressed-_-",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 46,
+            "memory": 0,
+            "submissionTime": 1708761900
+        },
+        "acceptedCode": "for _ in range(int(input())):\r\n    a, b, c = map(int, input().split())\r\n    if a != b and a != c:\r\n        print(a)\r\n    elif b != a and b != c:\r\n        print(b)\r\n    else:\r\n        print(c)",
+        "rejectedCode": "for _ in range(int(input())):\r\n    a, b, c = map(int, input().split())\r\n    if a != b and a != c:\r\n        print(a)\r\n    if b != a and b != c:\r\n        print(b)\r\n    else:\r\n        print(c)",
+        "failedTestCase": {
+            "input": "10\r\n1 2 2\r\n4 3 4\r\n5 5 6\r\n7 8 8\r\n9 0 9\r\n3 6 3\r\n2 8 2\r\n5 7 7\r\n7 7 5\r\n5 7 5\r\n",
+            "output": "1\r\n2\r\n3\r\n6\r\n7\r\n8\r\n0\r\n6\r\n8\r\n5\r\n7\r\n5\r\n7\r\n",
+            "expectedOutput": "1\r\n3\r\n6\r\n7\r\n0\r\n6\r\n8\r\n5\r\n5\r\n7\r\n",
+            "CheckerComment": "wrong answer 2nd numbers differ - expected: '3', found: '2'\r\n"
+        },
+        "errorLine": 5,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248054251",
+            "author": "ImanAbbasi",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 171,
+            "memory": 26200,
+            "submissionTime": 1708738500
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "248053860",
+            "author": "ImanAbbasi",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 3,
+            "runTime": 1000,
+            "memory": 600,
+            "submissionTime": 1708738320
+        },
+        "acceptedCode": "import math\n\ndef is_sqr(n):\n    root = math.isqrt(n)\n    return root * root == n\n\nn = int(input())\n\nfor _ in range(n):\n    a = int(input())\n    s = list(map(int, input().split()))\n    total_sum = sum(s)\n    \n    if is_sqr(total_sum):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n",
+        "rejectedCode": "n=int(input())\n\ndef is_sqr(n):\n    for i in range(1,n+1):\n        if n/i==i:\n            return True\n    else:\n        return False\n\nfor i in range(n):\n    a=int(input())\n    s=input().split(\" \")\n    sum=0\n    for j in range(a):\n        sum+=int(s[j])\n    \n    if is_sqr(sum):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n    \n\n",
+        "failedTestCase": {
+            "input": "50\r\n4357\r\n17784254 299683852 139062553 11272599 367943339 29588402 1711198 106764331 2951854 16055780 173763010 4769982 128568802 41683021 36457034 215748324 156861382 112669086 45143474 133051082 199445135 85521140 39695514 333223198 120574438 120349332 10915381 60910474 137612992 1573273 134051089 22057162 257834395 57348483 162678780 87422565 76648229 60756360 10422864 121092505 34225369 95541161 85403066 18911618 36807331 177522386 68037839 68031985 238605184 69019078 73336969 415511377 31215468 549745...",
+            "output": "YES\r\n",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 1,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248053519",
+            "author": "vamsireddykeesara123",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1708738200
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "248053240",
+            "author": "vamsireddykeesara123",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Compilation",
+            "errorCaseNo": 0,
+            "runTime": 0,
+            "memory": 0,
+            "submissionTime": 1708738080
+        },
+        "acceptedCode": "T=int(input())\r\nfor i in range(T):\r\n    a,b,c=map(int,input().split())\r\n    if(a!=b and b==c and c!=a):\r\n        print(a)\r\n    elif(b!=c and a==c and a!=b):\r\n        print(b)\r\n    else:\r\n        print(c)",
+        "rejectedCode": "T=int(input())\r\nfor i in range(T):\r\n    a,b,c=map(int,input().split())\r\n    if a!=b and b==c and c!=a:\r\n        print(a)\r\n    elif b!=c and a==c b!=a:\r\n        print(b)\r\n    else:\r\n        print(c)",
+        "failedTestCase": null,
+        "errorLine": 4,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "247994328",
+            "author": "bhavanaanukanti",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 187,
+            "memory": 26200,
+            "submissionTime": 1708692960
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "247992502",
+            "author": "bhavanaanukanti",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 31,
+            "memory": 0,
+            "submissionTime": 1708692240
+        },
+        "acceptedCode": "import math\r\nt =int(input())\r\nfor _ in range(t):\r\n    a = int(input())\r\n    s = list(map(int,input().split()))\r\n    #print(math.sqrt(sum(s)))\r\n    #print((sum(s)**1/4))\r\n    #print(sum(s))\r\n    #print(16**1/4)\r\n    if math.sqrt(sum(s)) == int(math.sqrt(sum(s))):\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")",
+        "rejectedCode": "import math\r\nt =int(input())\r\nfor _ in range(t):\r\n    a = int(input())\r\n    s = list(map(int,input().split()))\r\n    #print(math.sqrt(sum(s)))\r\n    #print((sum(s)**1/4))\r\n    #print(sum(s))\r\n    #print(16**1/4)\r\n    if math.sqrt(sum(s)) == int(sum(s)**1/4):\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")",
+        "failedTestCase": {
+            "input": "5\r\n1\r\n9\r\n2\r\n14 2\r\n7\r\n1 2 3 4 5 6 7\r\n6\r\n1 3 5 7 9 11\r\n4\r\n2 2 2 2\r\n",
+            "output": "NO\r\nYES\r\nNO\r\nNO\r\nNO\r\n",
+            "expectedOutput": "YES\r\nYES\r\nNO\r\nYES\r\nNO\r\n",
+            "CheckerComment": "wrong answer expected YES, found NO [1st token]\r\n"
+        },
+        "errorLine": 10,
+        "errorType": "single_line"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "247957518",
+            "author": "Ravi_Teja_N",
+            "lang": "Python 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 171,
+            "memory": 26200,
+            "submissionTime": 1708685940
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "C - Can I Square?",
+            "submissionID": "247942377",
+            "author": "Ravi_Teja_N",
+            "lang": "Python 3",
+            "isAccepted": false,
+            "errorType": "Time",
+            "errorCaseNo": 2,
+            "runTime": 1000,
+            "memory": 1300,
+            "submissionTime": 1708684560
+        },
+        "acceptedCode": "import math\r\n\r\nt = int(input())\r\nwhile t > 0:\r\n    n = int(input())\r\n    a = list(map(int, input().split()))\r\n    k = sum(a)\r\n    if math.sqrt(k) == round(math.sqrt(k)):\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")\r\n    t -= 1\r\n",
+        "rejectedCode": "import math\r\n\r\nt = int(input())\r\nwhile t > 0:\r\n    n = int(input())\r\n    a = list(map(int, input().split()))\r\n    c = []\r\n    k = sum(a)\r\n    for j in range(0, int(math.sqrt(10**9))):\r\n        c.append((j + 1) * (j + 1))\r\n\r\n    is_present = k in c\r\n    if is_present == True:\r\n        print(\"YES\")\r\n    else:\r\n        print(\"NO\")\r\n    t = t - 1\r\n",
+        "failedTestCase": {
+            "input": "10000\r\n2\r\n5 6\r\n5\r\n2 1 7 9 7\r\n2\r\n5 5\r\n2\r\n4 7\r\n1\r\n2\r\n2\r\n8 7\r\n2\r\n9 8\r\n1\r\n9\r\n1\r\n10\r\n3\r\n8 6 10\r\n3\r\n3 9 1\r\n5\r\n5 8 1 10 7\r\n3\r\n4 8 6\r\n5\r\n1 10 2 5 1\r\n2\r\n7 4\r\n1\r\n4\r\n5\r\n4 5 10 1 5\r\n1\r\n2\r\n5\r\n1 2 3 6 2\r\n4\r\n9 7 6 2\r\n2\r\n8 3\r\n5\r\n2 4 10 4 8\r\n4\r\n2 9 10 3\r\n1\r\n1\r\n2\r\n10 7\r\n2\r\n5 7\r\n2\r\n8 10\r\n1\r\n4\r\n3\r\n10 6 1\r\n3\r\n9 3 2\r\n4\r\n2 5 5 9\r\n4\r\n7 9 2 5\r\n5\r\n10 8 9 2 10\r\n2\r\n9 8\r\n1\r\n10\r\n1\r\n3\r\n4\r\n5 1 10 5\r\n3\r\n8 7 5\r\n3\r\n2 10 1\r\n4\r\n8 4 4 3\r\n4\r\n5 6 4 2\r\n2\r\n6 8\r\n3\r\n2 7 10\r\n1\r\n1\r\n5\r\n8 5 10 4 10\r\n2\r\n7 3\r\n5\r\n3 9 10 6 3\r\n2\r\n5 9\r\n2\r\n3 9\r\n1\r\n6\r\n5\r\n7 10 3...",
+            "output": "NO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nYES\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nYES\r\nNO\r\nNO\r\nNO...",
+            "expectedOutput": "",
+            "CheckerComment": ""
+        },
+        "errorLine": 7,
+        "errorType": "multi_hunks"
+    },
+    {
+        "acceptedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "247889225",
+            "author": "bananaaa.phucc",
+            "lang": "PyPy 3",
+            "isAccepted": true,
+            "errorType": "",
+            "errorCaseNo": 0,
+            "runTime": 108,
+            "memory": 400,
+            "submissionTime": 1708679280
+        },
+        "rejectedSubmission": {
+            "contestID": "1915",
+            "problem": "A - Odd One Out",
+            "submissionID": "247710543",
+            "author": "bananaaa.phucc",
+            "lang": "PyPy 3-64",
+            "isAccepted": false,
+            "errorType": "Answer",
+            "errorCaseNo": 1,
+            "runTime": 30,
+            "memory": 0,
+            "submissionTime": 1708571040
+        },
+        "acceptedCode": "t = int(input())\r\nlst = [[int(i) for i in input().split()] for j in range(t)]\r\n\r\nfrom collections import Counter\r\nfor i in range(t):\r\n    a = Counter(lst[i])\r\n    print(min(a, key=a.get))",
+        "rejectedCode": "t = int(input())\r\na = [sorted(int(i) for i in input().split()) for j in range(t)]\r\n    \r\n    \r\nfor j in range(t):\r\n    for i in range(2):\r\n        if i == 0:\r\n            if (a[j][i] != a[j][i+1]) and (a[j][i] != a[j][i+2]):\r\n                print(a[j][i])\r\n                break\r\n        elif i == 1:\r\n            if (a[j][i] != a[j][i-1]) and (a[j][i] != a[j][i+1]):\r\n                print(a[j][i])\r\n                break\r\n        elif i == 2:\r\n            if (a[j][i] != a[j][i-2]) and (a[j][i] != a[j][i-1]):\r\n                print(a[j][i])\r\n                break",
+        "failedTestCase": {
+            "input": "10\r\n1 2 2\r\n4 3 4\r\n5 5 6\r\n7 8 8\r\n9 0 9\r\n3 6 3\r\n2 8 2\r\n5 7 7\r\n7 7 5\r\n5 7 5\r\n",
+            "output": "1\r\n3\r\n7\r\n0\r\n5\r\n5\r\n",
+            "expectedOutput": "1\r\n3\r\n6\r\n7\r\n0\r\n6\r\n8\r\n5\r\n5\r\n7\r\n",
+            "CheckerComment": "wrong answer 3rd numbers differ - expected: '6', found: '7'\r\n"
+        },
+        "errorLine": 2,
+        "errorType": "single_hunk"
     }
 ]

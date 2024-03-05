@@ -74,8 +74,14 @@ if __name__ == "__main__":
 
         
         for submission_pair in tqdm(pairs_to_fetch):
-            accepted_code = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)[0]
+            accepted = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)
             rejected = fetch_submission_code_error(submission_pair[1].contestID, submission_pair[1].submissionID, submission_pair[1].errorCaseNo)
+
+            if (accepted == None or rejected == None):
+                # TODO: auto wait 5min and redo
+                break
+            
+            accepted_code = accepted[0]
             subject = CFSubject(acceptedSubmission=submission_pair[0],
                                 rejectedSubmission=submission_pair[1],
                                 acceptedCode=accepted_code,

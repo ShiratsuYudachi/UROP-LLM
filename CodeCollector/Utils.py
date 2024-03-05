@@ -6,6 +6,18 @@ import csv
 acceptedLangs = ["Python 3", "Python 2", "PyPy 2", "PyPy 3", "PyPy 3-64"]
 thresh_diff_lines = 5 # thresh for consider two code as same version
 
+use_proxy = True
+proxy = '127.0.0.1:1087'
+
+
+
+proxies = {
+    'http': 'http://' + proxy,
+    'https': 'http://' + proxy,
+}
+if not use_proxy:
+    proxies = None
+
 
 def wrapDir(dir: str):
     if not dir.endswith("/"):
@@ -104,13 +116,14 @@ class CFSubmission:
     
     
 class CFSubject:
-    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, failedTestCase={}, errorLine:int=0) -> None:
+    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, failedTestCase={}, errorLine:int=0, errorType="") -> None:
         self.acceptedSubmission = acceptedSubmission
         self.rejectedSubmission = rejectedSubmission
         self.acceptedCode = acceptedCode
         self.rejectedCode = rejectedCode
         self.failedTestCase = failedTestCase
         self.errorLine = errorLine
+        self.errorType = errorType
         
     def to_dict(self):
         return {
@@ -119,7 +132,8 @@ class CFSubject:
             'acceptedCode': self.acceptedCode,
             'rejectedCode': self.rejectedCode,
             'failedTestCase': self.failedTestCase,
-            'errorLine': self.errorLine
+            'errorLine': self.errorLine,
+            'errorType': self.errorType
         }
     
     @staticmethod
@@ -130,6 +144,7 @@ class CFSubject:
         rejectedCode = subjectDict['rejectedCode']
         failedTestCase = subjectDict['failedTestCase']
         errorLine = subjectDict.get('errorLine', 0)  # Use .get() to handle missing errorLine with default 0
+        errorType = subjectDict.get('errorLine', "")
 
         return CFSubject(
             acceptedSubmission=acceptedSubmission,
@@ -137,7 +152,8 @@ class CFSubject:
             acceptedCode=acceptedCode,
             rejectedCode=rejectedCode,
             failedTestCase=failedTestCase,
-            errorLine=errorLine
+            errorLine=errorLine,
+            errorType=errorType
         )
     
     @staticmethod
