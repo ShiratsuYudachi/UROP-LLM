@@ -91,12 +91,15 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
         colorPrint("HTTP Error: "+str(response.status_code), "red")
         return None
     
+    
     soup = BeautifulSoup(response.text, 'html.parser')
     
     # Find the <pre> tag with the specific id containing the submission code
     code_pre_tag = soup.find('pre', id="program-source-text")
     
     # Extract the text from the <pre> tag, which is the submission code
+    if not code_pre_tag:
+        return None
     
     code = code_pre_tag.get_text()
     if not code:
@@ -107,6 +110,7 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
 
     # find failed test cases
     if errorCaseNo:
+        time.sleep(1)
         # to make fetch successful, referer and csrf_token is needed
         meta_tag = soup.find('meta', attrs={'name': 'X-Csrf-Token'})
         if not meta_tag:
@@ -132,7 +136,10 @@ def fetch_submission_code_error(contest_id, submission_id, errorCaseNo = None):
             "submissionId": submission_id,
             "csrf_token": csrf_token
         }
-        response = session.post(submitSource_url, headers=headers, data=data, proxies=proxies).json()
+        response = session.post(submitSource_url, headers=headers, data=data, proxies=proxies)
+        if response.status_code != 200:
+            return None
+        response = response.json()
         errorCase = {
             'input': response[f'input#{errorCaseNo}'],
             'output': response[f'output#{errorCaseNo}'],

@@ -45,7 +45,7 @@ def recompareAll(contestID):
 
         # check error type
         if same_count == max_lineCount-1:   
-            subject.errorType = "single_line"
+            subject.bugType = "single_line"
         else:
             code1 = subject.acceptedCode.strip().split('\n')
             code2 = subject.rejectedCode.strip().split('\n')
@@ -61,9 +61,9 @@ def recompareAll(contestID):
                     break
             
             if sameline and compare_code_lines('\n'.join(code1[sameline[0]:]), '\n'.join(code2[sameline[1]:]))[1] != 0:
-                subject.errorType = "multi_hunks"
+                subject.bugType = "multi_hunks"
             else:
-                subject.errorType = "single_hunk"
+                subject.bugType = "single_hunk"
 
     CFSubject.save_list_to_json(subjects,contestID)
 

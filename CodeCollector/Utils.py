@@ -116,14 +116,14 @@ class CFSubmission:
     
     
 class CFSubject:
-    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, failedTestCase={}, errorLine:int=0, errorType="") -> None:
+    def __init__(self, acceptedSubmission:CFSubmission, rejectedSubmission:CFSubmission, acceptedCode:str, rejectedCode:str, failedTestCase={}, errorLine:int=0, bugType="") -> None:
         self.acceptedSubmission = acceptedSubmission
         self.rejectedSubmission = rejectedSubmission
         self.acceptedCode = acceptedCode
         self.rejectedCode = rejectedCode
         self.failedTestCase = failedTestCase
         self.errorLine = errorLine
-        self.errorType = errorType
+        self.bugType = bugType
         
     def to_dict(self):
         return {
@@ -133,7 +133,7 @@ class CFSubject:
             'rejectedCode': self.rejectedCode,
             'failedTestCase': self.failedTestCase,
             'errorLine': self.errorLine,
-            'errorType': self.errorType
+            'bugType': self.bugType
         }
     
     @staticmethod
@@ -144,7 +144,7 @@ class CFSubject:
         rejectedCode = subjectDict['rejectedCode']
         failedTestCase = subjectDict['failedTestCase']
         errorLine = subjectDict.get('errorLine', 0)  # Use .get() to handle missing errorLine with default 0
-        errorType = subjectDict.get('errorLine', "")
+        bugType = subjectDict.get('bugType', "")
 
         return CFSubject(
             acceptedSubmission=acceptedSubmission,
@@ -153,7 +153,7 @@ class CFSubject:
             rejectedCode=rejectedCode,
             failedTestCase=failedTestCase,
             errorLine=errorLine,
-            errorType=errorType
+            bugType=bugType
         )
     
     @staticmethod

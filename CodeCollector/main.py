@@ -12,7 +12,8 @@ from concurrent.futures import ThreadPoolExecutor
 if __name__ == "__main__":
     print("""options:
           1: fetch all submissions of given contest
-          2: get Subjects from fetched submission, and fetch code for them
+          2: get Subjects from fetched submission, and fetch code for them (multi-thread)
+          3: single thread ver of 2 (Suggested! will sleep & retry in case 403 happen)
           command: get runPy command
           """)
     option = input("option?= ")
@@ -35,11 +36,11 @@ if __name__ == "__main__":
                 startPage = 7050
                 colorPrint("INFO: contest already fully fetched", "yellow")
 
-        lock = threading.Lock()
             
-        with ThreadPoolExecutor(max_workers=30) as executor:
+        with ThreadPoolExecutor(max_workers=40) as executor:
             total = 7050-startPage
             pbar = tqdm(total=total)
+            lock = threading.Lock()
 
             def task(url):
                 submissions = []
@@ -88,14 +89,75 @@ if __name__ == "__main__":
                     
             print(f"imported {len(pairs) - len(pairs_to_fetch)} subjects")
 
+           
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            lock = threading.Lock()
+            pbar = tqdm(len(pairs_to_fetch))
+
+            def task(submission_pair):
+                accepted = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)
+                rejected = fetch_submission_code_error(submission_pair[1].contestID, submission_pair[1].submissionID, submission_pair[1].errorCaseNo)
+
+                if (accepted == None or rejected == None):
+                    # TODO: auto wait 5min and redo
+                    pass
+                
+                accepted_code = accepted[0]
+                subject = CFSubject(acceptedSubmission=submission_pair[0],
+                                    rejectedSubmission=submission_pair[1],
+                                    acceptedCode=accepted_code,
+                                    rejectedCode=rejected[0],
+                                    failedTestCase=rejected[1],
+                                    errorLine=compare_code_lines(accepted_code,rejected[0])[1]
+                                    )
+                with lock:
+                    subjects.append(subject)
+                    CFSubject.save_list_to_json(subjects, contestID)
+                    pbar.update(1)
+            
+            for submission_pair in pairs_to_fetch:
+                executor.submit(task, submission_pair)
+                time.sleep(1)
+    
+        pass
+
+    elif (option == "3"):
+        # fetch all submissions of the below contest
+        # single thread
+        default_contestID = 1915
+        contestID = input("contestID=")
+        if contestID=='':
+            contestID = default_contestID
+        
+        submissions = CFSubmission.read_from_csv(contestID)
+        pairs = find_pairs(submissions)
+        pairs_to_fetch = pairs.copy()
+        print_pairs(pairs)
+        subjects = []
+        startPage = 1
+        
+        if os.path.exists(get_subject_json_name(contestID)):
+            subjects = CFSubject.load_list_from_json(contestID)
+            for pair in pairs:
+                for subject in subjects:
+                    if (pair[0].author == subject.acceptedSubmission.author):
+                        pairs_to_fetch.remove(pair)
+                    
+            print(f"imported {len(pairs) - len(pairs_to_fetch)} subjects")
+
         
         for submission_pair in tqdm(pairs_to_fetch):
-            accepted = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)
-            rejected = fetch_submission_code_error(submission_pair[1].contestID, submission_pair[1].submissionID, submission_pair[1].errorCaseNo)
-
+            try:
+                accepted = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)
+                time.sleep(1)
+                rejected = fetch_submission_code_error(submission_pair[1].contestID, submission_pair[1].submissionID, submission_pair[1].errorCaseNo)
+            except Exception:
+                continue
             if (accepted == None or rejected == None):
                 # TODO: auto wait 5min and redo
-                break
+                colorPrint("sleeping...","yellow")
+                time.sleep(300)
+                continue
             
             accepted_code = accepted[0]
             subject = CFSubject(acceptedSubmission=submission_pair[0],
@@ -106,7 +168,10 @@ if __name__ == "__main__":
                                 errorLine=compare_code_lines(accepted_code,rejected[0])[1]
                                 )
             subjects.append(subject)
-            CFSubject.save_list_to_json(subjects, contestID)
+            try:
+                CFSubject.save_list_to_json(subjects, contestID)
+            except Exception:
+                continue
     
         pass
     else:
