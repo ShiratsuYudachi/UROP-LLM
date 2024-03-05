@@ -1,7 +1,7 @@
 from Utils import *
 from FetchManager import fetch_submissions
 from SubjectsCollector import find_pairs, print_pairs, fetch_submission_code_error
-from Comparator import compare_code_lines
+from Comparator import compare_code_lines, recompareAll
 from tqdm import tqdm
 import os
 import time
@@ -9,11 +9,13 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 
 
+
 if __name__ == "__main__":
     print("""options:
           1: fetch all submissions of given contest
           2: get Subjects from fetched submission, and fetch code for them (multi-thread)
           3: single thread ver of 2 (Suggested! will sleep & retry in case 403 happen)
+          4: compare subject codes & update errorLine and bugType attribute
           command: get runPy command
           """)
     option = input("option?= ")
@@ -151,12 +153,13 @@ if __name__ == "__main__":
                 accepted = fetch_submission_code_error(submission_pair[0].contestID, submission_pair[0].submissionID)
                 time.sleep(1)
                 rejected = fetch_submission_code_error(submission_pair[1].contestID, submission_pair[1].submissionID, submission_pair[1].errorCaseNo)
-            except Exception:
+            except Exception as e:
+                colorPrint("Exception thrown during fetching, skipping...","yellow")
                 continue
             if (accepted == None or rejected == None):
                 # TODO: auto wait 5min and redo
                 colorPrint("sleeping...","yellow")
-                time.sleep(300)
+                time.sleep(100)
                 continue
             
             accepted_code = accepted[0]
@@ -171,9 +174,17 @@ if __name__ == "__main__":
             try:
                 CFSubject.save_list_to_json(subjects, contestID)
             except Exception:
+                colorPrint("Exception thrown during saving, skipping...","yellow")
                 continue
     
         pass
+    elif (option == "4"):
+        default_contestID = 1915
+        contestID = input("contestID=")
+        if contestID=='':
+            contestID = default_contestID
+        recompareAll(contestID)
+        colorPrint("compare completed","yellow")
     else:
         fetch_submissions("https://codeforces.com/contest/1915/status?order=BY_ARRIVED_DESC")
         pass
