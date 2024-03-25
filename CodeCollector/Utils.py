@@ -136,6 +136,15 @@ class CFSubject:
             'bugType': self.bugType
         }
     
+    def print(self):
+        print(f"author:{self.acceptedSubmission.author}")
+    
+    @staticmethod
+    def printList(subjectList):
+        for i in subjectList:
+            i.print()
+        
+    
     @staticmethod
     def parse_dict(subjectDict):
         acceptedSubmission = CFSubmission.parse_dict(subjectDict['acceptedSubmission'])

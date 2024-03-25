@@ -1,6 +1,6 @@
 from Utils import *
 from FetchManager import fetch_submissions
-from SubjectsCollector import find_pairs, print_pairs, fetch_submission_code_error
+from SubjectsCollector import find_pairs, print_pairs, fetch_submission_code_error, randomGetFrom
 from Comparator import compare_code_lines, recompareAll
 from tqdm import tqdm
 import os
@@ -16,12 +16,13 @@ if __name__ == "__main__":
           2: get Subjects from fetched submission, and fetch code for them (multi-thread)
           3: single thread ver of 2 (Suggested! will sleep & retry in case 403 happen)
           4: compare subject codes & update errorLine and bugType attribute
+          5: randomly get subject from stored subjects
           command: get runPy command
           """)
     option = input("option?= ")
+    default_contestID = 1915
     if (option == "1"):
         # fetch all submissions of the below contest
-        default_contestID = 1915
         contestID = input("contestID=")
         if contestID=='':
             contestID = default_contestID
@@ -70,7 +71,6 @@ if __name__ == "__main__":
 
     elif (option == "2"):
         # fetch all submissions of the below contest
-        default_contestID = 1915
         contestID = input("contestID=")
         if contestID=='':
             contestID = default_contestID
@@ -126,7 +126,6 @@ if __name__ == "__main__":
     elif (option == "3"):
         # fetch all submissions of the below contest
         # single thread
-        default_contestID = 1915
         contestID = input("contestID=")
         if contestID=='':
             contestID = default_contestID
@@ -179,12 +178,18 @@ if __name__ == "__main__":
     
         pass
     elif (option == "4"):
-        default_contestID = 1915
         contestID = input("contestID=")
         if contestID=='':
             contestID = default_contestID
         recompareAll(contestID)
         colorPrint("compare completed","yellow")
+    elif (option == "5"):
+        contestID = input("contestID=")
+        if contestID=='':
+            contestID = default_contestID
+        subjects = CFSubject.load_list_from_json(contestID)
+        randomGetFrom(subjects).print()
+        
     else:
         fetch_submissions("https://codeforces.com/contest/1915/status?order=BY_ARRIVED_DESC")
         pass

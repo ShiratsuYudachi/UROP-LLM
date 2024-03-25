@@ -3,6 +3,7 @@ from Utils import *
 from FetchManager import fetch_submission_code_error
 from tqdm import tqdm
 from Comparator import compare_code_lines
+import random
 
 def filter_lang(submissions):
     filtered_submissions = []
@@ -41,6 +42,23 @@ def find_pairs(submissions):
                 break  # Only keep one pair per author
 
     return pairs
+
+def filterRedundant(subject:CFSubject, minLineNum:int) -> bool:
+    if len(subject.acceptedCode.split('\n'))>2*minLineNum and subject.bugType=='multi_hunks':
+        return False
+    return True
+    
+
+def randomGetFrom(subjects):
+    minLineNum = 99999999
+    for subject in subjects:
+        subjectMin = len(subject.acceptedCode.split('\n'))
+        if subjectMin<minLineNum:
+            minLineNum = subjectMin
+    
+    filteredSubjects = list(filter(lambda x: filterRedundant(x,minLineNum),subjects))
+    random.seed(0)
+    return random.choice(filteredSubjects)
 
 def print_pairs(pairs):
     for pair in pairs:
